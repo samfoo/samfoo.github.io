@@ -1,0 +1,23 @@
+---
+layout: default
+title: Sam Gibson
+---
+
+<p>
+Hello, I'm <a id="name" href="images/GOPR0053.jpg">Sam Gibson</a>.
+</p>
+
+<p>
+I run around the world, making noise, writing code, and climbing things.
+</p>
+
+<p>
+See some of my code on <a id="github" href="https://github.com/samfoo">github</a>,
+or read about me on <a id="twitter" href="https://twitter.com/capnkrump">twitter</a>.
+</p>
+
+<ul id="posts">
+    {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
