@@ -1,0 +1,81 @@
+---
+title: Sam Gibson
+---
+
+<div>
+    <h1>Sam Gibson</h1>
+
+    <p class="quote">
+        <i class="fa fa-quote-left"></i>
+        The best men are those who remain boys in some heart-deep place, and keep
+        some genuine naïveté as a kind of talisman against too much reality.
+        <i class="fa fa-quote-right"></i>
+    </p>
+
+    <p class="attributed-to"> - Greg Bear, Slant </p>
+
+    <ul class="links">
+        <li>
+            <a href="mailto:sam@ifdown.net">
+                <i class="fa fa-envelope"></i>
+            email
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/samfoo">
+                <i class="fa fa-github"></i>
+            github
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/capnkrump">
+                <i class="fa fa-twitter"></i>
+            twitter
+            </a>
+        </li>
+        <li>
+            <a href="https://au.linkedin.com/in/samfoo">
+                <i class="fa fa-linkedin-square"></i>
+            linkedin
+            </a>
+        </li>
+        <li>
+            <a href="https://keybase.io/samfoo"><i class="fa fa-key"></i>
+            keybase</a>
+            <i class="fingerprint">819F FF48 03E0 1B0F</i>
+        </li>
+        <li>
+            <a href="resume.html"><i class="fa fa-file-text-o"></i>
+            resume</a>
+        </li>
+    </u>
+</div>
+
+<div>
+    <h2>Words</h2>
+
+    <ul class="writings">
+        <% Dir.foreach(File.join(File.dirname(__FILE__), "posts")) do |p| %>
+            <% m = /(\d{4}-\d{2}-\d{2})-(.*)\.md/.match(p) %>
+
+            <% if !m.nil? %>
+                <li>
+                    <span class="date"><%= m[1] %></span> -
+                    <a href="posts/<%= p.gsub(/\.md$/, ".html") %>">
+                        <%= m[2].titleize %>
+                    </a>
+                </li>
+            <% end %>
+        <% end %>
+    </ul>
+</div>
+
+<div>
+    <h2>Misc</h2>
+
+    <ul>
+        <li>
+            <a href="books.html">Reading list</a>
+        </li>
+    </ul>
+</div>

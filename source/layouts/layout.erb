@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title><%= current_page.data.title || "Sam Gibson" %></title>
+
+        <%= stylesheet_link_tag "normalize", "all", "font-awesome.min" %>
+        <!-- <%= javascript_include_tag  "all" %> -->
+    </head>
+
+    <body id="content" class="<%= page_classes %>">
+        <%= yield %>
+    </body>
+</html>
