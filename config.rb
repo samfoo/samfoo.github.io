@@ -59,7 +59,6 @@ set :markdown, fenced_code_blocks: true
 
 page "/resume*", :layout => "layout"
 page "/pages/*", :layout => "layout"
-page "/books*", :layout => "books"
 
 helpers do
   def markdown(text)

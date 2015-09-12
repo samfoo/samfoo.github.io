@@ -1,7 +1,55 @@
-.books img {
-    max-width: 200px;
-    max-height: 400px;
+.book {
+    -moz-perspective: 100px;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    margin-bottom: 100px;
 }
 
-.books .book-review {
+.book .cover {
+    float: right;
+    position: relative;
+    box-shadow: 10px 5px 25px #333;
+    margin-left: 40px;
+    -moz-perspective: 100px;
+    -moz-transform: rotateY(-3deg);
+    -webkit-transform: perspective(100) rotateY(-3deg);
 }
+
+.book .cover:before,
+.book .cover:after {
+    position: absolute;
+    top: 2%;
+    height: 96%;
+    content: ' ';
+    z-index: -1;
+}
+
+.book .cover:after {
+    width: 10%;
+    left: 99%;
+    background-color: #eee;
+    -moz-transform: rotateY(30deg);
+    -webkit-transform: perspective(100) rotateY(30deg);
+    box-shadow: 5px 5px 30px #ccc;
+}
+
+.book .cover img {
+    max-width: 150px;
+    max-height: 300px;
+    display: block;
+}
+
+.book h2 {
+    margin-bottom: 0;
+}
+
+.book .finished-on {
+    color: lightgray;
+    margin-top: 0;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
