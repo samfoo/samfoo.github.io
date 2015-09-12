@@ -8,35 +8,49 @@
 .book .cover {
     float: right;
     position: relative;
-    box-shadow: 10px 5px 25px #333;
+    box-shadow: 10px 5px 25px #999;
     margin-left: 40px;
     -moz-perspective: 100px;
     -moz-transform: rotateY(-3deg);
     -webkit-transform: perspective(100) rotateY(-3deg);
+    border-radius: 3px;
 }
 
 .book .cover:before,
 .book .cover:after {
     position: absolute;
-    top: 2%;
-    height: 96%;
+    top: 3%;
+    height: 93%;
     content: ' ';
     z-index: -1;
 }
 
+.book .cover:before {
+    width: 15%;
+    left: 93%;
+    top: 4%;
+    height: 92%;
+    background-color: #333;
+    border-radius: 3px;
+    -moz-perspective: 100px;
+    -moz-transform: rotateY(-3deg);
+    -webkit-transform: perspective(100) rotateY(30deg);
+}
+
 .book .cover:after {
-    width: 10%;
-    left: 99%;
+    width: 15%;
+    left: 95%;
     background-color: #eee;
     -moz-transform: rotateY(30deg);
     -webkit-transform: perspective(100) rotateY(30deg);
-    box-shadow: 5px 5px 30px #ccc;
+    box-shadow: 5px 5px 30px #ddd;
 }
 
 .book .cover img {
     max-width: 150px;
     max-height: 300px;
     display: block;
+    border-radius: 3px;
 }
 
 .book h2 {
