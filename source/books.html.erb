@@ -1,0 +1,12 @@
+<% data.books.books.each do |book| %>
+<div class="book">
+    <h2><%= book.title %> - <%= book.author %></h2>
+    <h3 class="finished-on">Finished on <%= book.date %></h3>
+
+    <div class="review">
+    <%= markdown book.review %>
+    </div>
+
+    <img class="cover" src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img>
+</div>
+<% end %>

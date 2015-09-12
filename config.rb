@@ -59,8 +59,13 @@ set :markdown, fenced_code_blocks: true
 
 page "/resume*", :layout => "layout"
 page "/pages/*", :layout => "layout"
+page "/books*", :layout => "books"
 
-activate :syntax
+helpers do
+  def markdown(text)
+    Tilt['markdown'].new { text }.render
+  end
+end
 
 configure :build do
   activate :minify_css
