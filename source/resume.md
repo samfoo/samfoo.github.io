@@ -5,28 +5,22 @@
 * [http://twitter.com/capnkrump](https://twitter.com/capnkrump)
 * +61467970000
 
-## Background
+## Abstract
 
-I enjoy building things. From software and hardware, to business development, I
-am a builder.
+I enjoy building things. From software &amp; hardware, to business development.
 
-I've worked across a range of industries and domains, including: several
-successful startups, financial institutions, media companies, and retail.
+I've worked across a range of industries &amp; domains, including: several
+successful startups, large financial institutions, media companies, airlines,
+and retail.
 
-I'm excited about recent developments that make embedded electronics more
-accessible and am an enthusiast of open source.
+I'm a zealous enthusiast of open source.
 
 ## Experience
 
-### ThoughtWorks (Australia, India, South Africa, New Zealand)
+### [ThoughtWorks](http://thoughworks.com) (Australia, India, South Africa, New Zealand)
 #### Lead Developer Consultant - Semptember 2011 - present
 
-ThoughtWorks is a global IT consulting firm. Their portfolio is focused on
-large telecommunication, financial services and insurance. They're well know
-evangelists of continuous delivery, Agile, and extreme programming.
-
-I worked in a wide-variety of roles, from developer to tech-lead to coach,
-which all involved a wide-variety of technologies and techniques.
+* Continuous delivery enterprise strategy lead for a worldclass air carrier.
 
 * Led a large team as a tech lead in a year long project to deliver a new
 application for financial advisers to assist in onboarding their clients to a
@@ -35,13 +29,11 @@ challenges, and helped transition a project with poor test automation to an
 exemplar in quality for the rest of the program. Mostly JavaScript and Java
 (Spring MVC).
 
-* Led a team at one of the Australia's largest retailers helping them roll out
-a continuous delivery practice proof of concept, on an unusual set of
-technologies, including: AIX, HPUX, with C, C++, PL/SQL, and Java. Integrated
-proprietary unix builds into continuous integration, as well as rolling out
-test automation for projects completely lacking them.
+* Led a team at one of the Australia's largest retailers helping to produce
+a continuous delivery proof of concept on an unusual set of technologies,
+including: AIX, HPUX, with C, C++, PL/SQL, and Java.
 
-* Capability development lead for South African offie. This included
+* Head of capability development for South African office. This included
 on-boarding technical new hires, developing training material, organising
 conference speaking and attendance for the technical staff, and
 identifying/addressing specific skill gaps by bringing in external resources.
@@ -50,21 +42,16 @@ identifying/addressing specific skill gaps by bringing in external resources.
 Sydney-based start-us. Both startups raised large seed rounds, and succesfully
 exited.
 
-* Co-developed ThoughtWorks LevelUp - a teaching program for university
-students who want to get real-world experience. It now runs in four different
-countries and has had over 1000 students.
+* Co-developed [LevelUp](http://levelup.thoughtworks.com) &mdash; a teaching program
+for university students interested in technology. It now runs in four different
+countries and has had thousands of students.
 
-* Worked on an off-shorered team delivering an online dating app for a
-large UK newspaper in Scala and Python. Focused on a more sophisticated
-matching algorithm.
+* Worked off-shorere with a team delivering an online dating app for a
+large UK newspaper in scala and python. Focused on a more sophisticated
+matching algorithm and search mechanism.
 
-### Socrata (Seattle)
-#### Senior Software Engineer - December 2007 to July 2011
-
-Socrata develops a platform for publishing Government data beautifully.
-
-I was a very early stage employee and had the opportunity to work on many
-different projects.
+### [Socrata](http://socrata.com) (Seattle)
+#### Software Engineer - December 2007 to July 2011
 
 * Developed a cassandra-backed time-series database for aggregating and
 querying tens of millions of events. Used for customer and business facing
@@ -79,19 +66,17 @@ then Java to Scala. I was also the company champion of automated testing.
 * Successfully worked (telecommuting) while traveling across five continents
 for two years.
 
-### Thriva / The Active Network (Seattle)
+### [Thriva / The Active Network](http://www.activenetwork.com) (Seattle)
 #### Software Engineer - April 2006 to October 2007
-
-The Active Network developed an event registration framwork allowing promoters
-to register and manage participants online.
 
 * Created a reporting interface that allowed registrants and customers
 to create their own name tags, and create arbitrary reports as either PDF or
 HTML.
 
-* Introduced modern source control.
+* Introduced modern source control, continuous integration and testing
+practices.
 
-* Championed continuous integration practices.
+* Championed a transition to a service oriented design/architecture.
 
 ## Education
 
@@ -101,9 +86,11 @@ HTML.
 
 * [servo browser engine](https://github.com/servo/servo)
 * [vt1xx terminal emulator](http://github.com/samfoo/vt102)
+* [awesome assertions for rust](http://github.com/samfoo/oxidize)
 * [clojure nes emulator](https://github.com/samfoo/clones)
 * [automated ping-pong ball sentry gun](https://github.com/samfoo/sentry)
 
 ## Interests
 
-Rock climbing, alpinism, travel, and general all-around adventure.
+Rock climbing, canyoning, alpinism, drawing, travel, and general all-around
+adventure.
