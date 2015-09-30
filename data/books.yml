@@ -245,3 +245,10 @@ books:
       review: |
                 (see - A Game of Thrones)
 
+    - asin: B003YL4LYI
+      date: 2015-09-28
+      title: A Dance With Dragons
+      author: George R.R. Martin
+      review: |
+                (see - A Game of Thrones)
+
