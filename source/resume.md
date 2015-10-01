@@ -3,7 +3,7 @@
 * <sam@ifdown.net>
 * [http://github.com/samfoo](https://github.com/samfoo)
 * [http://twitter.com/capnkrump](https://twitter.com/capnkrump)
-* +61467970000
+* [+61467970000](tel:+61467970000)
 
 ## Abstract
 
