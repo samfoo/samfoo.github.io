@@ -1,16 +1,15 @@
 # Shopping List
 
 * Essentials
-    * Tub/container
+    * Tub/container (perhaps something specific to the ute?)
     * Toilet paper
-    * Snacks
-    * Long shelf-life emergency food
-    * Jacket / sweat
-    * Trash bags
+    * Long shelf-life / emergency food
+    * Jacket / sweater
     * Duct tape
     * EPIRB
     * Water panier
     * Eskie
+    * Sunscreen
 * Emergency stuff
     * First aid kit
     * Jumper cables
@@ -19,5 +18,5 @@
 * Camping
     * Foam mattress(s?) for sleeping in the tub
     * Pillows for the tub
-* Rubber ute mat (should only be ~$100)
+    * Rubber ute mat (should only be ~$100)
 * CB/UHF receiver
