@@ -7,16 +7,16 @@
     * Jacket / sweater
     * Duct tape
     * EPIRB
-    * Water panier
-    * Eskie
+    * ~~ Water panier ~~
+    * ~~ Eskie ~~
     * Sunscreen
 * Emergency stuff
     * First aid kit
-    * Jumper cables
+    * ~~ Jumper cables ~~
     * Tire patch kit
-    * Basic tool kit
+    * ~~ Basic tool kit ~~
 * Camping
     * Foam mattress(s?) for sleeping in the tub
     * Pillows for the tub
     * Rubber ute mat (should only be ~$100)
-* CB/UHF receiver
+* ~~ CB/UHF receiver ~~
