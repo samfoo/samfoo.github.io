@@ -20,3 +20,4 @@
     * Pillows for the tub
     * Rubber ute mat (should only be ~$100)
 * ~~ CB/UHF receiver ~~
+* GPS logging device (e.g. i-Blue 747 A+)
