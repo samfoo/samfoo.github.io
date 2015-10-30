@@ -270,7 +270,7 @@ books:
 
     - asin: B007UK9KG8
       date: 2015-10-26
-      title: Shakespeare: The World as a Stage
+      title: "Shakespeare: The World as a Stage"
       author: Bill Bryson
       review: |
                 Typical Bill Bryson wit can't rescue a topic that is relatively
@@ -288,7 +288,7 @@ books:
 
     - asin: B002UQHYI8
       date: 2015-10-27
-      title: One Bullet Away: The making of a US Marine Officer
+      title: "One Bullet Away: The making of a US Marine Officer"
       author: Nathaniel Fick
       review: |
                 A thought provoking foray into the pleasures and sorrows of the
