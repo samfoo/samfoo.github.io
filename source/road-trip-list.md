@@ -2,11 +2,11 @@
 
 * Essentials
     * Tub/container (perhaps something specific to the ute?)
-    * Toilet paper
+    * ~~ Toilet paper ~~
     * Long shelf-life / emergency food
-    * Jacket / sweater
+    * ~~ Jacket / sweater ~~
     * Duct tape
-    * EPIRB
+    * ~~ EPIRB ~~
     * ~~ Water panier ~~
     * ~~ Eskie ~~
     * Sunscreen
@@ -17,7 +17,9 @@
     * ~~ Basic tool kit ~~
 * Camping
     * Foam mattress(s?) for sleeping in the tub
-    * Pillows for the tub
-    * Rubber ute mat (should only be ~$100)
+        * Best bet is outdoor furniture pads from Bunnings. ~$40 each. Need to
+          measure width of the tub before buying.
+    * ~~ Pillows for the tub ~~
+    * ~~ Rubber ute mat (should only be ~$100) ~~
 * ~~ CB/UHF receiver ~~
-* GPS logging device (e.g. i-Blue 747 A+)
+* ~~ GPS logging device (e.g. i-Blue 747 A+) ~~ (will use phone)
