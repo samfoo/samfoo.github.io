@@ -265,7 +265,7 @@ books:
                 sympathetic character in the book. So many of the other
                 characters left me wondering about their motivations. Like a
                 William Gibson novel, the depth of the vernacular left me
-                confused for large portions &mdash; especially when talking
+                confused for large portions "-" especially when talking
                 about gender.
 
     - asin: B007UK9KG8
@@ -275,7 +275,7 @@ books:
       review: |
                 Typical Bill Bryson wit can't rescue a topic that is relatively
                 devoid of factual information. The book can basically be
-                summarized as &mdash "We don't know much".
+                summarized as "- We don't know much".
 
                 I appreciate that the book did a good job of addressing some of
                 the more pernicious of Shakespearean myths (he was multiple
@@ -299,7 +299,7 @@ books:
 
                 One quote from the recruiter, in response to a comment from a
                 student about how having ROTC on campus went against the morals
-                of the school (paraphrased) &mdash "It's good that the ROTC is
+                of the school (paraphrased) "- It's good that the ROTC is
                 on campus because the university needs to liberalize the
                 military"
 
@@ -320,7 +320,7 @@ books:
       review: |
                 Film noír cyber punk, what's not to like? Slightly longer than
                 I thought necessary, and more than a little formulaic,
-                nevertheless &mdash; a guilty pleasure.
+                nevertheless "-" a guilty pleasure.
 
                 The premise of digitised humans, where the limiting factor is
                 cost, paints a world where only the rich can be both immortal
@@ -379,3 +379,15 @@ books:
                 deeply into their relationships and interactions. Has there
                 ever been a group so vain and so righteous in that vanity
                 than the early Royal Society?
+
+    - asin: B00FJ3CK2Y
+      date: 2015-11-16
+      title: "The Girl Who Saved the King of Sweden"
+      author: Jonas Jonasson
+      review: |
+                Beautiful novel. I loved all of the characters and the writing
+                was superb. The comedy style reminded me of the style in
+                Catch-22, though certainly less dark towards the end. The book
+                drags on a bit towards the end, but ultimately wraps itself up
+                nicely. Will be looking at more books by Jonasson.
+
