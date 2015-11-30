@@ -1,7 +1,7 @@
 # Shopping List
 
 * Essentials
-    * Tub/container (perhaps something specific to the ute?)
+    * ~~ Tub/container (perhaps something specific to the ute?) ~~
     * ~~ Toilet paper ~~
     * Long shelf-life / emergency food
     * ~~ Jacket / sweater ~~
@@ -16,7 +16,7 @@
     * Tire patch kit
     * ~~ Basic tool kit ~~
 * Camping
-    * Foam mattress(s?) for sleeping in the tub
+    * ~~ Foam mattress(s?) for sleeping in the tub ~~
         * Best bet is outdoor furniture pads from Bunnings. ~$40 each. Need to
           measure width of the tub before buying.
     * ~~ Pillows for the tub ~~
