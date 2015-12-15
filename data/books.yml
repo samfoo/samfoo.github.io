@@ -391,3 +391,26 @@ books:
                 drags on a bit towards the end, but ultimately wraps itself up
                 nicely. Will be looking at more books by Jonasson.
 
+    - asin: B00HVJB4VM
+      date: 2015-12-15
+      title: "Flash Boys: A Wall Street Revolt"
+      author: Michael Lewis
+      review: |
+                Interesting view from some Wall Street insiders about how
+                technology has changed trading in the modern era.
+
+                I was unimpressed with much of the description of technologists
+                and their ethics, capabilities and responsibilities. Describing
+                shipping proprietary code owned by your employer offsite
+                against both criminal law and contractual obligations as
+                something many Wall Street techies did can be viewed either as
+                a gross misunderstanding or a depressing view into vocational
+                ethics.
+
+                The total lack of input from the side of HFT throughout the
+                book is a bit deafening, especially since the deeper an
+                understanding Brad Katsuyama and IEX get of HFT firms, the more
+                they realise that the bigger banks are the ones enabling many
+                of the more complicated trading strategies that favour HFT.
+                Despite this, HFT remains the villain throughout.
+
