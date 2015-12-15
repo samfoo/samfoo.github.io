@@ -26,3 +26,9 @@ computer, cook a tasty meal, fight efficiently, die gallantly. Specialization
 is for insects."
 
 \- Robert Heinlein, *Time Enough For Love*
+
+"We want to be loved; failing that, admired; failing that, feared; failing
+that, hated and despised. At all costs we want to stir up some sort of feeling
+in others. Our soul abhors a vacuum. At all costs it longs for contact."
+
+\- Hjalmar Söderberg, *Doktor Glas*
