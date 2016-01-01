@@ -86,7 +86,6 @@ practices.
 
 * [servo browser engine](https://github.com/servo/servo)
 * [vt1xx terminal emulator](http://github.com/samfoo/vt102)
-* [awesome assertions for rust](http://github.com/samfoo/oxidize)
 * [clojure nes emulator](https://github.com/samfoo/clones)
 * [automated ping-pong ball sentry gun](https://github.com/samfoo/sentry)
 
