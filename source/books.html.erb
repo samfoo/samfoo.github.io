@@ -83,9 +83,9 @@ page_classes: books
 
 <h1>Reading List</h1>
 
-<div id="2016">
+<div class="year" id="2016">
     <% books_year = data.books.books.select{|b| b["date"].year == 2016} %>
-    <h2>2016</h2>
+    <h2 class="year-head">2016</h2>
     <h2 style="display:none"><i class="fa fa-line-chart"></i> Reading Summary</h2>
 
     <div id="summary-2016" style="display:none">
@@ -123,6 +123,9 @@ page_classes: books
     </div>
 
     <h2><i class="fa fa-book"></i> Reading List</h2>
+    <% if books_year.empty? %>
+        <div class="empty"><i class="fa fa-hand-spock-o"></i> nothing yet...</div>
+    <% end %>
     <% books_year.each do |book| %>
         <div class="book">
             <div class="cover">
@@ -140,9 +143,9 @@ page_classes: books
     <% end %>
 </div>
 
-<div id="2015">
+<div class="year" id="2015">
     <% books_year = data.books.books.select{|b| b["date"].year == 2015} %>
-    <h2>2015</h2>
+    <h2 class="year-head">2015</h2>
     <h2><i class="fa fa-line-chart"></i> Reading Summary</h2>
 
     <div id="summary-2015">
@@ -180,6 +183,9 @@ page_classes: books
     </div>
 
     <h2><i class="fa fa-book"></i> Reading List</h2>
+    <% if books_year.empty? %>
+        <div class="empty"><i class="fa fa-hand-spock-o"></i> nothing yet...</div>
+    <% end %>
     <% books_year.each do |book| %>
         <div class="book">
             <div class="cover">

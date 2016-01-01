@@ -207,3 +207,17 @@ span.date {
     margin-top: 30px;
     color: #cfd8dc;
 }
+
+.empty {
+    text-align: center;
+    font-size: 40px;
+    color: #cfd8dc;
+}
+
+.year {
+    margin-bottom: 105px;
+}
+
+.year-head {
+    font-size: 42px;
+}
