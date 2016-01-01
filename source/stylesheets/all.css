@@ -122,3 +122,88 @@ span.date {
     color: gray;
     text-align: right;
 }
+
+#by-month-2015 .c3-line-dup {
+  stroke-width: 5px;
+}
+
+#by-month-2015 .c3-axis-x line {
+    display: none;
+}
+
+#by-month-2015 .c3-axis-x {
+    opacity: 0.3 !important;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#by-month-2015 .domain {
+    display: none;
+}
+
+.tt {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #ff4081;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+#by-month-2015 .c3-xgrid-focus {
+    display: none;
+}
+
+.stats {
+    font-size: 18px;
+    background: #607D8B;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.stats i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.stats span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
+}
+
+.stats .total .count, .stats .type .fiction-count, .stats .type .non-fiction-count {
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffc107;
+    font-style: normal;
+    margin: 0 5px;
+}
+
+.stats .avg-total {
+    margin-right: 5px;
+}
+
+.stats .total, .stats .type {
+    text-align: center;
+}
+
+.stats .avg {
+    font-style: normal;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.stats .avg-total {
+    font-size: 14px;
+}
+
+.arrow {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 30px;
+    color: #cfd8dc;
+}

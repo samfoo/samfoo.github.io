@@ -3,6 +3,7 @@ books:
       date: 2015-01-10
       title: Acceptance
       author: Jeff VanderMeer
+      type: fiction
       review: |
                 Not nearly as good as the first two in the series. The mystery
                 of Area X continued without any real answers that were
@@ -18,6 +19,7 @@ books:
       date: 2015-02-10
       title: Peripheral
       author: William Gibson
+      type: fiction
       review: |
                 Very dense. Scott mentioned that he thought it was
                 crazy-super-dense even for Gibson, but I thought Neuromancer
@@ -36,6 +38,7 @@ books:
       date: 2015-03-01
       title: The House of Silk
       author: Anthony Horowitz
+      type: fiction
       review: |
                 Brilliantly new and riveting Holmes story. Pretty much nothing
                 not to like except that it ended. I’m hopeful that Horwitz’s
@@ -52,6 +55,7 @@ books:
       date: 2015-03-07
       title: The Martian
       author: Andy Weir
+      type: fiction
       review: |
                 Interesting take on the classic survival story. Mark Watney is
                 a bit of a campy character. Too much “lol’ing” and everything.
@@ -68,6 +72,7 @@ books:
       date: 2015-03-15
       title: Moriarty
       author: Anthony Horowitz
+      type: fiction
       review: |
                 Not nearly as good as The House of Silk. Excellent twist, kept
                 mostly hidden until the end (though at the point the reader is
@@ -87,6 +92,7 @@ books:
       date: 2015-04-05
       title: The Boys in the Boat
       author: Daniel James Brown
+      type: nonfiction
       review: |
                 Fantastic story. I couldn’t believe how riveted I was. The era
                 when sports meant heart and not dollars is sadly past. The back
@@ -103,6 +109,7 @@ books:
       date: 2015-05-20
       title: Solaris
       author: Stanisław Lem
+      type: fiction
       review: |
                 Very much a psychological thriller throughout. The first half
                 or so was extremely good, the explanation of the living planet
@@ -119,6 +126,7 @@ books:
       date: 2015-06-06
       title: I Am the Messenger
       author: Markus Zusak
+      type: fiction
       review: |
                 Strong beginning, but wavers heavily towards the end. The
                 message that “normal” people have the opportunity to be great,
@@ -134,6 +142,7 @@ books:
       date: 2015-06-09
       title: Where'd You Go Bernadette
       author: Maria Semple
+      type: fiction
       review: |
                 Charming story, and a very interesting concept. Throughout the
                 book the only character that I didn’t think was a total jerk
@@ -152,6 +161,7 @@ books:
       date: 2015-07-16
       title: Call for the Dead
       author: John le Carré
+      type: fiction
       review: |
                 Completely forgettable. Not nearly as good as Tinker, Tailor,
                 Solider, Spy.
@@ -160,6 +170,7 @@ books:
       date: 2015-07-20
       title: The Girl on the Train
       author: Paula Hawkins
+      type: fiction
       review: |
                 A novel filled with irrational people and their intrigue. The
                 way the story unfolded was incredibly well executed, but the
@@ -176,6 +187,7 @@ books:
       date: 2015-07-24
       title: Armada
       author: Ernet Cline
+      type: fiction
       review: |
                 Not as good as Ready Player One, but still pretty awesome.
                 Basically a self-aware “last starfighter” with a it of star
@@ -190,6 +202,7 @@ books:
       date: 2015-08-06
       title: A Game of Thrones
       author: George R.R. Martin
+      type: fiction
       review: |
                 What’s to say here that hasn’t already been written. ASOIAF is
                 a fantasy epic, mostly readable series, and after spending a
@@ -203,6 +216,7 @@ books:
       date: 2015-08-16
       title: A Clash of Kings
       author: George R.R. Martin
+      type: fiction
       review: |
                 (see - A Game of Thrones)
 
@@ -210,6 +224,7 @@ books:
       date: 2015-08-27
       title: A Storm of Swords
       author: George R.R. Martin
+      type: fiction
       review: |
                 (see - A Game of Thrones)
 
@@ -217,6 +232,7 @@ books:
       date: 2015-09-10
       title: The Phoenix Project
       author: Gene Kim, Kevin Behr, and George Spafford
+      type: fiction
       review: |
                 The first time I’ve read a “work” book and not just learned
                 something, but enjoyed the ride. Obviously a parable, but well
@@ -228,6 +244,7 @@ books:
       date: 2015-09-10
       title: When Google Met Wikileaks
       author: Julian Assange
+      type: nonfiction
       review: |
                 Julian is such an inspired thinker. Both the interview and his
                 polemic against Eric Schmidt as commentary of the aftermath is
@@ -242,6 +259,7 @@ books:
       date: 2015-09-15
       title: A Feast for Crows
       author: George R.R. Martin
+      type: fiction
       review: |
                 (see - A Game of Thrones)
 
@@ -249,6 +267,7 @@ books:
       date: 2015-09-28
       title: A Dance With Dragons
       author: George R.R. Martin
+      type: fiction
       review: |
                 (see - A Game of Thrones)
 
@@ -256,6 +275,7 @@ books:
       date: 2015-10-13
       title: Ancillary Justice
       author: Ann Leckie
+      type: fiction
       review: |
                 Interesting story, that takes until about halfway through to
                 really come together. I love the play with languages and the
@@ -272,6 +292,7 @@ books:
       date: 2015-10-26
       title: "Shakespeare: The World as a Stage"
       author: Bill Bryson
+      type: nonfiction
       review: |
                 Typical Bill Bryson wit can't rescue a topic that is relatively
                 devoid of factual information. The book can basically be
@@ -290,6 +311,7 @@ books:
       date: 2015-10-27
       title: "One Bullet Away: The making of a US Marine Officer"
       author: Nathaniel Fick
+      type: nonfiction
       review: |
                 A thought provoking foray into the pleasures and sorrows of the
                 military. Fick, as an ivy-league liberal, is convinced by the
@@ -317,6 +339,7 @@ books:
       date: 2015-10-31
       title: Altered Carbon
       author: Richard Morgan
+      type: fiction
       review: |
                 Film noír cyber punk, what's not to like? Slightly longer than
                 I thought necessary, and more than a little formulaic,
@@ -336,6 +359,7 @@ books:
       date: 2015-11-07
       title: Daemon
       author: Daniel Suarez
+      type: fiction
       review: |
                 Surprising and twisting thriller. The book starts off as your
                 standard who-done-it thriller with a hard-boiled detective.
@@ -350,6 +374,7 @@ books:
       date: 2015-11-09
       title: Freedom (TM)
       author: Daniel Suarez
+      type: fiction
       review: |
                 A much more politically-centric continuation of the first book.
                 Largely I felt that Suarez didn't tackle the hard questions,
@@ -367,6 +392,7 @@ books:
       date: 2015-11-13
       title: "The Clockwork Universe: Isaac Newton, the Royal Society, and the Birth of the Modern World"
       author: Edward Dolnick
+      type: nonfiction
       review: |
                 Amazing! I've never been so engaged with a book about the
                 history of mathematics. Dolnick spreads the context of the
@@ -384,6 +410,7 @@ books:
       date: 2015-11-16
       title: "The Girl Who Saved the King of Sweden"
       author: Jonas Jonasson
+      type: fiction
       review: |
                 Beautiful novel. I loved all of the characters and the writing
                 was superb. The comedy style reminded me of the style in
@@ -395,6 +422,7 @@ books:
       date: 2015-12-15
       title: "Flash Boys: A Wall Street Revolt"
       author: Michael Lewis
+      type: nonfiction
       review: |
                 Interesting view from some Wall Street insiders about how
                 technology has changed trading in the modern era.
@@ -418,6 +446,7 @@ books:
       date: 2015-12-20
       title: "Lesser Beasts: A Snout-to-Tail History of the Humble Pig"
       author: Mark Essig
+      type: nonfiction
       review: |
                 Some really interesting history about the pig, especially the
                 role it played in westward expansion and exploration. By the
@@ -428,6 +457,7 @@ books:
       date: 2015-12-22
       title: "One of Us: The Story of Anders Breivik and the Massacre in Norway"
       author: Asne Seierstad (Author), Sarah Death (Translator)
+      type: nonfiction
       review: |
                 A humanising look at one of the right-wing monsters of the
                 post-9/11 era. Breivik's life is explored from beginning to
@@ -451,6 +481,7 @@ books:
       date: 2015-12-31
       title: "The Sellout: A Novel"
       author: Paul Beatty
+      type: fiction
       review: |
                Less satire and more memoir than expected. The navel gazing was
                a bit much at times.

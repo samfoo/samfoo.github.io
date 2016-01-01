@@ -4,19 +4,195 @@ layout: layout
 page_classes: books
 ---
 
+<%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js" %>
+<%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js" %>
+
+<script>
+    function makeStats(year, books) {
+        console.log(books);
+        var formatMonth = function(i) {
+            switch (i) {
+                case 1: return "jan";
+                case 2: return "feb";
+                case 3: return "mar";
+                case 4: return "apr";
+                case 5: return "may";
+                case 6: return "jun";
+                case 7: return "jul";
+                case 8: return "aug";
+                case 9: return "sep";
+                case 10: return "oct";
+                case 11: return "nov";
+                case 12: return "dec";
+            }
+        };
+
+        var byMonth = [ "finished", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
+
+        byMonth = books.reduce(function(m, b) {
+            var key = parseInt(b.date.split("-")[1]);
+            m[key] += 1;
+
+            return m
+        }, byMonth);
+
+        var dup = byMonth.slice(0);
+        dup[0] = "dup";
+
+        var chart = c3.generate({
+            axis: {
+                x: {
+                    tick: {
+                        outer: false,
+                        culling: false,
+                        format: function(i) { return formatMonth(i+1); }
+                    }
+                },
+                y: { show: false },
+            },
+            legend: { hide: true },
+            bindto: "#by-month-" + year,
+            tooltip: {
+                    contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
+                        var v = d[0].value;
+                        var plural = "books";
+                        if (v < 2) {
+                            plural = "book";
+                        }
+                        return "<div class='tt'>Read " + v + " " + plural + "</div>";
+                    }
+            },
+            data: {
+                color: function(c, s) {
+                    if (s == "finished" || s.id == "finished") {
+                        return "#03A9F4";
+                    } else {
+                        return "#ffc107";
+                    }
+                },
+                columns: [ byMonth, dup ],
+                type: "bar",
+                types: {
+                    dup: "spline"
+                }
+            },
+            bar: { width: { ratio: 1.01 } }
+        });
+    }
+</script>
+
 <h1>Reading List</h1>
-<% data.books.books.each do |book| %>
-    <div class="book">
-        <div class="cover">
-            <img src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img>
-        </div>
-        <h2><%= book.title %> - <%= book.author %></h2>
-        <h3 class="finished-on">Finished on <%= book.date %></h3>
 
-        <div class="review">
-            <%= markdown book.review %>
+<div id="2016">
+    <% books_year = data.books.books.select{|b| b["date"].year == 2016} %>
+    <h2>2016</h2>
+    <h2 style="display:none"><i class="fa fa-line-chart"></i> Reading Summary</h2>
+
+    <div id="summary-2016" style="display:none">
+        <div class="stats">
+            <div class="total">
+                Read
+                <em class="count"><%= books_year.count %></em>
+                <span class="avg-total">
+                    (<em class="avg"><%= (books_year.count / 12.0).round(2) %></em> / mo.)
+                </span>
+                books total
+            </div>
+
+            <div class="type">
+                <span class="fiction">
+                    <em class="fiction-count"><%= books_year.select{ |b| b["type"] == "fiction" }.count %></em>
+                    fiction
+                </span>
+
+                &mdash;
+
+                <span class="nonfiction">
+                    <em class="non-fiction-count"><%= books_year.select{ |b| b["type"] == "nonfiction" }.count %></em>
+                    non-fiction
+                </span>
+            </div>
         </div>
 
-        <div class="clearfix"></div>
+        <div class="arrow">
+            <i class="fa fa-arrow-down"></i>
+        </div>
+
+        <div id="by-month-2016"></div>
+        <script>makeStats(2016, <%= books_year.to_json %>);</script>
     </div>
-<% end %>
+
+    <h2><i class="fa fa-book"></i> Reading List</h2>
+    <% books_year.each do |book| %>
+        <div class="book">
+            <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img>
+            </div>
+            <h2><%= book.title %> - <%= book.author %></h2>
+            <h3 class="finished-on">Finished on <%= book.date %></h3>
+
+            <div class="review">
+                <%= markdown book.review %>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    <% end %>
+</div>
+
+<div id="2015">
+    <% books_year = data.books.books.select{|b| b["date"].year == 2015} %>
+    <h2>2015</h2>
+    <h2><i class="fa fa-line-chart"></i> Reading Summary</h2>
+
+    <div id="summary-2015">
+        <div class="stats">
+            <div class="total">
+                Read
+                <em class="count"><%= books_year.count %></em>
+                <span class="avg-total">
+                    (<em class="avg"><%= (books_year.count / 12.0).round(2) %></em> / mo.)
+                </span>
+                books total
+            </div>
+
+            <div class="type">
+                <span class="fiction">
+                    <em class="fiction-count"><%= books_year.select{ |b| b["type"] == "fiction" }.count %></em>
+                    fiction
+                </span>
+
+                &mdash;
+
+                <span class="nonfiction">
+                    <em class="non-fiction-count"><%= books_year.select{ |b| b["type"] == "nonfiction" }.count %></em>
+                    non-fiction
+                </span>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <i class="fa fa-arrow-down"></i>
+        </div>
+
+        <div id="by-month-2015"></div>
+        <script>makeStats(2015, <%= books_year.to_json %>);</script>
+    </div>
+
+    <h2><i class="fa fa-book"></i> Reading List</h2>
+    <% books_year.each do |book| %>
+        <div class="book">
+            <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img>
+            </div>
+            <h2><%= book.title %> - <%= book.author %></h2>
+            <h3 class="finished-on">Finished on <%= book.date %></h3>
+
+            <div class="review">
+                <%= markdown book.review %>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    <% end %>
+</div>
