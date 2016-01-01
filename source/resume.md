@@ -18,7 +18,7 @@ I'm a zealous enthusiast of open source.
 ## Experience
 
 ### [ThoughtWorks](http://thoughworks.com) (Australia, India, South Africa, New Zealand)
-#### Lead Developer Consultant - Semptember 2011 - present
+#### Lead Developer Consultant - September 2011 - present
 
 * Continuous delivery enterprise strategy lead for a worldclass air carrier.
 
