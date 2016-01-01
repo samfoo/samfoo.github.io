@@ -221,3 +221,17 @@ span.date {
 .year-head {
     font-size: 42px;
 }
+
+.quotes p {
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.quotes .attrib {
+    text-align: right;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #607d8b;
+}
