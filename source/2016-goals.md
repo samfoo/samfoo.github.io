@@ -7,17 +7,17 @@
 * Start a new hobby
 
     ### Current hobbies
-        * Canyoning
-        * Climbing
-        * Hiking
-        * 4WD
-        * Cooking
+    * Canyoning
+    * Climbing
+    * Hiking
+    * 4WD
+    * Cooking
 
     ### Ideas
-        * Surfing (if moving to the beach)
-        * Drawing
-        * Painting
-        * Creative writing
+    * Surfing (if moving to the beach)
+    * Drawing
+    * Painting
+    * Creative writing
 
 * Improve existing hobbies
     * Climb at least Ewbank 25 outdoors, sport
@@ -29,6 +29,7 @@
 
 * Do at least one "art" a month.
     * Do 1 piece of digital art.
+    * Sketch 1 thing a week.
 
 ## Learning and Media Consumption
 
