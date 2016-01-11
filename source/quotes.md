@@ -34,3 +34,10 @@ that, hated and despised. At all costs we want to stir up some sort of feeling
 in others. Our soul abhors a vacuum. At all costs it longs for contact."
 
 <div class="attrib">- Hjalmar Söderberg, <em>Doktor Glas</em></div>
+
+"There are two ways of constructing a software design: One way is to make it so
+simple that there are obviously no deficiencies and the other way is to make it
+so complicated that there are no obvious deficiencies."
+
+<div class="attrib">– C.A.R. Hoare, <em>The 1980 ACM Turing Award Lecture</em></div>
+
