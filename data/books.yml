@@ -483,9 +483,23 @@ books:
       author: Paul Beatty
       type: fiction
       review: |
-               Less satire and more memoir than expected. The navel gazing was
-               a bit much at times.
+                Less satire and more memoir than expected. The navel gazing was
+                a bit much at times.
 
-               The beginning set a brilliant tone, but the ending left
-               something to be desired. Nevertheless, the best book on race
-               that I've read in a long while.
+                The beginning set a brilliant tone, but the ending left
+                something to be desired. Nevertheless, the best book on race
+                that I've read in a long while.
+
+    - asin: B00J1IQUYM
+      date: 2016-01-11
+      title: "Station Eleven"
+      author: Emily St. John Mandel
+      type: fiction
+      review: |
+                While the convergent storylines were clever, and didn't feel
+                forced or unnatural as often happens, they also were ultimately
+                banal and predictable. The post-apocolypse society wasn't
+                fleshed out or particularly believable either.
+
+                The rest of the novel was a bore. Rich people doing rich people
+                things. Oh no.
