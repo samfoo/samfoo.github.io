@@ -5,7 +5,7 @@ title: "Memorable Quotes"
 
 # Memorable Quotes
 
-"I am, somehow, less interested in the weight and convolutions of Einstein’s
+"I am, somehow, less interested in the weight and convolutions of Einstein's
 brain than in the near certainty that people of equal talent have lived and
 died in cotton fields and sweatshops."
 
@@ -41,3 +41,15 @@ so complicated that there are no obvious deficiencies."
 
 <div class="attrib">– C.A.R. Hoare, <em>The 1980 ACM Turing Award Lecture</em></div>
 
+"Oh, she says well, you're not a poor man. You know, why don't you go online
+and buy a hundred envelopes and put them in the closet? And so I pretend not to
+hear her. And go out to get an envelope because I'm going to have a hell of a
+good time in the process of buying one envelope. I meet a lot of people. And,
+see some great looking babes. And a fire engine goes by. And I give them the
+thumbs up. And, and ask a woman what kind of dog that is. And, and I don't
+know. The moral of the story is, is we're here on Earth to fart around. And, of
+course, the computers will do us out of that. And, what the computer people
+don't realize, or they don't care, is we're dancing animals. You know, we love
+to move around. And, we're not supposed to dance at all anymore."
+
+<div class="attrib">– Kurt Vonnegut</div>
