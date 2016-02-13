@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+
+        body {
+          font-size: 14px;
+          font-family: "Open Sans", "Helvetica Neue", sans-serif;
+          color: #7f8c8d;
+        }
+
+        .week-legend {
+            font-weight: bold;
+            font-size: 11px;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        #legend {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        #legend .item {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+        }
+
+        #cost {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #cost-container {
+            border: 2px solid #9b59b6;
+            border-radius: 5px;
+            max-width: 480px;
+            padding: 10px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        #total-uptime {
+            font-weight: bold;
+            margin: 20px auto;
+        }
+
+        #total-uptime table {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        #total-uptime table td {
+            width: 50%;
+            padding: 0 50px;
+        }
+
+        #total-uptime .title {
+            text-align: right;
+        }
+
+        #total-uptime .value {
+            text-align: left;
+        }
+
+        .equals {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .subtotal {
+            color: black;
+            font-weight: bold;
+        }
+
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 300;
+            font-size: 50px
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: table;
+            margin: 0 auto;
+            padding: 10px;
+            transition: all .2s ease-in-out;
+        }
+
+        li:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+       }
+
+        li > div {
+            display: table-row;
+        }
+
+        .week {
+            display: table-cell;
+            width: 40%;
+        }
+
+        .pixel {
+            float: left;
+            width: 25px;
+            height: 25px;
+            margin-right: 2px;
+        }
+
+        .clear:after {
+            clear: both;
+        }
+
+        .spark {
+            height: 15px;
+            display: table-cell;
+        }
+
+        .day {
+          fill: #fff;
+          stroke: #ccc;
+        }
+
+        .r-text {
+            color: #e74c3c;
+        }
+
+        .g-text {
+            color: #2ecc71;
+        }
+
+        .y-text {
+            color: #f1c40f;
+        }
+
+        .r {
+            background: #e74c3c;
+        }
+
+        .g {
+            background: #2ecc71;
+        }
+
+        .y {
+            background: #f1c40f;
+        }
+
+        .o {
+            background: #bdc3c7;
+        }
+
+        .l {
+            background: #448aff;
+            color: #f5f5f5;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        td {
+            height: 40px;
+            width: 40px;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        .tile {
+            border-radius: 5px;
+        }
+
+        </style>
+
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                var data = {
+                    '31 Jan - 06 Feb': ['o','o','o','o','o','o','o'],
+                    '07 Feb - 13 Feb': ['g','g','g','g','r','y','g'],
+                };
+
+                var chart;
+
+                var table = d3.select("#vis");
+                var thead = table.append("thead").append("tr");
+                var tbody = table.append("tbody");
+
+                function drawWeeks() {
+                    var weeks = _.keys(data);
+
+                    var listItem = d3
+                        .select("#weeks")
+                        .selectAll("li")
+                            .data(weeks)
+                            .enter()
+                            .append("li")
+                        .selectAll("div")
+                            .data(function (d, i) { return [d]; })
+                            .enter()
+                            .append("div")
+                                .append("div")
+                                    .attr("class", "week")
+                                    .text(function (d) { return d; })
+                                    .select(function () { return this.parentNode; })
+                                .append("section")
+                                    .attr("class", "spark clear")
+                                    .selectAll("div")
+                                        .data(function (d, i) { return _.flatten(data[d]); })
+                                        .enter()
+                                        .append("div")
+                                        .attr("class", function (d) {
+                                            return "pixel " + d;
+                                        });
+                }
+
+                function drawUptime() {
+                    var uptimes = _.reduce(data, function (m, v) {
+                        return _.flatten(m.concat(v));
+                    }, []);
+
+                    var uptimeValues = _.reduce(uptimes, function (m, u) {
+                        m[u] += 1;
+                        return m;
+                    }, {r: 0, g: 0, y: 0});
+
+                    var total = uptimeValues.r + uptimeValues.g + uptimeValues.y,
+                        totalR = uptimeValues.r / total,
+                        totalG = uptimeValues.g / total,
+                        totalY = uptimeValues.y / total;
+
+                    d3.select("#fully-down")
+                        .data([totalR])
+                        .text(d3.format("%"));
+
+                    d3.select("#partially-down")
+                        .data([totalY])
+                        .text(d3.format("%"));
+
+                    d3.select("#up")
+                        .data([totalG])
+                        .text(d3.format("%"));
+                }
+
+
+                drawWeeks();
+                drawUptime();
+            });
+        </script>
+    </head>
+
+    <body class='antialiased'>
+        <h1 style="text-align: center; font-weight: 300; font-size: 50px">tracking progress</h1>
+
+        <div id="legend">
+            <div>
+                <div class="item g"></div>
+                None
+            </div>
+
+            <div>
+                <div class="item y"></div>
+                Moderate
+            </div>
+
+            <div>
+                <div class="item r"></div>
+                Lots
+            </div>
+
+            <div>
+                <div class="item o"></div>
+                No data
+            </div>
+        </div>
+
+        <div id="total-uptime">
+            <table class="r-text">
+                <tr>
+                    <td class="title" >Lots</td>
+                    <td class="value" id="fully-down"></td>
+                </tr>
+            </table>
+
+            <table class="y-text">
+                <tr>
+                    <td class="title" >Moderate</td>
+                    <td class="value" id="partially-down"></td>
+                </tr>
+            </table>
+
+            <table class="g-text">
+                <tr>
+                    <td class="title" >None</td>
+                    <td class="value" id="up"></td>
+                </tr>
+            </table>
+        </div>
+
+        <ul>
+            <li>
+            <div class="week-legend">
+                <div class="week">&nbsp;</div>
+                <section class="spark clear">
+                    <div class="pixel l">su</div>
+                    <div class="pixel l">m</div>
+                    <div class="pixel l">t</div>
+                    <div class="pixel l">w</div>
+                    <div class="pixel l">th</div>
+                    <div class="pixel l">f</div>
+                    <div class="pixel l">s</div>
+                </section>
+            </div>
+            </li>
+        </ul>
+        <ul id="weeks">
+        </ul>
+
+        <h2 id="daterange"></h2>
+
+        <div>
+            <table id="vis">
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="chart"></div>
+    </body>
+</html>
