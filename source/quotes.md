@@ -53,3 +53,17 @@ don't realize, or they don't care, is we're dancing animals. You know, we love
 to move around. And, we're not supposed to dance at all anymore."
 
 <div class="attrib">– Kurt Vonnegut</div>
+
+"War is always about betrayal, betrayal of the young by the old, of idealists
+by cynics and of troops by politicians."
+
+<div class="attrib">– Chris Hedges, <em>A Culture of Atrocity</em></div>
+
+"I love him who does not hold back one drop of spirit for himself, but wants to
+be entirely the spirit of his virtue: thus he strides over the bridge as
+spirit."
+
+"I love him who makes his virtue his addiction and his catastrophe: for
+his virtue’s sake he wants to live on and to live no longer."
+
+<div class="attrib">- Friedrich Nietzsche, <em>Thus Spoke Zarathustra</em></div>
