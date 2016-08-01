@@ -626,3 +626,16 @@ books:
                 For the life of my I cannot figure out why this book got such
                 rave reviews. I could not imagine a more boring book about
                 pirates.
+
+    - asin: B000FC0ZIA
+      date: 2016-07-31
+      title: "The Devil in the White City: A Saga of Magic and Murder at the Fair that Changed America"
+      author: Erik Larson
+      type: nonfiction
+      review: |
+                Beautiful writing, and a very interesting parallel set of
+                stories. The beginning of the fair thread, in particular,
+                was incredibly interesting.
+
+                Even the murder &quot;mystery&quot; was excellent, though it
+                certainly made me grateful for modern policing.
