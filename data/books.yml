@@ -681,3 +681,31 @@ books:
       review: |
                 More Pratchett. Forgettable. The Australian humour was fun at
                 first, but quickly gets old.
+
+    - asin: B00DB361N8
+      date: 2016-09-28
+      title: "Astoria: John Jacob Astor and Thomas Jefferson's Lost Pacific Empire: A Story of Wealth, Ambition, and Survival"
+      author: Peter Stark
+      type: nonfiction
+      review: |
+                The best adventure book I've read in ages, with the exception
+                of an ending that fizzles out (one can hardly blame the author
+                for the history, but the ending still felt rather abrupt).
+
+                The accounts of interaction with Native Americans/First Nations
+                is deepling interesting, as was imagining the wearwithall that
+                must have been required to survive either the overland trek or
+                the sea voyage.
+
+    - asin: B00H25FCSQ
+      date: 2016-10-01
+      title: "The Fifth Season"
+      author: N. K. Jemisin
+      type: fiction
+      review: |
+                Finally! Some original fantasy that doesn't involve thousands
+                of pages of world-building snoozefests. More than anything the
+                series reminds me of the Avatar series; part magic, part coming
+                of age, and part political intrigue and mystery. Weaving all
+                three plots together was a satisfying, and mostly unexpected,
+                twist.
