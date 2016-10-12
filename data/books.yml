@@ -718,3 +718,14 @@ books:
       review: |
                 Haven't read this for a decade. Strong beginning and middle,
                 and a very weak ending. Excellent audio book production.
+
+    - asin: B01922I1GG
+      date: 2016-10-08
+      title: "The Obelisk Gate"
+      author: N. K. Jemisin
+      type: fiction
+      review: |
+                Much slower than the first book, but the story progresses and
+                the world building never feels overbearing. Ultimately the
+                story was only enough to whet my appetite for the third book,
+                and I was left unsatisfied.
