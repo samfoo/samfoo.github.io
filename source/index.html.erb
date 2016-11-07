@@ -52,23 +52,33 @@ title: Sam Gibson
 </div>
 
 <div>
-    <h2>Words</h2>
+    <h2>Trip Reports</h2>
 
     <ul class="writings">
-        <% Dir.foreach(File.join(File.dirname(__FILE__), "posts")) do |p| %>
-            <% m = /(\d{4}-\d{2}-\d{2})-(.*)\.md/.match(p) %>
-
-            <% if !m.nil? %>
-                <li>
-                    <span class="date"><%= m[1] %></span> -
-                    <a href="posts/<%= p.gsub(/\.md$/, ".html") %>">
-                        <%= m[2].titleize %>
-                    </a>
-                </li>
-            <% end %>
-        <% end %>
+        <li>
+            <a href="trips/fraser">Fraser Island</a>
+        </li>
     </ul>
 </div>
+
+<!-- <div> -->
+<!--     <h2>Words</h2> -->
+<!--  -->
+<!--     <ul class="writings"> -->
+<!--         <% Dir.foreach(File.join(File.dirname(__FILE__), "posts")) do |p| %> -->
+<!--             <% m = /(\d{4}&#45;\d{2}&#45;\d{2})&#45;(.*)\.md/.match(p) %> -->
+<!--  -->
+<!--             <% if !m.nil? %> -->
+<!--                 <li> -->
+<!--                     <span class="date"><%= m[1] %></span> &#45; -->
+<!--                     <a href="posts/<%= p.gsub(/\.md$/, ".html") %>"> -->
+<!--                         <%= m[2].titleize %> -->
+<!--                     </a> -->
+<!--                 </li> -->
+<!--             <% end %> -->
+<!--         <% end %> -->
+<!--     </ul> -->
+<!-- </div> -->
 
 <div>
     <h2>Misc</h2>

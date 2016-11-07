@@ -767,3 +767,27 @@ books:
                 
                 The romance is just as cringe-worthy as real, actual,
                 adolescent romance.
+
+    - asin: B0083ZBW2Y
+      date: 2016-11-06
+      title: "The Call of the Wild"
+      author: Jack London
+      type: fiction
+      review: |
+                After many years, reading a London story feels like returning
+                home. The vibrancy and vivid detail that he uses to describe
+                the settings is gripping.
+
+                Still a book that inspires me.
+
+    - asin: B00GQ623NY
+      date: 2016-11-08
+      title: "The Causal Angel"
+      author: Hannu Rajaniemi
+      type: fiction
+      review: |
+                Best book of the series, and I remain impressed that all the
+                loose ends managed to get tied up. I love the different
+                descriptions between the Zoku and the Sobernost.
+                
+                Perfect ending. Can't wait for more from Rajaniemi.
