@@ -112,7 +112,7 @@ As we came up over the crest of the beach to the campsite, we saw a dingo
 digging around looking for food. As soon as he saw us, he trotted off and we
 made for the car and then to camp for the night.
 
-# Day 2
+## Day 2
 
 Though we'd brought some instant coffee, we decided to check out Kingfisher Bay
 resort and see if we could beg a flat white off someone. After our cuppa, we
@@ -122,7 +122,7 @@ After breakfast and fishing we headed off to Lake Birrabeen, which ended up
 being our favourite of the inland lakes. Just as beautiful as McKinsey, but
 completely empty save for the dingo that trotted past while we were sunbathing.
 
-# Day 3
+## Day 3
 
 Repeated the previous mornings fish/brekkie at KB pier. We managed to catch a
 Pikey Bream juuuust at the legal size, as well as a couple smaller fish. We
@@ -153,7 +153,7 @@ to it.
 By this time it was really hot, and we decided to head back to camp to read and
 cook up the Bream.
 
-# Day 4
+## Day 4
 
 Due to severe mosquito issues, we headed straight to the ferry wharf in the
 morning where we fished and waited for the ferry. A lazy ride back to the
