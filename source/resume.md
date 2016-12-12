@@ -7,7 +7,7 @@
 
 ## Abstract
 
-I enjoy building things. From software &amp; hardware, to business development.
+I enjoy building things.
 
 I've worked across a range of industries &amp; domains, including: several
 successful startups, large financial institutions, media companies, airlines,
@@ -17,23 +17,26 @@ I'm a zealous enthusiast of open source.
 
 ## Experience
 
+### [Optiver Asia Pacific](http://optiver.com) (Australia)
+#### Software Engineer - January 2016 - Present
+
 ### [ThoughtWorks](http://thoughworks.com) (Australia, India, South Africa, New Zealand)
-#### Lead Developer Consultant - September 2011 - present
+#### Lead Developer Consultant - September 2011 - November 2015
 
-* Continuous delivery enterprise strategy lead for a worldclass air carrier.
+* Continuous delivery enterprise strategy lead for a worldclass air carrier in
+New Zealand.
 
-* Led a large team as a tech lead in a year long project to deliver a new
-application for financial advisers to assist in onboarding their clients to a
-wealth management platform. Overcome substantial enterprise integration
-challenges, and helped transition a project with poor test automation to an
-exemplar in quality for the rest of the program. Mostly JavaScript and Java
-(Spring MVC).
+* Led a team of 20+ at a large Australian bank in a year long project to
+deliver an application for financial advisers to onboard clients to a wealth
+management platform. Overcame substantial enterprise integration challenges,
+and helped transition a project with poor test automation to an exemplar in
+quality for the rest of the program. Mostly JavaScript and Java (Spring MVC).
 
-* Led a team at one of the Australia's largest retailers helping to produce
+* Led a team at one of the Australia's largest retailers producing
 a continuous delivery proof of concept on an unusual set of technologies,
 including: AIX, HPUX, with C, C++, PL/SQL, and Java.
 
-* Head of capability development for South African office. This included
+* Head of capability development for South Africa. This included
 on-boarding technical new hires, developing training material, organising
 conference speaking and attendance for the technical staff, and
 identifying/addressing specific skill gaps by bringing in external resources.
@@ -42,11 +45,11 @@ identifying/addressing specific skill gaps by bringing in external resources.
 Sydney-based start-us. Both startups raised large seed rounds, and succesfully
 exited.
 
-* Co-developed [LevelUp](http://levelup.thoughtworks.com) &mdash; a teaching program
+* Co-created [LevelUp](http://levelup.thoughtworks.com) &mdash; a teaching program
 for university students interested in technology. It now runs in four different
 countries and has had thousands of students.
 
-* Worked off-shorere with a team delivering an online dating app for a
+* Worked off-shore with a team delivering an online dating app for a
 large UK newspaper in scala and python. Focused on a more sophisticated
 matching algorithm and search mechanism.
 

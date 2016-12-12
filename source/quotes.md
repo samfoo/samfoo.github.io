@@ -67,3 +67,10 @@ I love him who makes his virtue his addiction and his catastrophe: for
 his virtue’s sake he wants to live on and to live no longer."
 
 <div class="attrib">- Friedrich Nietzsche, <em>Thus Spoke Zarathustra</em></div>
+
+"In the 21st century, censorship doesn't work by withholding information.
+Censorship now works by flooding with information, by causing distraction, by
+causing confusion, by creating doubts and just this question mark and shadow so
+that you really can't figure out what's going on."
+
+<div class="attrib">- Zeynep Tufekci</div>

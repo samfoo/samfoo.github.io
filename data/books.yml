@@ -811,3 +811,13 @@ books:
                 Terrible, nonsensicle, plot. Stupid characters. None of the
                 humour of David's previous books makes it through. Just a
                 terrible book from start to finish.
+
+    - asin: B000FBJCJE
+      date: 2016-12-11
+      title: "Snow Crash"
+      author: Neal Stephenson
+      type: fiction
+      review: |
+                A re-read after many years. Absolutely fascinating how much
+                Neal got right, but also the things that he missed. Hopefully
+                not a prescient view of the future of governance.
