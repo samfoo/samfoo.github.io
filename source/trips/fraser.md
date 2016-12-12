@@ -19,6 +19,8 @@ Central Station has washing stations and coin-operated hot showers. Neither of
 us had the courage to try the showers (it's only four days, and swimming in the
 lakes is cleaning enough).
 
+![Central Station Camp Ground][central-station]
+
 ## Getting Around
 
 Due to poor tide times (low tide was ~05:00 &amp; ~18:00), we avoided the beach
@@ -61,6 +63,8 @@ We saw several of:
 * Sting-rays
 * Soldier crabs
 * And heaps more...
+
+![Dingo at the Beach][dingo]
 
 ## Useful Tidbits
 
@@ -112,6 +116,8 @@ As we came up over the crest of the beach to the campsite, we saw a dingo
 digging around looking for food. As soon as he saw us, he trotted off and we
 made for the car and then to camp for the night.
 
+![McKinsey Beach][lake]
+
 ## Day 2
 
 Though we'd brought some instant coffee, we decided to check out Kingfisher Bay
@@ -121,6 +127,8 @@ headed out to the pier, and discovered a surprisingly good fishing spot.
 After breakfast and fishing we headed off to Lake Birrabeen, which ended up
 being our favourite of the inland lakes. Just as beautiful as McKinsey, but
 completely empty save for the dingo that trotted past while we were sunbathing.
+
+![Pipe on the Western Coast][pipe]
 
 ## Day 3
 
@@ -153,8 +161,16 @@ to it.
 By this time it was really hot, and we decided to head back to camp to read and
 cook up the Bream.
 
+![Fishing on the Western Coast][fishing]
+
 ## Day 4
 
 Due to severe mosquito issues, we headed straight to the ferry wharf in the
 morning where we fished and waited for the ferry. A lazy ride back to the
 mainland concluded our trip.
+
+[central-station]: /images/central-station.jpg
+[dingo]: /images/dingo-beach.jpg
+[lake]: /images/lake.jpg
+[fishing]: /images/fishing.jpg
+[pipe]: /images/pipe.jpg
