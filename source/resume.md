@@ -87,12 +87,16 @@ practices.
 
 ## Other Projects &amp; Experience
 
+#### Selected Open Source Contributions
+
 * [servo browser engine](https://github.com/servo/servo)
+* [web platform tests](https://github.com/w3c/web-platform-tests)
+
+#### Side Projects
+
 * [vt1xx terminal emulator](http://github.com/samfoo/vt102)
 * [clojure nes emulator](https://github.com/samfoo/clones)
-* [automated ping-pong ball sentry gun](https://github.com/samfoo/sentry)
 
 ## Interests
 
-Rock climbing, canyoning, alpinism, drawing, travel, and general all-around
-adventure.
+Surfing, canyoning, BJJ, travel, and general all-around adventure.
