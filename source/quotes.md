@@ -74,3 +74,8 @@ causing confusion, by creating doubts and just this question mark and shadow so
 that you really can't figure out what's going on."
 
 <div class="attrib">- Zeynep Tufekci</div>
+
+"In its majestic equality, the law forbids rich and poor alike to sleep under
+bridges, beg in the streets and steal loaves of bread."
+
+<div class="attrib">- Anatole France</div>

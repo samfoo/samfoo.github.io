@@ -821,3 +821,12 @@ books:
                 A re-read after many years. Absolutely fascinating how much
                 Neal got right, but also the things that he missed. Hopefully
                 not a prescient view of the future of governance.
+
+    - asin: B000FBJCKI
+      date: 2016-12-22
+      title: "The Diamond Age"
+      author: Neal Stephenson
+      type: fiction
+      review: |
+              A re-read after many years. Remains as I remember: a brilliant
+              first half, and a totally uninspired ending.
