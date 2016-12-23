@@ -69,3 +69,39 @@
     clear: both;
 }
 
+#by-month-2016 .c3-line-dup,
+#by-month-2015 .c3-line-dup {
+  stroke-width: 5px;
+}
+
+#by-month-2016 .c3-axis-x line,
+#by-month-2015 .c3-axis-x line {
+    display: none;
+}
+
+#by-month-2016 .c3-axis-x,
+#by-month-2015 .c3-axis-x {
+    opacity: 0.3 !important;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#by-month-2016 .domain,
+#by-month-2015 .domain {
+    display: none;
+}
+
+.tt {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #ff4081;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+#by-month-2016 .c3-xgrid-focus,
+#by-month-2015 .c3-xgrid-focus {
+    display: none;
+}
+
