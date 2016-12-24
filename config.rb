@@ -53,9 +53,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :markdown_engine, :redcarpet
-
-set :markdown, fenced_code_blocks: true
+set :markdown_engine, :kramdown
+set :markdown, input: "GFM"
 
 page "/resume*", :layout => "layout"
 page "/pages/*", :layout => "layout"
@@ -87,4 +86,3 @@ activate :deploy do |deploy|
   # strategy is optional (default is :force_push)
   # deploy.strategy = :submodule
 end
-
