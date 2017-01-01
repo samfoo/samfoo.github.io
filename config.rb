@@ -78,7 +78,7 @@ class Redcarpet::Markdown
           end
         end
 
-      check_box_tag "check_#{current_index}", "", checked, data: data_options(body, &block)
+      check_box_tag "check_#{current_index}", "", checked, disabled: true, data: data_options(body, &block)
     end
   end
 
