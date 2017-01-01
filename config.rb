@@ -48,13 +48,14 @@
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
-set :markdown_engine, :kramdown
-set :markdown, input: "GFM"
+require "markdown_checkboxes"
+renderer = CheckboxMarkdown.new(Redcarpet::Render::HTML.new())
+
+set :markdown_engine, :redcarpet
+set :markdown, input: "GFM", tables: true, autolink: true, renderer: renderer
 
 page "/resume*", :layout => "layout"
 page "/pages/*", :layout => "layout"
