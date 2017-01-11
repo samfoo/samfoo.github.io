@@ -830,3 +830,12 @@ books:
       review: |
               A re-read after many years. Remains as I remember: a brilliant
               first half, and a totally uninspired ending.
+
+    - asin: B01772PS00
+      date: 2017-01-11
+      title: "The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger"
+      author: Marc Levinson
+      type: nonfiction
+      review: |
+              Lots of small interesting bits tied together with tedium. Worth
+              finishing, but the core message was repeated way too often.
