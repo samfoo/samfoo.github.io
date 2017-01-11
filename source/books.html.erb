@@ -83,6 +83,66 @@ page_classes: books
 
 <h1>Reading List</h1>
 
+<div class="year" id="2017">
+    <% books_year = data.books.books.select{|b| b["date"].year == 2017} %>
+    <h2 class="year-head">2017</h2>
+    <h2><i class="fa fa-line-chart"></i> Reading Summary</h2>
+
+    <div id="summary-2017" style="display: none">
+        <div class="stats">
+            <div class="total">
+                Read
+                <em class="count"><%= books_year.count %></em>
+                <span class="avg-total">
+                    (<em class="avg"><%= (books_year.count / 12.0).round(2) %></em> / mo.)
+                </span>
+                books total
+            </div>
+
+            <div class="type">
+                <span class="fiction">
+                    <em class="fiction-count"><%= books_year.select{ |b| b["type"] == "fiction" }.count %></em>
+                    fiction
+                </span>
+
+                &mdash;
+
+                <span class="nonfiction">
+                    <em class="non-fiction-count"><%= books_year.select{ |b| b["type"] == "nonfiction" }.count %></em>
+                    non-fiction
+                </span>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <i class="fa fa-arrow-down"></i>
+        </div>
+
+        <div id="by-month-2017"></div>
+        <script>makeStats(2017, <%= books_year.to_json %>);</script>
+    </div>
+
+    <h2><i class="fa fa-book"></i> Reading List</h2>
+    <% if books_year.empty? %>
+        <div class="empty"><i class="fa fa-hand-spock-o"></i> nothing yet...</div>
+    <% end %>
+    <% books_year.each do |book| %>
+        <div class="book">
+            <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img>
+            </div>
+            <h2><%= book.title %> - <%= book.author %></h2>
+            <h3 class="finished-on">Finished on <%= book.date %></h3>
+
+            <div class="review">
+                <%= markdown book.review %>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    <% end %>
+</div>
+
 <div class="year" id="2016">
     <% books_year = data.books.books.select{|b| b["date"].year == 2016} %>
     <h2 class="year-head">2016</h2>
