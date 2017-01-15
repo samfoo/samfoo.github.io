@@ -828,8 +828,8 @@ books:
       author: Neal Stephenson
       type: fiction
       review: |
-              A re-read after many years. Remains as I remember: a brilliant
-              first half, and a totally uninspired ending.
+                A re-read after many years. Remains as I remember: a brilliant
+                first half, and a totally uninspired ending.
 
     - asin: B01772PS00
       date: 2017-01-11
@@ -837,5 +837,27 @@ books:
       author: Marc Levinson
       type: nonfiction
       review: |
-              Lots of small interesting bits tied together with tedium. Worth
-              finishing, but the core message was repeated way too often.
+                Lots of small interesting bits tied together with tedium. Worth
+                finishing, but the core message was repeated way too often.
+
+    - asin: B00FVW7CVM
+      date: 2017-01-13
+      title: "The Queen of the Tearling"
+      author: Erika Johansen
+      type: fiction
+      review: |
+                Fun, easy reading with a clever mix of sci-fi and fantasy.
+                Traditional story where everything goes just as necessary for
+                the &quot; good guys &quot;. Read it pretty quick, so it can't
+                have been that bad.
+
+    - asin: B00PFX5S3G
+      date: 2017-01-15
+      title: "The Invasion of the Tearling"
+      author: Erika Johansen
+      type: fiction
+      review: |
+                *Much* better than the first book. Couldn't put it down. Dark
+                and confusing towards the second half.
+
+
