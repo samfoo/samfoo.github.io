@@ -913,3 +913,26 @@ books:
                 story didn't feel tied together with a bow. Definitely the best
                 sci-fi I've read in awhile. Here's hoping for a television
                 adaptation.
+
+    - asin: B00ICN066A
+      date: 2017-02-15
+      title: "Sapiens: A Brief History of Humankind"
+      author: Yuval Noah Harari
+      type: nonfiction
+      review: |
+                Terrible book. All the worst things about the social sciences
+                and pop science rolled into a repetitive package.
+
+    - asin: B004XCGKYQ
+      date: 2017-03-02
+      title: "Leviathan Wakes"
+      author: James S. A. Corey
+      type: fiction
+      review: |
+                Good, but not particularly fantastic. Much more interesting
+                than the book, but the plot moves along almost too fast. The
+                main characters are paper thin, and largely unlikeable.
+
+                The sci-fi component is interesting, though. Good world
+                building. I don't think I'll last the remaining 7 books,
+                though.
