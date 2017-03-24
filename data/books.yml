@@ -944,3 +944,12 @@ books:
       review: |
                 Really well written and cleverly laid out. Good short read,
                 and with some unexpectadly fun stories.
+
+    - asin: B005SCRR1A
+      date: 2017-03-21
+      title: "Caliban's War"
+      author: James S. A. Corey
+      type: fiction
+      review: |
+                Much better than the first book. Way less cheesy, much more
+                interesting story telling. I'm back into the series.
