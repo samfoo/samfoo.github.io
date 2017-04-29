@@ -953,3 +953,20 @@ books:
       review: |
                 Much better than the first book. Way less cheesy, much more
                 interesting story telling. I'm back into the series.
+
+    - asin: B00A2DZMYE
+      date: 2017-04-01
+      title: "Abaddon's Gate"
+      author: James S. A. Corey
+      type: fiction
+      review: |
+                Series continues to get better.
+
+    - asin: B00FPQA4F0
+      date: 2017-04-10
+      title: "Cibola Burn"
+      author: James S. A. Corey
+      type: fiction
+      review: |
+                Action is starting to get a bit contrived, but I'm too deep
+                on the series now to stop. At least ghost-Miller is no more.
