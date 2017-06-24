@@ -1024,3 +1024,12 @@ books:
       review: |
                 Lovely writing, though a bit slow to grab my attention. Great
                 characters, with complex motivations, and just enough mystery.
+
+    - asin: B009NLMB8Q
+      date: 2017-06-24
+      title: "Python for Data Analysis"
+      author: Wes McKinney
+      type: nonfiction
+      review: |
+                Intro to numpy/pandas. Learned a few things, but not as useful
+                as I'd hoped.
