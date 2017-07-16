@@ -1033,3 +1033,35 @@ books:
       review: |
                 Intro to numpy/pandas. Learned a few things, but not as useful
                 as I'd hoped.
+
+    - asin: B0104NWYGA
+      date: 2017-06-30
+      title: "Between the World and Me"
+      author: Ta-Nehisi Coates
+      type: nonfiction
+      review: |
+                Finally got around the reading this, despite its popularity.
+                Extremely well written, unsurprisingly. Still very sad, and
+                doesn't offer much hope. I suspect it was written for a white
+                audience that's already aware of its message.
+
+    - asin: B005JE1KHE
+      date: 2017-07-10
+      title: "Royal Assassin"
+      author: Robin Hobb
+      type: fiction
+      review: |
+                Much more gripping and action-packed than the first book. Far
+                too much filler for me. Lots of moving from one location to
+                another location and not much happenning in between.
+
+    - asin: B005JE1KLU
+      date: 2017-07-16
+      title: "Assassin's Quest"
+      author: Robin Hobb
+      type: fiction
+      review: |
+                So. Much. Filler. Great ending to the series, though. Happily
+                eschews either a melancholy or save-the-princess ending.
+
+                So much filler.
