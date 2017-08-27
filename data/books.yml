@@ -1076,3 +1076,21 @@ books:
                 Because of that, I didn't really learn much new. Funny enough,
                 in a Bill-Bryson-y sort of way. Looking forward to the next
                 one.
+
+    - asin: B004K1EC1S
+      date: 2017-08-21
+      title: "Rivers of London"
+      author: Ben Aaronovitch
+      type: fiction
+      review: |
+                Harry Potter meets Hot Fuzz. Fun read, though a bit scattered.
+
+    - asin: B004VF624S
+      date: 2017-08-27
+      title: "Moons Over Soho"
+      author: Ben Aaronovitch
+      type: fiction
+      review: |
+                As good as the first. The bigger mystery is interesting, and
+                the fact that the main character isn't some super prodigy is
+                encouraging.
