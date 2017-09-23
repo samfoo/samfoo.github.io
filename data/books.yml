@@ -1120,3 +1120,13 @@ books:
       type: fiction
       review: |
                 See above. Series continues to be good.
+
+    - asin: B00JZVKSMA
+      date: 2017-09-20
+      title: "Foxglove Summer"
+      author: Ben Aaronovitch
+      type: fiction
+      review: |
+                Bit of a filler book. No real advancement of the bigger
+                storyline, but still good overall. Hopeful that the latest
+                novel is better.
