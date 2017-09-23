@@ -47,6 +47,18 @@
 #   end
 # end
 
+
+
+class BuildCleaner < Middleman::Extension
+  def initialize(app, options_hash={}, &block)
+    super
+    FileUtils.rm_rf app.config[:build_dir]
+  end
+end
+
+::Middleman::Extensions.register(:build_cleaner, BuildCleaner)
+
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -71,6 +83,8 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
   activate :livereload
+
+  activate :build_cleaner
 end
 
 activate :deploy do |deploy|
