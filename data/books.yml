@@ -1128,3 +1128,11 @@ books:
       type: fiction
       review: |
                 Finally a reveal! Can't wait for the next book.
+
+    - asin: B01N7EQOFA
+      date: 2017-10-30
+      title: "The Stone Sky"
+      author: N. K. Jemisin
+      type: fiction
+      review: |
+                Excellent ending to the series.
