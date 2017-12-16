@@ -18,7 +18,7 @@ I'm a zealous enthusiast of open source.
 ## Experience
 
 ### [Optiver Asia Pacific](http://optiver.com) (Australia)
-#### Software Engineer - January 2016 - Present
+#### IT Lead: Japan Markets: Execution Speed &amp; Success - January 2016 - Present
 
 ### [ThoughtWorks](http://thoughworks.com) (Australia, India, South Africa, New Zealand)
 #### Lead Developer Consultant - September 2011 - November 2015
