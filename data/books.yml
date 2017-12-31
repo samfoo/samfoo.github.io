@@ -1136,3 +1136,12 @@ books:
       type: fiction
       review: |
                 Excellent ending to the series.
+
+    - asin: B01NAWAH85
+      date: 2017-12-29
+      title: "Oathbring"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Much better than the second book. Less filler, just enough
+                world building, and a few good twists.
