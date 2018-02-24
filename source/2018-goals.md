@@ -57,7 +57,7 @@ not making any serious purchases, and keeping down dining costs.
 
 * [ ] Save &gt;= $60k pre-bonus.
 * [ ] Save ~$100k bonus.
-* [ ] Put $10k into some high-risk investment.
+* [x] Put $10k into some high-risk investment.
 * [ ] Rebalance investment portfolio more scientifically. Invest more.
 * [ ] Speak with a financial advisor about where to park money while saving for
   a house.
