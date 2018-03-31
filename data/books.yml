@@ -1188,3 +1188,22 @@ books:
                 'Shitty bookclub' book for February. Well and truly one of the
                 whitest books I've ever read. I'm pretty sure that a characters
                 cries on average once every other page.
+
+    - asin: B009LRWGIC
+      date: 2018-02-28
+      title: "Sweet Valley High: Secrets"
+      author: Francine Pascal
+      type: fiction
+      review: |
+                'Shitty bookclub' book for February. See above.
+
+    - asin: B009LRWGIC
+      date: 2018-03-15
+      title: "Range of Ghosts"
+      author: Elizabeth Bear
+      type: fiction
+      review: |
+                Starts off good. Interesting story, and the writing is great.
+                Quickly becomes tedious. Lots of journeying from here-to-there
+                and uninteresting characters. I won't be reading the remaining
+                books.
