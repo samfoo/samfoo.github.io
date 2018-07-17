@@ -1,58 +1,20 @@
-@import "https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css";
+.book td {
+    padding: 5px;
+}
 
-.book {
-    -moz-perspective: 100px;
-    -moz-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    margin-bottom: 100px;
+.book h5 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
 }
 
 .book .cover {
-    float: right;
-    position: relative;
-    box-shadow: 10px 5px 25px #999;
-    margin-left: 40px;
-    -moz-perspective: 100px;
-    -moz-transform: rotateY(-3deg);
-    -webkit-transform: perspective(100) rotateY(-3deg);
-    border-radius: 3px;
-}
-
-.book .cover:before,
-.book .cover:after {
-    position: absolute;
-    top: 3%;
-    height: 93%;
-    content: ' ';
-    z-index: -1;
-}
-
-.book .cover:before {
-    width: 15%;
-    left: 93%;
-    top: 4%;
-    height: 92%;
-    background-color: #333;
-    border-radius: 3px;
-    -moz-perspective: 100px;
-    -moz-transform: rotateY(-3deg);
-    -webkit-transform: perspective(100) rotateY(30deg);
-}
-
-.book .cover:after {
-    width: 15%;
-    left: 95%;
-    background-color: #eee;
-    -moz-transform: rotateY(30deg);
-    -webkit-transform: perspective(100) rotateY(30deg);
-    box-shadow: 5px 5px 30px #ddd;
+    text-align: center;
+    vertical-align: top;
 }
 
 .book .cover img {
-    max-width: 150px;
-    max-height: 300px;
-    display: block;
-    border-radius: 3px;
+    max-height: 140px;
 }
 
 .book h2 {
@@ -64,44 +26,24 @@
     margin-top: 0;
 }
 
-
-.clearfix {
-    clear: both;
+.book .title {
+    vertical-align: top;
 }
 
-#by-month-2016 .c3-line-dup,
-#by-month-2015 .c3-line-dup {
-  stroke-width: 5px;
-}
-
-#by-month-2016 .c3-axis-x line,
-#by-month-2015 .c3-axis-x line {
-    display: none;
-}
-
-#by-month-2016 .c3-axis-x,
-#by-month-2015 .c3-axis-x {
-    opacity: 0.3 !important;
+.book .top-title {
     font-weight: bold;
-    font-size: 13px;
 }
 
-#by-month-2016 .domain,
-#by-month-2015 .domain {
-    display: none;
+.book .author {
+    font-style: italic;
+    color: darkgrey;
 }
 
-.tt {
-    color: white;
-    font-weight: bold;
-    font-size: 13px;
-    background-color: #ff4081;
-    padding: 6px 10px;
-    border-radius: 3px;
+.book .review {
+    vertical-align: top;
 }
 
-#by-month-2016 .c3-xgrid-focus,
-#by-month-2015 .c3-xgrid-focus {
-    display: none;
+.book .review p:first-child {
+    padding-top: 0;
+    margin-top: 0;
 }
-
