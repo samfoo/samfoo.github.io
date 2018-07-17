@@ -1235,3 +1235,35 @@ books:
       type: fiction
       review: |
                 Sequel to 'Lies of Locke Lamora'. Pretty much the same review.
+
+    - asin: B004J4WLIM
+      date: 2018-05-15
+      title: "The Republic of Thieves"
+      author: Scott Lynch
+      type: fiction
+      review: |
+                Absolutely *terrible* ending. The reveal is just *so* dumb.
+                Aside from the fact that the author hasn't published since
+                2013, and therefore is unlikely to ever(???) publish again; I
+                will definitely not be reading any further books in the series.
+
+    - asin: B01HMRF5FI
+      date: 2018-07-07
+      title: "The Shadow of What Was Lost"
+      author: James Islington
+      type: fiction
+      review: |
+                This has to be the best fantasy book I've read for a long time.
+                I love to have found an Aussie fantasy author that is really
+                great. The plot, the characters, the world building, all the
+                times when I thought there'd be a horrible cliche and then
+                there wasn't. This book really has it all.
+
+    - asin: B01HMRF5FI
+      date: 2018-07-17
+      title: "An Echo of Things to Come"
+      author: James Islington
+      type: fiction
+      review: |
+                Somehow even better than the first book. I can't wait for the
+                final book to be released.
