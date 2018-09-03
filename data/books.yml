@@ -1267,3 +1267,31 @@ books:
       review: |
                 Somehow even better than the first book. I can't wait for the
                 final book to be released.
+
+    - asin: B002GYI9C4
+      date: 2018-08-17
+      title: "The Final Empire"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Better than I was expecting. An uninspiring start, but gets
+                interesting after that. Can see how Sanderson's style has
+                evolved. Love the heist story.
+
+    - asin: B000UZQI0Q
+      date: 2018-08-18
+      title: "The Well of Ascension"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Good middle book. Didn't lul too much, kept me interested the
+                whole time.
+
+    - asin: B002LC8HF0
+      date: 2018-08-19
+      title: "The Hero of Ages"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Stellar conclusion. One of the best endings to any fantasy
+                series ever.

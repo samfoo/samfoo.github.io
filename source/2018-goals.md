@@ -59,8 +59,6 @@ not making any serious purchases, and keeping down dining costs.
 * [ ] Save ~$100k bonus.
 * [x] Put $10k into some high-risk investment.
 * [ ] Rebalance investment portfolio more scientifically. Invest more.
-* [ ] Speak with a financial advisor about where to park money while saving for
-  a house.
 
 ### Professional
 
