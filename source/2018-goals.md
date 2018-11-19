@@ -55,27 +55,27 @@ not making any serious purchases, and keeping down dining costs.
 
 ### Finances
 
-* [ ] Save &gt;= $60k pre-bonus.
-* [ ] Save ~$100k bonus.
+* [x] Save &gt;= $60k pre-bonus.
+* [x] Save ~$100k bonus.
 * [x] Put $10k into some high-risk investment.
-* [ ] Rebalance investment portfolio more scientifically. Invest more.
+* [x] Rebalance investment portfolio more scientifically. Invest more.
 
 ### Professional
 
 * [ ] Get promoted to DEV4 This year.
-* [ ] Be happy with my work/life balance.
+* [x] Be happy with my work/life balance.
 
 ## Hobbies
 
 ### BJJ
 
 * [ ] Train 3 times a week.
-* [ ] Stay injury free.
-* [ ] Get black belt.
+* [x] Stay injury free.
+* [x] Get black belt.
 
 ### Camping / Outdoors
 
-* [ ] Go camping, or travel out of the city at least once a month.
+* [x] Go camping, or travel out of the city at least once a month.
     * Surf trips to Culbarra.
     * Camping/hiking trips to the mountains.
     * Canyoning.
@@ -88,4 +88,4 @@ not making any serious purchases, and keeping down dining costs.
 
 ### Board Games / Tabletop Games
 
-* [ ] Play boardgames or D&amp;D socially at least once a fortnight.
+* [x] Play boardgames or D&amp;D socially at least once a fortnight.
