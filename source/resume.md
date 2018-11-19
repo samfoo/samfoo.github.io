@@ -92,11 +92,6 @@ practices.
 * [servo browser engine](https://github.com/servo/servo)
 * [web platform tests](https://github.com/w3c/web-platform-tests)
 
-#### Selected Side Projects
-
-* [vt1xx terminal emulator](http://github.com/samfoo/vt102)
-* [clojure nes emulator](https://github.com/samfoo/clones)
-
 ## Interests
 
 Surfing, canyoning, BJJ, travel, and general all-around adventure.
