@@ -1,0 +1,53 @@
+.dnd {
+    background: #f5eccf;
+    color: #4e3b2d;
+}
+
+.dnd a {
+    color: #e61e28;
+    font-style: italic;
+}
+
+.dnd a:hover {
+    border-bottom: 3px solid #27bdb2;
+}
+
+.dnd .clear {
+    clear: both;
+}
+
+.dnd h2 {
+    color: #f26530;
+    margin-bottom: 0;
+}
+
+.dnd h3, .dnd h4 {
+    color: #640d13;
+    margin-bottom: 0;
+}
+
+.dnd h3 {
+    float: left;
+}
+
+.dnd h4 {
+    float: right;
+    font-style: italic;
+}
+
+.dnd dl {
+    display: grid;
+    grid-auto-flow: rows;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+}
+
+.dnd dt {
+    font-weight: bold;
+    grid-column-start: 1;
+}
+
+.dnd dd {
+    grid-column-start: 2;
+}

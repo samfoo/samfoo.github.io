@@ -1,0 +1,148 @@
+npcs:
+    - name: Vanard von Wroth
+      link: vanard
+      details: |
+          TODO
+
+pcs:
+    - name: Su Yuan
+      link: su-yuan
+      class: monk
+      race: human
+      details: |
+          TODO
+    - name: Dr. Phil
+      link: dr-phil
+      class: warlock
+      race: wood elf
+      details: |
+          TODO
+    - name: Jimmy
+      link: jimmy
+      class: druid
+      race: aarakocra
+      details: |
+          TODO
+    - name: Salim
+      link: salim
+      class: paladin
+      race: dragonborn
+      details: |
+          TODO
+    - name: Lord Faro Blimby Nar-nar De'Radwo Slyn VII Esq.
+      link: faro
+      class: sorcerer
+      race: rock gnome
+      details: |
+          Managing director of the Gnome Underdark Mining Corporation.
+          Billionaire, philanthropist, adventurer, and Victorian Gentleman.
+    - name: Dr. Phil (Parallel Universe)
+      link: parallel-dr-phil
+      class: warlock
+      race: wood elf
+      details: |
+          Parallel version of Dr. Phile. Has a weakness for noble men with
+          curly hair. Hates basic bitches.
+    - name: Garth
+      link: garth
+      class: rogue
+      race: half orc
+      details: |
+          Escaped the cult he was born into, but is plagued by the traumatic
+          actions he was forced to take as a child. Loves rats.
+    - name: "Unknown (alias Mittens)"
+      link: mittens
+      class: rogue
+      race: gnome
+      details: |
+          TODO
+
+story:
+    - date: 2018-11-01
+      title: "Parallel Interlude: Mystery Dinner"
+      summary: |
+          In a parallel version of Delway, [Parallel-Dr.
+          Phil](#parallel-dr-phil), [Lord Faro Blimby Nar-nar De'Radwo Slyn VII
+          Esq.](#faro), and [Garth](#garth), find themselves the guest of Count
+          Vorloft, having recently won acclaim ridding the region of bandits.
+
+          After the celebratory feast, our adventurers awoke to a panicked
+          guard corps. The Count's daughter, Amelia, had been kidnapped
+          during the night. Thankfully, the party had slept in the guard
+          barracks and so had an alibi above reproach. Knowing the party's
+          reputation, the captain of the guard, Oscar, requests their
+          assistance in the matter.
+
+          After a brief investigation of the scene of the crime, strange
+          scratch marks and a letter intimating that Amelia had been having
+          a dalliance with a gentleman not of the court, the team decided
+          first to interview the suspects, who were guests at the dinner the
+          night before.
+
+          After clever word play and magically enhanced persuasion, the crew
+          was able to discover
+
+          1. A commoner who'd killed a nobleman and was attempting to
+          impersonate him in order to marry Amelia (subsequently arrested and
+          sentenced to hard labour in the Gnome Underdark Mining Corporation's
+          mines)
+          2. A spy sent to out the commoner and bring him to justice.
+          3. A secret wererat lover of Amelia, who had kidnapped her for a
+          ritual to turn her into a wererat so that she would be able to be
+          with him forever (*gaaaaaassssssspppp*)
+
+          After learning of what happened to Amelia, the team heading to the
+          sewers to find and rescue her. After a well-timed Fireball, and a
+          hasty retreat, they were able to exit the sewers and return to the
+          keep with Amelia alive (barely), and their reputations intact.
+
+    - date: 2018-11-23
+      title: Missing Contact
+      summary: |
+          The P-Team, having arrived in the Crown City of Jewel, sought council
+          from the contact given to them by Vanard von Wroth, one Sir Thomas of
+          Rouge. Calling upon him in the royal palace, the P-Team discovered
+          he's been missing for several days. A peculiar interaction with one
+          of the royal staff, led [Su Yuan](#su-yuan) and [Dr. Phil](#dr-phil)
+          to investigate the palace further.
+
+          Eventually the two were accosted by a shady gnome, referring only to
+          himself as "[Mittens](#mittens)". [Mittens](#mittens) offered to
+          introduce the team to his boss, who most assuredly knew more details
+          of Sir Thomas' disappearance.
+
+          After some negotiation, and a blantant bribe, [Mittens](#mittens) led
+          the two to the door 5 metres away, and introduced them to
+          $SPYMASTERWHOSENAMEIFORGOT.
+
+          The team learned that Sir Thomas had been sent on a diplomatic
+          mission to the undercity several days ago, and had not returned as
+          expected. He was to speak with the King of the undercity deuregar,
+          and start to form an alliance with him against any possible Southern
+          aggression.
+
+          The P-Team agreed to have [Mittens](#mittens) guide them through the
+          undercity to discover the fate of Sir Thomas and report back, or save
+          him if necessary.
+
+          The motley crew ventured into the undercity where they were quickly
+          accosted by a group of bandits all named "Dan". The bandits were
+          quickly dispatched with after they intimated their desire to use
+          [Jimmy](#jimmy)'s gold pouch without his consent.
+
+          Before trampling the last of the bandits, [Dr. Phil](#dr-phil)
+          learned of a secret passage in the hall they were in. He took point,
+          leading the crew to a small campfire [Dr. Phil](#dr-phil) found a
+          stupendously obese man, and a rail thin man. Through arcane means of
+          pursuasion he learned they too were named "Dan" and that the other
+          "Dan's" were their friends.
+
+          Unfortunately, Obese-Dan was not as taken by [Dr. Phil](#dr-phil)'s
+          charm as Skinny-Dan, and declared his intention to harm anyone in
+          their lair not in the "Dan Gang".
+
+          [Su Yuan](#su-yuan) took this as his cue and initiated a
+          prospectively-defensive first strike on Obese-Dan.
+
+          The session ended mid-battle, with Obese-Dan transformed into a giant
+          scorpion.

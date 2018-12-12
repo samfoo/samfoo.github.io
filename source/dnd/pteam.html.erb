@@ -1,0 +1,29 @@
+---
+title: The Adventures of the P-Team
+layout: layout
+page_classes: dnd
+---
+
+<% story = data.pteam.story.sort_by! { |b| b["date"] } %>
+<% pcs = data.pteam.pcs %>
+
+<h2>Sessions</h2>
+<% story.each_with_index do |session, i| %>
+    <div class="session">
+        <h3><%= i + 1 %>. <%= session.title %></h2>
+        <h4><%= session.date %></h4>
+        <div class="clear"></div>
+
+        <div class="summary">
+            <%= markdown session.summary %>
+        </div>
+    </div>
+<% end %>
+
+<h2>Player Characters</h2>
+<dl>
+    <% pcs.each do |char| %>
+        <dt id="<%= char.link %>"><%= char.name %></dt>
+        <dd><%= char.details %></dd>
+    <% end %>
+</dl>
