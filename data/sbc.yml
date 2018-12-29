@@ -1,0 +1,56 @@
+meetings:
+    - date: 2018-02-04
+      attendees:
+        - Mike Thompson
+        - Sam Gibson
+        - Scott Robinson
+      books:
+        - asin: B004G606K8
+          title: "Dragons of Autumn Twilight"
+          author: Mararet Weis and Tracy Hickman
+
+    - date: 2018-03-11
+      attendees:
+        - Mike Thompson
+        - Sam Gibson
+        - Scott Robinson
+      books:
+        - asin: B009LRWGIC
+          title: "Sweet Valley High: Double Love"
+          author: Francine Pascal
+
+        - asin: B01HC9FM6I
+          title: "Sweet Valley High: Secrets"
+          author: Francine Pascal
+
+    - date: 2018-04-08
+      attendees:
+        - Mike Thompson
+        - Sam Gibson
+        - Scott Robinson
+        - Adam Scott
+      books:
+        - asin: B000FA66TE
+          title: "Contest"
+          author: Matthew Reilly
+
+    - date: 2018-11-11
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Mike Thompson
+      books:
+        - asin: B007J4T2G8
+          title: "Fifty Shades of Grey"
+          author: E L James
+
+    - date: 2018-12-23
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Justina Chong
+        - Michale Telford
+      books:
+        - asin: B00S4B95RQ
+          title: "Space Raptor Butt Invasion"
+          author: Chuck Tingle

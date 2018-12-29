@@ -1,0 +1,107 @@
+---
+title: Reading List
+layout: layout
+page_classes: books
+---
+
+<h2>Shitty Book Club</h2>
+
+<% meets = data.sbc.meetings.sort_by! { |b| b["date"] }.reverse! %>
+
+<div>
+    <h3>What is Shitty Book Club?</h3>
+
+    <p>
+    "Shitty Book Club" is a forum in which friends from around the world
+    celebrate "terrible" literature. This can be anything from poorly written,
+    whimsical absurdity, horrible racism, cringy displays of sex or horrible
+    contrived plot.
+    </p>
+
+    <p>
+    Most of the time a book is "all of the above"
+    </p>
+</div>
+
+<div>
+    <h3>When is the next Shitty Book Club?</h3>
+
+    <p>
+    We don't have a fixed schedule. We rotate who chooses the next book each
+    session and that person is responsible for scheduling a call. We usually
+    have a video call for about and hour to review each book. The video call is
+    organised on Google Hangouts.
+    </p>
+
+    <h4>Next book club meeting...</h4>
+    <div class="bookclub">
+        <div class="up-next">
+            <table>
+                <thead>
+                    <tr>
+                        <th>2018-02-03</th>
+                        <th></th>
+                        <th class="invite">
+                            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MG9qYXNmYWU2M204ZGEycDg0dDVybmc0NjMgc2FtQGlmZG93bi5uZXQ&amp;tmsrc=sam%40ifdown.net">Add to Calendar</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cover"><img src="https://images-na.ssl-images-amazon.com/images/P/B072F3MYRH.01.LZZZZZZZ.jpg" alt="The President is Missing - James Patterson"></img></td>
+                        <td class="title-author">
+                            <div class="title">The President is Missing</div>
+                            <div class="author">James Patterson</div>
+                        </td>
+                        <td class="desc">
+                            The President Is Missing confronts a threat so
+                            huge that it jeopardizes not just Pennsylvania
+                            Avenue and Wall Street, but all of America.
+                            Uncertainty and fear grip the nation. There are
+                            whispers of cyberterror and espionage and a
+                            traitor in the Cabinet. Even the President himself
+                            becomes a suspect, and then he disappears from
+                            public view ..
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h3>Shitty Book Club Meetings Archive</h3>
+
+<table class="bookclub">
+    <tbody>
+        <% meets.each do |meetup| %>
+            <tr class="meetup">
+                <td class="books">
+                    <table>
+                        <tbody>
+                            <% meetup.books.each do |book| %>
+                                <tr class="book">
+                                    <td class="cover"><img src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img></td>
+                                    <td>
+                                        <div class="title"><%= book.title %></div>
+                                        <div class="author"><%= book.author%></div>
+                                    </td>
+                                </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="attendees">
+                    <ul>
+                        <% meetup.attendees.each do |person| %>
+                            <li><%= person %></li>
+                        <% end %>
+                    </ul>
+                </td>
+                <td class="date">
+                    <%= meetup.date %>
+                </td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
