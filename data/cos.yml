@@ -1,0 +1,149 @@
+npcs:
+    - name: Vanard von Wroth
+      link: vanard
+      details: |
+          TODO
+
+pcs:
+    - name: Elf (real name unknown)
+      link: elf
+      class: ranger
+      race: wood elf
+      details: |
+          Elderly, even by elven standards. Elf has live many
+          lifetimes and forgotten his or her (gender also unknown)
+          name.
+    - name: Thaddeus
+      link: thaddeus
+      class: paladin
+      race: human
+      details: |
+          Arrogant and racist. Proud to a fault. Follower of the god
+          Helm. Challenged Strahd van Zarovich to a duel in which he
+          was kill despite a valliant effort.
+    - name: Philip (Pip)
+      link: pip
+      class: paladin
+      race: human
+      details: |
+          Squire to Thaddeus, who treated him as his own son. Has
+          sworn an oath of vengence against Strahd.
+    - name: Mighty
+      link: mighty
+      class: druid
+      race: tortle
+      details: |
+          Sailor cum adventurer. Kind hearted, but fearsome in battle.
+          Fell to a swarm of vampire spawn. Whereabouts unknown,
+          presumed dead. Best friends with Astrid.
+    - name: Astrid
+      link: astrid
+      class: rogue
+      race: tabaxi
+      details: |
+          Orphaned tabaxi street child. Wild and untamed. Best friends
+          with Mighty.
+    - name: Milivoj
+      link: milivoj
+      class: fighter
+      race: human
+      details: |
+          Born in Vallaki. Milivoj rejects the burgomaster’s
+          proclamation that “All will be well!” and is frustrated that
+          he can’t protect his younger siblings. He wants to be free
+          of Barovia’s curse but sees no hope of escape.
+
+          After the adventurer's retrieve the bones of St. Andal from
+          the coffin maker, and Milivoj sees that Strahd can be
+          resisted, he offers to join them.
+
+          Trusty with a shovel, which he weilds like a polearm.
+
+story:
+    - date: 2018-11-24
+      title: Instantiation
+      summary: |
+          A seasoned band of adventurers found their way to a remote
+          inn after being accosted by bandits many times deep into the
+          Sword Coast.
+
+          After some much needed food, ale and milk, a colourfully
+          dressed gypsey burst into the inn and approached the
+          adventurers, speaking directly to them. He informed them
+          that his master was in need of their service and presented
+          them with a letter of invitation to the land of Barovia.
+
+          After a long night's rest, the group agreed to heed the
+          letter's instructions and headed down the old Svalich road
+          towards Barovia. Eventually, strange mists engulfed them.
+          Nature warped around them.
+
+          After being harried by a large group of direwolves, the
+          group eventually arrived in the Village of Barovia just as
+          night was falling. There they learned the land of Barovia is
+          ruled by a cruel tyrant vampire lord named Strahd van
+          Zarovich.
+
+          Eventually they met Ismark, son of the burgermaster, and
+          reluctantly agreed to help him and his sister Ireena who has
+          been harrassed by Strahd for several weeks.
+
+          As the group went with Ismark to his manor, they found
+          Ireena. And they found Strahd. Strahd bites Ireena, leaving
+          her incapacitated, and welcomes the group to Barovia. He
+          then disappears, transmogrified into a swarm of bats.
+
+          After stabilising Ireena and calming her and Ismark, the
+          crew agrees to escort her to the town of Vallaki where
+          Ismark believes she will be safe at St. Andal's church.
+
+    - date: 2018-12-05
+      title: Tarokka Reading
+      summary: |
+          The adventurers make their way from the Village of Barovia
+          down the Svalich Road towards Vallaki. They come across Tser
+          Pool, an encampment of Vistani. Amongst them is Madam Eva, a
+          Vistana soothsayer who takes the fortune of each member of
+          the party, revealing to them some more details of Strahd and
+          hinting that there might be some items that can be used to
+          destroy him and release the curse.
+
+          After thanking the Vistani for their hospitality, the group
+          continued up the Svalich Road. Eventually they arrived at a
+          bridge crossing Tser Falls where they found Strahd himself.
+
+          Immediately, [Thaddeus](#thaddeus) challenged him to a duel,
+          which Strahd accepted. Eventually the paladin was killed,
+          and Strahd once again, disappeared virtually unharmed.
+
+          [Pip](#pip), taking [Thaddeus](#thaddeus)' horse galloped
+          towards Vallaki as fast as he could. The rest of the group
+          barely able to keep up.
+
+          Finally the team arrived at the Blue Waters inn. [Pip](#pip)
+          was inconsolible, and the rest of the party was shaken to
+          their core.
+
+    - date: 2018-12-23
+      title: Tarokka Reading
+      summary: |
+          The team, having barely recovered from the passing of
+          Thaddeus, starts to learn of the problems facing the town of
+          Valaki.
+
+          The burgermaster is insane and trying to force happiness on
+          everyone, the church is not a safe haven they thought it
+          would be for Ireena, since the bones of Saint Andal, which
+          protected it have been stolen.
+
+          They determine that the stolen bones are the highest
+          priority, and through some clever sleuthing determine that
+          they were taken by Milivoj, the groundskeeper, and sold to
+          Henrich the coffin maker.
+
+          They confront Henrich who admits to the crime, but in the
+          process awaken a nest of vampire spawn. [Elf](#elf) and
+          [Astrid](#astrid) are able to escape with the bones and
+          return to the church, Pip and Mighty are not so lucky.
+          Mighty is killed by vampire spawn, and Pip is saved only by
+          the timely intervention of the town's guard.

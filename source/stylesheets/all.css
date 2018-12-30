@@ -208,3 +208,9 @@ span.date {
     font-weight: bold;
     color: #607d8b;
 }
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
