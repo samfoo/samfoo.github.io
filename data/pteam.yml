@@ -4,25 +4,72 @@ npcs:
       details: |
           TODO
 
+    - name: Liu Kai
+      link: liu-kai
+      details: |
+          TODO
+
+    - name: Julia
+      link: julia
+      details: |
+          A girl familiar to Bill Bailey. He's unable to recall exactly how he
+          knows her, but kows that he must find her.
+
 pcs:
     - name: Su Yuan
       link: su-yuan
       class: monk
       race: human
       details: |
-          TODO
+          A monk from the southern kingdoms. Before becoming a monk, he was
+          some kind of military leader in one of the southern kingdoms. Liu Kai
+          betrayed or attacked him which led to his exile and becoming a monk.
+          Not much is know about Su Yuan's past, but he hunts Liu Kai
+          relentlessly.
+
+          Unable to pass up a chance to challenge another to a challenge of
+          might, has a deep hatred and fear of the dark arts and especially
+          necromancy, and unwilling to allow injustice to go uncontested, Su
+          Yuan is often willing to charge in without thinking and is the first
+          to put himself in front of danger.
+
+          Annoyingly polite. Allegedly a &quot;flaming homosexual&quot;
+          according to profile notes from Dr. Phil.
     - name: Dr. Phil
       link: dr-phil
       class: warlock
       race: wood elf
       details: |
-          TODO
+          A strange arrogant elf who believes he was previously a host of a
+          show that helped many people with relationship and other mental
+          problems.
+
+          Studious of others' behaviour, he is constantly taking notes about
+          those in his group and outside.
+
+          Unaware of his surroundings and inimitable in his willingness to
+          blindly walk into the face of danger. He's rude, ostentatious, and
+          insulting.
+
+          He sometimes seems to be possessed by an alternate personality of
+          sorts in Bill Bailey.
+    - name: Bill Bailey
+      link: bill-bailey
+      class: commoner
+      race: wood elf
+      details: |
+          Dr. Phil's alternate personality. Commoner son of a blacksmith.
+          Searching for Julia. He doesn't understand why he continues to have
+          the episodes where he blacks out and wakes up far in the future in
+          dangerous situations.
     - name: Jimmy
       link: jimmy
       class: druid
       race: aarakocra
       details: |
-          TODO
+          In the likeness of the cockatoo Aarakocra's, he is on the verge of
+          insanity. Often agitated, and attracted by shiny objects, not much is
+          known about his past.
     - name: Salim
       link: salim
       class: paladin
@@ -41,7 +88,7 @@ pcs:
       class: warlock
       race: wood elf
       details: |
-          Parallel version of Dr. Phile. Has a weakness for noble men with
+          Parallel version of Dr. Phil. Has a weakness for noble men with
           curly hair. Hates basic bitches.
     - name: Garth
       link: garth
@@ -152,3 +199,133 @@ story:
 
           The session ended mid-battle, with Obese-Dan transformed into a giant
           scorpion.
+
+    - date: 2019-01-18
+      title: Tribe Named "Dan"
+      summary: |
+          The P-Team continued their melee with Obese-Dan-cum-scorpion. [Su
+          Yuan](#su-yuan) scored two critical hits on one turn, and was
+          followed by [Salim](#salim) severing the tail of the beast and
+          rending several of its legs.
+
+          Returned to his repulsive druid form, Obese-Dan was clearly
+          frightened for his life. He took one final, desperate measure, and
+          broke his own finger to activate a magical ring that transformed him
+          into a swarm of rats. The rats scurried down a nearby hole, but were
+          quickly followed and dispatched by [Jimmy](#jimmy) who was disgusted
+          by rats.
+
+          As the fat criminal turned to escape further down the hole, [Su
+          Yuan](#su-yuan) jumped down, crushing his head and ending both the
+          chase and the large man's life.
+
+          As the team took stock of their surroundings, they found a tunnel
+          filled with viscera, dead bodies and rent flesh. [Mittens](#mittens)
+          and [Su Yuan](#su-yuan) quietly ventured ahead while the rest of the
+          team regrouped. Both of them wary of what they'd walked into saw
+          flitters of movement followed by a conspicuous silence. They returned
+          to the group where a reinvigorated [Dr. Phil](#dr-phil) decided he
+          would move on ahead, extricating himself from the warnings (and grip)
+          of [Su Yuan](#su-yuan), he immediately came face to face with a giant
+          scaly dog-like creature.
+
+          Thinking quickly [Dr. Phil](#dr-phil) cast invisibility on himself
+          and [Su Yuan](#su-yuan), and slipped past the creature, quickly
+          starting to explore the rest of the passage.
+
+          Meanwhile, [Jimmy](#jimmy) attempted to pursuade the creature, by
+          using his druidic powers to speak with it that it didn't want
+          anything to do with us. The creature was unmoved by the attempt at
+          persuasion, and began attacking the remaining P-Team members in
+          earnest.
+
+          [Su-Yuan](#su-yuan) managed to slip past and stun the creature,
+          allowing the others to slip past to the interior of the path as well.
+          Seizing the opportunity, [Su Yuan](#su-yuan) took one of the sticks
+          of dynamite that he'd acquired for the assault on Count Vorlofts'
+          keep, and was able to light it and **ahem** place it on (or rather,
+          in) the creature.
+
+          Making a hasty retreat, the dynamite exploded, destroying the
+          creature, injuring some of the team and collapsing their escape
+          route. With no other option, they pushed forward to find [Dr.
+          Phil](#dr-phil), and hopefully Sir Thomas or at least the King of the
+          undercity deuregar.
+
+          [Dr. Phil](#dr-phil) continued far ahead, and found himself in a room
+          with what appeared to be three pups of the giant dog-like creature
+          the companions had run into earlier. Despite his best efforts, he
+          managed to draw their attention and his only escape route was a tiny
+          hole. He jumped in, and slid until it opened in the ceiling of a
+          chamber, 60 feet up. The fall knocked [Dr.  Phil](#dr-phil)
+          unconscious, and left him in a dire situation, alone and with his
+          only campanions not knowing where he'd gone.
+
+          Just as he could feel the life leaving him, he was approached by a
+          familiar presence. "It took you long enough", said [Dr.
+          Phil](#dr-phil), and with this [Bill Bailey](#bill-bailey) found
+          himself again in a dark chamber with one rotted exit and no idea how
+          he got there...
+
+          The rest of the P-Team came to the room [Dr. Phil](#dr-phil) had gone
+          down the hole in, but now it was empty. After some investigation and
+          calling down the hole, they heard [Bill](#bill-bailey) respond.
+          [Salim](#salim) and [Su Yuan](#su-yuan) lowered [Mittens](#mittens)
+          down on a rope to see what he could do. As they were doing so, they
+          were attacked by the monsterous dog-like pups.
+
+          Dispatching of them, the team was eventually able to get
+          [Bill](#bill-bailey) hauled up the the higher chamber. Backtracking
+          briefly they found an iron gate with a rusted padlock, and made their
+          way into a hallway not filled with half-eaten corpses. There they
+          took a brief respite and ended the session.
+
+    - date: 2019-02-15
+      title: An Aboleth Named George
+      summary: |
+          The P-Team, after a short break discussed their options moving
+          forward. [Bill Bailey](#bill-bailey), terrified of the dungeon
+          refused to move forward until convinced by [Su Yuan](#su-yuan) that
+          the only way to find [Julia](#julia) would be to delve deeper into
+          the sewers.
+
+          [Su Yuan](#su-yuan) and [Bill Bailey](#bill-bailey) discussed the
+          past of the young blacksmith's apprentice. Before he started having
+          his episodes, he had gone out with friends and awoke in the middle of
+          what appeared to be some kind of cult ritual. Cultists in purple
+          robes, with their faces hidden were performing a blood sacrifice.
+          [Bill](#bill-bailey) ran and escaped. He didn't know how long ago
+          that was, nor did he know anything about how he got there. He just
+          knew that he feels a warm sensation and a light and then wakes up in
+          dangerous situations.
+
+          [Su Yuan](#su-yuan) described to him, his transformation to [Dr.
+          Phil](#dr-phil), but the poor lad struggled to understand, and the
+          P-Team could do little to explain the experience.
+
+          Eventually, rested enough, the team ventured forward where they came
+          across a grate in the ground with a milky white water underneath.
+          Poking it, they revealed a gelatenous cube that immediately tried to
+          consume them. After the defeat of the cube, and another brief rest,
+          the team finally found a crossroads that [Mittens](#mittens)
+          recognised and started to make their way much deeper underground.
+
+          Leaving the sewers behind, they made their way to the beginning of
+          the underdark, where they found a massive underground lake. The water
+          completely still.
+
+          [Mittens](#mittens) warned the group the be silent, and not to touch
+          the water. Miraculously, and despite several temptations, the P-Team
+          managed to heed his advice and made their way uneventfully across the
+          lake in a magical raft that left the water undisturbed. Halfway
+          across the lake, the team saw what they recognised as an Aboleth,
+          which is the creature [Mittens](#mittens) was cautioning against
+          disturbing.
+
+          Finally, after disembarking on the other side of the lake, the team
+          found their way to a campsite and was able to get a night's rest.
+
+          In the morning they found [Bill](#bill-bailey) once again returned to
+          [Dr. Phil](#dr-phil), who characteristically started his best effort
+          to ruin any kind of subtlety or clandestine approach the team had
+          planned.
