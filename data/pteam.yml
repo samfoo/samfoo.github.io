@@ -22,19 +22,19 @@ pcs:
       race: human
       details: |
           A monk from the southern kingdoms. Before becoming a monk, he was
-          some kind of military leader in one of the southern kingdoms. Liu Kai
-          betrayed or attacked him which led to his exile and becoming a monk.
-          Not much is know about Su Yuan's past, but he hunts Liu Kai
-          relentlessly.
+          some kind of military leader. Liu Kai betrayed or attacked him which
+          led to his exile and becoming a monk.  Not much is know about Su
+          Yuan's past, but he hunts Liu Kai relentlessly.
 
-          Unable to pass up a chance to challenge another to a challenge of
-          might, has a deep hatred and fear of the dark arts and especially
+          Unable to pass up a chance to challenge another to a battle of might,
+          has a deep hatred and fear of the dark arts and especially
           necromancy, and unwilling to allow injustice to go uncontested, Su
           Yuan is often willing to charge in without thinking and is the first
           to put himself in front of danger.
 
           Annoyingly polite. Allegedly a &quot;flaming homosexual&quot;
           according to profile notes from Dr. Phil.
+
     - name: Dr. Phil
       link: dr-phil
       class: warlock
@@ -53,6 +53,7 @@ pcs:
 
           He sometimes seems to be possessed by an alternate personality of
           sorts in Bill Bailey.
+
     - name: Bill Bailey
       link: bill-bailey
       class: commoner
@@ -62,6 +63,7 @@ pcs:
           Searching for Julia. He doesn't understand why he continues to have
           the episodes where he blacks out and wakes up far in the future in
           dangerous situations.
+
     - name: Jimmy
       link: jimmy
       class: druid
@@ -70,12 +72,14 @@ pcs:
           In the likeness of the cockatoo Aarakocra's, he is on the verge of
           insanity. Often agitated, and attracted by shiny objects, not much is
           known about his past.
+
     - name: Salim
       link: salim
       class: paladin
       race: dragonborn
       details: |
           TODO
+
     - name: Lord Faro Blimby Nar-nar De'Radwo Slyn VII Esq.
       link: faro
       class: sorcerer
@@ -83,6 +87,7 @@ pcs:
       details: |
           Managing director of the Gnome Underdark Mining Corporation.
           Billionaire, philanthropist, adventurer, and Victorian Gentleman.
+
     - name: Dr. Phil (Parallel Universe)
       link: parallel-dr-phil
       class: warlock
@@ -90,6 +95,7 @@ pcs:
       details: |
           Parallel version of Dr. Phil. Has a weakness for noble men with
           curly hair. Hates basic bitches.
+
     - name: Garth
       link: garth
       class: rogue
@@ -97,7 +103,8 @@ pcs:
       details: |
           Escaped the cult he was born into, but is plagued by the traumatic
           actions he was forced to take as a child. Loves rats.
-    - name: "Unknown (alias Mittens)"
+
+    - name: "Mittens (real name unknown)"
       link: mittens
       class: rogue
       race: gnome
