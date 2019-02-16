@@ -24,6 +24,6 @@ page_classes: dnd
 <dl>
     <% pcs.each do |char| %>
         <dt id="<%= char.link %>"><%= char.name %></dt>
-        <dd><%= char.details %></dd>
+        <dd><%= markdown char.details %></dd>
     <% end %>
 </dl>
