@@ -5,9 +5,9 @@ meetings:
         - Sam Gibson
         - Scott Robinson
       books:
-        - asin: B004G606K8
-          title: "Dragons of Autumn Twilight"
-          author: Mararet Weis and Tracy Hickman
+          - asin: B004G606K8
+            title: "Dragons of Autumn Twilight"
+            author: Mararet Weis and Tracy Hickman
 
     - date: 2018-03-11
       attendees:
@@ -49,8 +49,18 @@ meetings:
         - Sam Gibson
         - Scott Robinson
         - Justina Chong
-        - Michale Telford
+        - Michael Telford
       books:
         - asin: B00S4B95RQ
           title: "Space Raptor Butt Invasion"
           author: Chuck Tingle
+
+    - date: 2019-02-10
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Michael Thompson
+      books:
+        - asin: B072F3MYRH
+          title: "The President is Missing"
+          author: James Patternson
