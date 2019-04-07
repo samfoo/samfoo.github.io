@@ -1,19 +1,35 @@
 npcs:
+    - name: Sir Thomas of Rouge
+      link: morcom
+      details: |
+          Bronze dragon, though often appearing in his human form. He is the
+          head diplomat for foreign relations for the Crown City of Jewel.
+
+    - name: Lord Morcom Kester
+      link: morcom
+      details: |
+          Spymaster for the Crown City of Jewel.
+
     - name: Vanard von Wroth
       link: vanard
       details: |
-          TODO
+          Not much is known of Vanard, other than he is the head of the King's
+          guard.
 
     - name: Liu Kai
       link: liu-kai
       details: |
-          TODO
+          Former vizier of the southern empire. He betrayed the Emperor,
+          killing the imperial family and all of it's successors.
+
+          A powerful necromancy, he tried to kill Su Yuan during the pogrom. Su
+          Yuan narrowly escaped, but has been plotting vengenge ever since.
 
     - name: Julia
       link: julia
       details: |
           A girl familiar to Bill Bailey. He's unable to recall exactly how he
-          knows her, but kows that he must find her.
+          knows her, but knows that he must find her.
 
 pcs:
     - name: Su Yuan
@@ -21,13 +37,13 @@ pcs:
       class: monk
       race: human
       details: |
-          A monk from the southern kingdoms. Before becoming a monk, he was
-          some kind of military leader. Liu Kai betrayed or attacked him which
-          led to his exile and becoming a monk.  Not much is know about Su
-          Yuan's past, but he hunts Liu Kai relentlessly.
+          A monk from the southern kingdoms. Before becoming a monk, he was the
+          general for the imperial court, tasked with the personal safety of
+          the Emperor himself. Liu Kai betrayed him and the Emperor, killing
+          the latter and forcing the exile of the former.
 
-          Unable to pass up a chance to challenge another to a battle of might,
-          has a deep hatred and fear of the dark arts and especially
+          Unable to pass the opportunity to challenge another to a battle of
+          might, has a deep hatred and fear of the dark arts and especially
           necromancy, and unwilling to allow injustice to go uncontested, Su
           Yuan is often willing to charge in without thinking and is the first
           to put himself in front of danger.
@@ -40,19 +56,16 @@ pcs:
       class: warlock
       race: wood elf
       details: |
-          A strange arrogant elf who believes he was previously a host of a
-          show that helped many people with relationship and other mental
-          problems.
+          A strange arrogant elf who believes he was previously the host of a
+          popular psychology show.
 
           Studious of others' behaviour, he is constantly taking notes about
-          those in his group and outside.
+          those around him.
 
-          Unaware of his surroundings and inimitable in his willingness to
-          blindly walk into the face of danger. He's rude, ostentatious, and
-          insulting.
+          Unaware of his surroundings and willing to blindly walk into the face
+          of danger, he's rude, ostentatious, and insulting.
 
-          He sometimes seems to be possessed by an alternate personality of
-          sorts in Bill Bailey.
+          He sometimes is possessed by an alternate personality in Bill Bailey.
 
     - name: Bill Bailey
       link: bill-bailey
@@ -78,7 +91,8 @@ pcs:
       class: paladin
       race: dragonborn
       details: |
-          TODO
+          Paladin of the dragonborn empire. Sardonic with a biting wit, he is
+          the tank of the group.
 
     - name: Lord Faro Blimby Nar-nar De'Radwo Slyn VII Esq.
       link: faro
@@ -109,8 +123,8 @@ pcs:
       class: rogue
       race: gnome
       details: |
-          Gnomish rogue working for Lord Morcom Kester the spymaster for the
-          Crown City of Jewel. Focused and clever, never one to miss the
+          Gnomish rogue working for Lord Morcom Kester (the spymaster for the
+          Crown City of Jewel). Focused and clever, never one to miss the
           opportunity to make a bit of coin.
 
 story:
@@ -120,35 +134,36 @@ story:
           In a parallel version of Delway, [Parallel-Dr.
           Phil](#parallel-dr-phil), [Lord Faro Blimby Nar-nar De'Radwo Slyn VII
           Esq.](#faro), and [Garth](#garth), find themselves the guest of Count
-          Vorloft, having recently won acclaim ridding the region of bandits.
+          Vorloft.
 
           After the celebratory feast, our adventurers awoke to a panicked
           guard corps. The Count's daughter, Amelia, had been kidnapped
           during the night. Thankfully, the party had slept in the guard
           barracks and so had an alibi above reproach. Knowing the party's
-          reputation, the captain of the guard, Oscar, requests their
+          reputation, the captain of the guard, Oscar, requested their
           assistance in the matter.
 
           After a brief investigation of the scene of the crime, strange
-          scratch marks and a letter intimating that Amelia had been having
-          a dalliance with a gentleman not of the court, the team decided
-          first to interview the suspects, who were guests at the dinner the
-          night before.
+          scratch marks and a letter intimating that Amelia had been having a
+          dalliance with a gentleman not of the court, the team decided to
+          interview the suspects, who were guests at the dinner the night
+          before.
 
-          After clever word play and magically enhanced persuasion, the crew
-          was able to discover
+          After some clever word play and magically enhanced persuasion, the
+          crew was able to discover
 
           1. A commoner who'd killed a nobleman and was attempting to
           impersonate him in order to marry Amelia (subsequently arrested and
           sentenced to hard labour in the Gnome Underdark Mining Corporation's
           mines)
-          2. A spy sent to out the commoner and bring him to justice.
+          2. A spy sent to discover the aforementioned commoner and bring him
+          to justice.
           3. A secret wererat lover of Amelia, who had kidnapped her for a
           ritual to turn her into a wererat so that she would be able to be
-          with him forever (*gaaaaaassssssspppp*)
+          with him forever.
 
           After learning of what happened to Amelia, the team heading to the
-          sewers to find and rescue her. After a well-timed Fireball, and a
+          sewers to find and rescue her. Thanks to a well-timed Fireball, and a
           hasty retreat, they were able to exit the sewers and return to the
           keep with Amelia alive (barely), and their reputations intact.
 
@@ -167,15 +182,14 @@ story:
           introduce the team to his boss, who most assuredly knew more details
           of Sir Thomas' disappearance.
 
-          After some negotiation, and a blantant bribe, [Mittens](#mittens) led
-          the two to the door 5 metres away, and introduced them to
-          Lord Morcom Kester, spymaster for the throne, and purveyer of
-          mysteries.
+          After some negotiation, and a rather costly bribe,
+          [Mittens](#mittens) led the two to the door five metres away, and
+          introduced them to Lord Morcom Kester, spymaster for the throne.
 
           The team learned that Sir Thomas had been sent on a diplomatic
           mission to the undercity several days ago, and had not returned as
           expected. He was to speak with the King of the undercity deuregar,
-          and start to form an alliance with him against any possible Southern
+          and to form an alliance with him against any possible Southern
           aggression.
 
           Additionally, the team learned that the castle staff whom had been
@@ -214,15 +228,14 @@ story:
       summary: |
           The P-Team continued their melee with Obese-Dan-cum-scorpion. [Su
           Yuan](#su-yuan) scored two critical hits on one turn, and was
-          followed by [Salim](#salim) severing the tail of the beast and
+          followed by [Salim](#salim) severing the tail of the beast as well as
           rending several of its legs.
 
-          Returned to his repulsive druid form, Obese-Dan was clearly
-          frightened for his life. He took one final, desperate measure, and
-          broke his own finger to activate a magical ring that transformed him
-          into a swarm of rats. The rats scurried down a nearby hole, but were
-          quickly followed and dispatched by [Jimmy](#jimmy) who was disgusted
-          by rats.
+          Returned to his repulsive druid form Obese-Dan, frightened for his
+          life, took one final, desperate measure, and broke his own finger to
+          activate a magical ring that transformed him into a swarm of rats.
+          The rats scurried down a nearby hole, but were quickly followed and
+          dispatched by [Jimmy](#jimmy).
 
           As the fat criminal turned to escape further down the hole, [Su
           Yuan](#su-yuan) jumped down, crushing his head and ending both the
@@ -252,8 +265,8 @@ story:
           allowing the others to slip past to the interior of the path as well.
           Seizing the opportunity, [Su Yuan](#su-yuan) took one of the sticks
           of dynamite that he'd acquired for the assault on Count Vorlofts'
-          keep, and was able to light it and **ahem** place it on (or rather,
-          in) the creature.
+          keep, and was able to light it and place it on (or rather, in) the
+          creature.
 
           Making a hasty retreat, the dynamite exploded, destroying the
           creature, injuring some of the team and collapsing their escape
@@ -342,37 +355,34 @@ story:
     - date: 2019-02-28
       title: Sir Thomas
       summary: |
-          With the return of [Dr. Phil](#dr-phil) the group pushed onward,
-          further into the underdark. Eventually their path opened to a massive
-          underground chamber, where they found themselves greeted by two
-          Duergar guards.
+          With the return of [Dr. Phil](#dr-phil) the group pushed further into
+          the underdark. Eventually, their path opened to a massive underground
+          chamber where they found themselves greeted by two Duergar guards.
 
-          Thankfully (if somewhat mysteriously) [Jimmy](#jimmy) spoke Duergan
-          and was able to communicate the groups desire to speak with the king
-          to the guards. Despite this, a non-Duergar Dwarven ambassador was
-          summoned first to speak with the group in common. He explained to the
-          group that they could not meet with the king directly, but that he
-          could arrange a meeting with some other nobility or bureaucrat who
-          would hear out their questions.
+          Thankfully [Jimmy](#jimmy) spoke Duergan and was able to communicate
+          the groups desire to speak with the king. Despite this, a non-Duergar
+          Dwarven ambassador was summoned to speak with the group in common. He
+          explained to the group that they could not meet with the king
+          directly, but that he could arrange a meeting with some other
+          nobility or bureaucrat who would hear out their questions.
 
-          The ambassador did reveal that Sir Thomas had visited the city
-          several weeks ago, and argued with the king before leaving.
+          The ambassador revealed that Sir Thomas had visited the city several
+          weeks ago, and argued with the king before leaving.
 
           With this little information, the adventurers saw no other course
           than to allow themselves to be escorted by the guards to a spartan
           waiting room.
 
           [Jimmy](#jimmy) did his best to converse with the guard left to
-          observe them, but clearly he was uncomfortable with outsiders. After
-          a number of uncomfortable moments, the guard excused himself and left
-          the group alone.
+          observe them, but had little luck. After a number of uncomfortable
+          minutes, the guard excused himself and left the group alone.
 
-          After several minutes, [Dr. Phil](#dr-phil) grew anxious and started
-          looking around. Soon realising that they weren't in a waiting room as
-          much as a cell, though perhaps an unconventional one. The corridor
-          was bookended on either side by a door with a magical lock.
+          [Dr. Phil](#dr-phil) grew anxious and started looking around. Soon
+          realising that they weren't in a waiting room as much as a cell,
+          though perhaps an unconventional one. The corridor was enclosed on
+          either side by doors with a magical locks.
 
-          Eventually [Su Yuan](#su-yuan) discovered another room similar to the
+          Meanwhile [Su Yuan](#su-yuan) discovered another room similar to the
           one in which they'd been placed, and felt a slight draft coming from
           the floor stones.
 
@@ -395,39 +405,95 @@ story:
           entire duergar militia was forming up to attack them.
 
           Sir Thomas assured the group that he would be able to create a path
-          to the exit, and so the team burst into the courtyard.
+          to the exit. The team burst into the courtyard.
 
-          To the happy surprise of the group, Sir Thomas revealed his true form
-          &mdash; a bronze dragon. He held off the frontal assault while the
-          P-Team was tasked with defending the rear.
+          To their happy surprise, Sir Thomas revealed his true form &mdash; a
+          adult bronze dragon. He held off the frontal assault while the P-Team
+          was defended the rear.
 
           After dispatching of the first wave of attacking duergar, Sir Thomas
           and the team saw their chance and moved with haste towards the exit.
           As they neared the edge of town, however, their vision became clouded
           and dark tentacles appeared in a way halting their progress.
           Entangling Sir Thomas, the next wave of the duergar assault started
-          to overwhelm him despite bein in his dragon form.
+          to overwhelm him despite being in his dragon form.
 
-          The team turned to see the King of the Duegar, dead eyed emerge from
+          The team turned to see the King of the Duegar, dead eyed, emerge from
           the underground fortress. Behind him came a tentacle mouthed
           illithid.
 
           Before the illithid or the King could react, [Su Yuan](#su-yuan)
-          reached into his bag of holding, picturing his last remaining magic
+          reached into his bag of holding, pictured his last remaining magic
           bean in his mind's eye. As it materialised in his palm he threw it in
           the direction of the illithid.
 
           For a moment, nothing happened. Then the earth shook and a tiny
-          pyramid appeared in place of the bean. The pyamid grew larger and
-          larger, forcing the mind flayer and the king back into the fortress
-          before settling unnaturally in the midst of the duergar city.
-          Towering over the rest of the structures and blocking any entrace or
-          exit to the fortress.
+          pyramid appeared. The pyamid grew larger and larger, forcing the mind
+          flayer and the king back into the fortress before settling
+          unnaturally in the midst of the duergar city.  Towering over the rest
+          of the structures and blocking any entrace or exit to the fortress.
 
-          With this the tentacles disappeared, and Sir Thomas threw off his
-          attackers. He explained that he recognised the magic of the pyramid
-          and that the group should leave post haste. Inside the pyramid would
-          be a mummy lord, a formiddible opponent even for the dragon himself.
+          With this the tentacles disappeared. Sir Thomas threw off his
+          attackers and explained that he recognised the magic of the pyramid.
+          Inside the pyramid would be a mummy lord, a formiddible opponent even
+          for the dragon himself.
 
           Upward through the underdark and to the sewers, past their own
           destructive path the team ventured back to the Crown City of Jewel.
+
+    - date: 2019-03-21
+      title: Where to Next...
+      summary: |
+          Returning from the underdark, exhausted and pushed to their limit,
+          the P-Team was ready for a well earned break. They were granted
+          rooms in the royal palace for the night and drifted into a deep
+          slumber.
+
+          Upon awakening, they approached Sir Thomas in his office where [Su
+          Yuan](#su-yuan) gave a more detailed description of the risk a
+          southern invasion would pose.
+
+          He described his former life as personal general to the Emperor. Lu
+          Kai was the vizier of the empire. He gathered support and led a coup
+          against the Emperor, killing him and all his heirs before taking the
+          throne for himself. [Su Yuan](#su-yuan) narrowly escaped with his
+          life.
+
+          The team also gave Sir Thomas details of strange happenings in the
+          northern mountains that they'd uncovered. The agent smuggling weapons
+          from the south to bandits in the north. The demonic possession of
+          Count Vorloft in Delway. The appearance of Lu Kai in a dead soldier.
+
+          Sir Thomas was left to ponder on this news, and suggested that the
+          crew go to speak with the court wizard who was in need of adventurers
+          to help with something that could be used against the Southern
+          Imperial Army.
+
+          So not to leave them thinking that he was not grateful for the
+          service they'd provided in rescuing him; Sir Thomas also granted the
+          team a country estate. Land, keep and servants.
+
+          After discussing their options, the P-Team agreed that first they
+          would speak with the count wizard before deciding on their next
+          course of action.
+
+          They made their way to the wizards keep, where he quickly enlisted
+          them in a harebrained scheme to go back in time to discover the
+          source of all magic in the kingdom.
+
+          Despite their reservations, they eventually agreed (and were
+          contractually bound) to have their consciousnesses sent back in time.
+
+          Upon arriving they discovered a giant statue of a human bound in
+          chains and locks. Immediately they were set upon by cultists, despite
+          several attempts at diplomacy.
+
+          They also found a strange hammer. Upon picking it up, it bound itself
+          to the holder until one of the locks on the giant was smashed with
+          it.
+
+          The team slowly made their way up the giant, smashing lock after lock
+          and being harried by cultists the entire time. Each lock seemed to
+          bring more life and freedom back to the statue.
+
+          The session ended just as they approached the final lock.
