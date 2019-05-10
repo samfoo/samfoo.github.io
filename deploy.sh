@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-middleman deploy --verbose --build-before
+middleman build --verbose
+middleman deploy --build-before
