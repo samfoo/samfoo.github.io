@@ -127,6 +127,14 @@ pcs:
           Crown City of Jewel). Focused and clever, never one to miss the
           opportunity to make a bit of coin.
 
+    - name: Steadly
+      link: steadly
+      class: fighter
+      race: halfling
+      details: |
+          Not much is known of steadly other than he is a mercenary working for
+          Lord Morcom Kester.
+
 story:
     - date: 2018-11-01
       title: "Parallel Interlude: Mystery Dinner"
