@@ -6,6 +6,7 @@ page_classes: dnd
 
 <% story = data.pteam.story.sort_by! { |b| b["date"] } %>
 <% pcs = data.pteam.pcs %>
+<% npcs = data.pteam.npcs %>
 
 <h2>Episodes</h2>
 <% story.each_with_index do |session, i| %>
