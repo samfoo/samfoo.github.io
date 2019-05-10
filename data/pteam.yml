@@ -1,7 +1,6 @@
 npcs:
     - name: Sir Thomas of Rouge
-      link: morcom
-      details: |
+      link: morcom details: |
           Bronze dragon, though often appearing in his human form. He is the
           head diplomat for foreign relations for the Crown City of Jewel.
 
@@ -127,7 +126,7 @@ pcs:
           Crown City of Jewel). Focused and clever, never one to miss the
           opportunity to make a bit of coin.
 
-    - name: Steadly
+    - name: Steadly "Danger" Carson
       link: steadly
       class: fighter
       race: halfling
@@ -615,8 +614,9 @@ story:
 
           As the group decided, Lord Kester warned them that the crown had not
           heard from the main supply post on the road. He introduced the group
-          to [Steadly](#steadly), the halfling mercenary who would be
-          accompanying the team to investigate the supply post problem.
+          to [Steadly "Danger" Carson](#steadly), a halfling mercenary who
+          would be accompanying the team to investigate the supply post
+          problem.
 
           And with that, the team embarked. After some time they came across a
           ruined carriage in the middle of the road. Cautiously [Su
