@@ -1,6 +1,7 @@
 npcs:
     - name: Sir Thomas of Rouge
-      link: morcom details: |
+      link: morcom
+      details: |
           Bronze dragon, though often appearing in his human form. He is the
           head diplomat for foreign relations for the Crown City of Jewel.
 
