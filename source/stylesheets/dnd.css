@@ -51,3 +51,8 @@
 .dnd dd {
     grid-column-start: 2;
 }
+
+.dnd .date {
+    float: right;
+    color: darkgrey;
+}

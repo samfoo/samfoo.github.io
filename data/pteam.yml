@@ -659,3 +659,17 @@ story:
 
           Given what the hobgoblin leader had told them of the impending
           attack, the group began to formulate a defensive plan...
+
+    - date: 2019-05-10
+      title: The Hobgoblin Attack
+      summary: |
+          With their best laid plans ready, the team defeated the hobgoblins
+          without incident.
+
+          Despite their best efforts to interrogate the hobgoblin general, he
+          revealed nothing of their motives other than greed and hate. No
+          connection to the south.
+
+          With his mission accomplished [Steadly](#steadly) made his way back
+          to Morcom, while the rest of the team started to work their way
+          towards the twin dragonborn cities of Hedjet and Weset.

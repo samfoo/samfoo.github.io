@@ -9,8 +9,24 @@ page_classes: dnd
 <% npcs = data.pteam.npcs %>
 
 <h2>Episodes</h2>
+
+<div class="session">
+  <dl class="toc">
+  <% story.each_with_index do |session, i| %>
+    <dt class="date"><%= session.date %></dt>
+    <dd>
+      <span class="title">
+        <a href="#session-<%= i %>">
+          <%= session.title %>
+        </a>
+      </span>
+    </dd>
+  <% end %>
+  <dl>
+</div>
+
 <% story.each_with_index do |session, i| %>
-    <div class="session">
+    <div class="session" id="session-<%= i %>">
         <h3><%= i + 1 %>. <%= session.title %></h2>
         <h4><%= session.date %></h4>
         <div class="clear"></div>
