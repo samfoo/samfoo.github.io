@@ -31,6 +31,12 @@ npcs:
           A girl familiar to Bill Bailey. He's unable to recall exactly how he
           knows her, but knows that he must find her.
 
+    - name: Statlorf
+      link: statlorf
+      details: |
+          High Vizier Statlorf Archancellor to the Jewel University of
+          Academics and Magic, and grand wizard consult to His Majesty.
+
 pcs:
     - name: Su Yuan
       link: su-yuan
@@ -134,6 +140,14 @@ pcs:
       details: |
           Not much is known of steadly other than he is a mercenary working for
           Lord Morcom Kester.
+
+    - name: Trist
+      link: trist
+      class: sorlock
+      race: half elf
+      details: |
+          Former student at the Jewel University of Academics and Magic
+          studying under High Vizier Statlorf.
 
 story:
     - date: 2018-11-01
@@ -482,8 +496,8 @@ story:
           team a country estate. Land, keep and servants.
 
           After discussing their options, the P-Team agreed that first they
-          would speak with the count wizard before deciding on their next
-          course of action.
+          would speak with the count wizard, [Statlorf](#statlorf) before
+          deciding on their next course of action.
 
           They made their way to the wizards keep, where he quickly enlisted
           them in a harebrained scheme to go back in time to discover the
@@ -673,3 +687,194 @@ story:
           With his mission accomplished [Steadly](#steadly) made his way back
           to Morcom, while the rest of the team started to work their way
           towards the twin dragonborn cities of Hedjet and Weset.
+
+    - date: 2019-06-07
+      title: "Interlude: Refuge"
+      summary: |
+          The team finds themselves waking up to the voice of [High Vizier
+          Statlorf](#statlorf) in their ears. He informs them that there's been
+          a bit of an accident and he intended to send them to **garbled**, and
+          that he's looking for a magical cup.
+
+          Amongst them is an individual they do not recognise. He introduces
+          himself as [Trist](#trist), a student of [Statlorf](#statlorf) and
+          explains that he's as ignorant as the other as to how they arrived in
+          such a place.
+
+          Looking around they see they are next to a town. The town, and the
+          P-Team are inside of a giant shimmering bubble. [Jimmy](#jimmy) goes
+          up to the bubble and touches it. As he tries to push through it
+          resists, but doesn't push back against him. Instead it feels like
+          he's slowed.
+
+          As they collect their thoughts and survey the rest of their surrounds
+          the team is approached by a clay golem who enquires who they are and
+          what they're doing. [Su Yuan](#su-yuan) introduces themselves.
+
+          The clay golem introduces himself as Roswell, deputy to Sheriff
+          Isaac, and asks how they managed to get through the barrier. It's
+          been inpenetrable, protecting the village since the sacrifice of Jack
+          and June - through their sacrifice the town is made safe.
+
+          No amount of further inquiry is able to get more details about Jack
+          and June, and Roswell insists that the team follow him to the
+          sheriff's office to wait for Isaac to return.
+
+          At the sheriff's office, the team finds one, occupied jail cell. The
+          criminal is identified as a local miner who tried to blow up the
+          temple to the west of town. When spoken to she's thoroughly crazy.
+
+          After some further discussion there's a small earthquake. At the
+          same time a commotion outside forces Roswell goes to investigate,
+          demanding that the team stay put and wait. As they look out, the
+          team sees several bandits in purple scarves squaring off against the
+          massive golem. After a short staredown, they retreat away and are not
+          pursued by Roswell.
+
+          Before he can return to the office and speak further with the team,
+          there's another commotion at the bank and a huge explosion. Customers
+          and smoke come billowing out of the bank, and Roswell charges in.
+
+          The team follows to see what is going on. Inside they find Roswell
+          and a number of other bandits. The bandits have used some sort of
+          explosive device to try to open the vault of the bank, but the
+          explosion by itself wasn't enough.
+
+          Just as Roswell starts to turn and discuss why they've left the
+          station with the group, the town clock strikes twelve. There's an
+          enormous earthquake &mdash; much bigger than the last and a giant
+          fissure opens up and swallows the team where they die.
+
+          ...
+
+          ...
+
+          ...
+
+          They find themself in a white plane with a woman in front of them.
+          She tells them they'll have to do better than that. And with a
+          strange sensation...
+
+          The team finds themselves waking up to the voice of [High Vizier
+          Statlorf](#statlorf) in their ears. He informs them that there's been
+          a bit of an accident and he intended to send them to **garbled**, and
+          that he's looking for a magical cup.
+
+          Quickly realising they're in some kind of temporal loop the team
+          tries a number of other strategies. Each time resulting in their
+          death, either by the apocolyptic earthquake, or through their own
+          mistakes (often at the hand of Roswell).
+
+          Finally after following clues, and listening to the prophecy of a
+          witch named Poloma (who seemed to know they were in a loop), they
+          find their way to the mine where Jack and June were lost. With some
+          puzzle solving, they work their way into a giant room labeled "Shaft
+          B" in the middle of which is a massive shaft.  After some
+          consideration, [Su Yuan](#su-yuan) leaps down the shaft and finds
+          that it touches the bottom of the bubble surrounding/protecting the
+          town. And outside the bubble is a massive purple worm, teeth the size
+          of buildings. Whereupon the apocolypse happens again and they return
+          once more to the garbled voice of Statlorf at the entrance of Refuge.
+          Now with the understanding, at least, of what is causing the
+          destruction.
+
+    - date: 2019-06-20
+      title: "Interlude: Leaving Refuge"
+      summary: |
+          After discovering that the final conflagration in each time loop was
+          caused by a giant purple worm, the group set about discovering how to
+          stop it.
+
+          They made their way to Poloma the witch who told them that should
+          would be able to give them a major prophecy, but that the ritual
+          spell would require ten diamonds.
+
+          Immediate plans for a bank robbery were drafted, and executed. Many
+          diamonds were stolen. Bandits were vaporised. Banks were nearly
+          leveled. Ten diamonds were procurred.
+
+          The ritual began, and the witch uttered a single phrase; "look to the
+          right".
+
+          With that cryptic advice, disappointed, the team made their way to
+          the fallen temple. They discovered it was a temple of the Goddess
+          Istus lady of fate, destiny, divination and the future. Nearby they
+          found a skeleton, still animated and alive who was once a priest to
+          Istus.
+
+          He Luca, and his brother Redmond, had been priests before the temple
+          crumbled because of sick time. But he believed that the temple could
+          be rebuilt if the adventurers could convince Redmond to assist him in
+          a ritual prayer.
+
+          And so they made their way to a stonefruit farm where they discovered
+          Redmond was the leader of the bandits and what planning to rob the
+          bank vault, believing that it held an artifact that could lower the
+          bubble and free the town from it's entrapment.
+
+          Now being expert bank robbers, the group offered their help. And so
+          began another bank robbery, this time only slight less bungled. In
+          the end however, [Su Yuan](#su-yuan) was able to use his monk agility
+          to get into the vault.
+
+          There he discovered the diary of Sheriff Isaac, in which he
+          chronicled his lust for a magical cup that Jack possessed. Finally
+          Isaac could not resist the lure of the cup and murdered Jack by
+          pushing him down Shaft B in the mines. The cup, however, fell into
+          the hands of the nearby June, and around her &mdash; and the town
+          &mdash; a bubble was errected, and the clay golem Roswell was
+          summoned. June however, was incapacitated and stuck to the cup inside
+          another, smaller bubble.
+
+          Isaac described the shame and horror that he felt, and how he used
+          the word "Junebug" as the command word for Roswell, directing him to
+          protect the town of Refuge.
+
+          Armed with this knowledge the team met another demise by way of
+          apocolypse and once again woke in front of Refuge.
+
+          This time, instead of negotiating or tricking Roswell, though, they
+          simply took control of him. From there they rushed to Redmond who
+          they convinced to help erect the Temple of Istus by promising him
+          Roswell's control word.
+
+          After the temple was mended, [Jimmy](#jimmy) communed with Istus who
+          provided them with a magical lance, which can pierce time bubbles. It
+          would not be able to pierce the larger bubble around the town without
+          some additional force, but would allow them to enter Shaft A.
+
+          So they ventured back to the mines and into Shaft A where they found
+          Isaac and June &mdash; and of course, the cup. June was unconscious,
+          inside the bubble with her hand resting on a magical chalice which
+          [Salim](#salim) detected as being thoroughly evil. June also appeared
+          to be the same woman as who had been appearing to the team upon each
+          resurrection.
+
+          After some initial talk, Isaac thought he had the upper hand and
+          attempted to take the lance from them by force. He was immediately
+          incapacitated by a number of fireballs from [Trist](#trist).
+
+          Safely then [Jimmy](#jimmy) used the lance to burst the protective
+          time bubble surrounding June and the cup. The cup, however was
+          sentient to some degree. It spoke to each of the members, pulling
+          their most painful memories from the past and promising the ability
+          to go back in time and change them.
+
+          The team was resolute. They wrapped the cup in a safe covering. At
+          this moment, the final tremors began. June explained to the group
+          that they could open Shaft A and close Shaft B and lure the worm away
+          from the town.
+
+          And so everyone got into a mining cart. They distracted the worm by
+          having [Trist](#trist) throw fireballs at it to get its attention.
+
+          Continuing down the shaft, the worm getting closer every minute.
+          Finally they came to a junction with a path to the left and the
+          right. Recalling the witches prophecy they chose the right path and
+          were launched into the air out of the mine tumbling toward the larger
+          bubble surrounding the whole town. Jimmy at the fore leveled the
+          lance and their momentum pushed them just far enough through to pop
+          the bubble.
+
+          And with that they found themselves back in [Statlorf's](#statlorf)
+          tower.
