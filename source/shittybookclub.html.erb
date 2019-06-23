@@ -84,7 +84,11 @@ page_classes: books
                         <tbody>
                             <% meetup.books.each do |book| %>
                                 <tr class="book">
-                                    <td class="cover"><img src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img></td>
+                                    <% if book.cover %>
+                                      <td class="cover"><img src="<%= book.cover %>" alt="<%= "#{book.title} - #{book.author}" %>"></img></td>
+                                    <% else %>
+                                      <td class="cover"><img src="https://images-na.ssl-images-amazon.com/images/P/<%= book.asin %>.01.LZZZZZZZ.jpg" alt="<%= "#{book.title} - #{book.author}" %>"></img></td>
+                                    <% end %>
                                     <td>
                                         <div class="title"><%= book.title %></div>
                                         <div class="author"><%= book.author%></div>
