@@ -1,8 +1,8 @@
 npcs:
-    - name: Vanard von Wroth
-      link: vanard
+    - name: Ezmeralda
+      link: ezmeralda
       details: |
-          TODO
+          A vistana vampire hunter.
 
 pcs:
     - name: Elf (real name unknown)
@@ -406,5 +406,58 @@ story:
           dispatched of this lone wolf before he could escape, the six others
           knew their position again and approached.
 
-          The group stealed themselves for what they feared may be their final
+          The group steeled themselves for what they feared may be their final
           stand.
+
+    - date: 2019-08-05
+      title: Near Death
+      summary: |
+          As the werewolves closed in, the group prepared for the worst. The
+          attack came swiftly. A group of four direwolves and three werewolves.
+          [Ez](#ezmeralda) used the the of her strength to cast greater
+          invisibility on [Elf](#elf).
+
+          Both [Pip](#pip) and [Milivoj](#milivoj) confronted the werewolves
+          head on. The two seasoned warriors worked with precision;
+          [Milivoj](#milivoj) sweeping the foul creatures off their feet and
+          [Pip](#pip) smashing them with Lightbringer.
+
+          Two direwolves pulled off from the pack to focus on the near
+          catatonic [Ezmeralda](#ezmeralda), focused only on trying to maintin
+          her concentration in hiding the errant archer.
+
+          As the wolves closed in, arrows appeared out of nowhere, piercing
+          their hearts and slaying the beasts. The effort was too much,
+          however, and the vistana swooned to the ground and the elf was
+          revealed.
+
+          The final werewolf saw that the situation was turning and attempeted
+          to flee. At this, [Elf](#elf) held out a single silver arrow, closed
+          his eyes and muttered a small incantation and let fly an ensnaring
+          strike.
+
+          The lycanthrope was rooted to the spot and [Milivoj](#milivoj) and
+          [Pip](#pip) closed in, the creature's death inevitable as the paladin
+          exacted his oath of vengance.
+
+          After the battle, the group could still hear the howls and feel other
+          werewolves closing in on them. Exhausted they swiftly moved through
+          the forest eventually reaching the Old Svalich Road. As they worked
+          their way towards the closest safe haven they knew of, The Wizards of
+          Wine Winery, they were once more beset. This time by fearsome
+          scarecrow creatures. Animated by some dark magic and imbued with an
+          arcane ability to cause fear.
+
+          Despite their exhaustion the group was able to dispatch of the
+          creatures quickly and stumble on death's to the safety of the winery.
+
+          Therein they spoke with Davian Martikov about the virus currently
+          afflicting [Ezmeralda](#ezmeralda). The Martikovs, themselves
+          lycanthropes, were familiar with the disease and the old patriarch
+          used a strange mixture of herbs to stall the infection and
+          artificially sedate the vistana until the group could find some
+          wolfsbane.
+
+          The only place to find wolfsbane in Barovia is high in the mountains
+          in the Tsolenka Pass. Davian warned them, however, that the pass was
+          home to a fearsome Roc.
