@@ -74,3 +74,13 @@ meetings:
         - cover: https://iv1.lisimg.com/image/1055236/600full-metal-gear-%28worlds-of-power%29-cover.jpg
           title: Worlds of Power - Metal Gear
           author: F. X. Nine
+
+    - date: 2019-07-28
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Michael Thompson
+      books:
+        - asin: B007EE4T3E
+          title: Bored of the Rings
+          author: Harvard Lampoon
