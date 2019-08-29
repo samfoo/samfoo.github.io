@@ -6,6 +6,24 @@ page_classes: dnd
 
 <% story = data.cos.story.sort_by! { |b| b["date"] } %>
 <% pcs = data.cos.pcs %>
+<% npcs = data.pteam.npcs %>
+
+<h2>Episodes</h2>
+
+<div class="session">
+  <dl class="toc">
+  <% story.each_with_index do |session, i| %>
+    <dt class="date"><%= session.date %></dt>
+    <dd>
+      <span class="title">
+        <a href="#session-<%= i %>">
+          <%= session.title %>
+        </a>
+      </span>
+    </dd>
+  <% end %>
+  <dl>
+</div>
 
 <h2>Sessions</h2>
 <% story.each_with_index do |session, i| %>
@@ -25,5 +43,13 @@ page_classes: dnd
     <% pcs.each do |char| %>
         <dt id="<%= char.link %>"><%= char.name %></dt>
         <dd><%= char.details %></dd>
+    <% end %>
+</dl>
+
+<h2>Non Player Characters</h2>
+<dl>
+    <% npcs.each do |char| %>
+        <dt id="<%= char.link %>"><%= char.name %></dt>
+        <dd><%= markdown char.details %></dd>
     <% end %>
 </dl>
