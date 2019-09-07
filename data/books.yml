@@ -1441,7 +1441,7 @@ books:
                 Complete garbage from start to finish. I still skipped
                 the songs.
 
-    - asin: none
+    - asin: B00873GRU4
       date: 2019-08-16
       title: "Wool"
       author: Hugh Howley
@@ -1455,3 +1455,20 @@ books:
                 This time, I loved it. Great world building
                 especially. The ending was a bit too "clean" for me,
                 but it's possible the sequels expand enough to fix this.
+
+    - asin: B00AZRP5LM
+      date: 2019-09-07
+      title: "Perdido Street Station"
+      author: China Mieville
+      type: fiction
+      review: |
+                Took me quite awhile to get into the flow in this book. The
+                beginning is very slow and there's lots of distractions and
+                world building. However, the middle of the book and the core
+                plot are incredible. Slake Moths are such great "bad guys" and
+                never felt tedious or contrived.
+
+                I wish that the book had either expanded more on some of the
+                other non-prime characters (the mayor, the crime boss, etc) or
+                dropped them entirely, since ultimately they didn't add much to
+                the book.
