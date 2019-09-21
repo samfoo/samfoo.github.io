@@ -13,6 +13,7 @@ pcs:
           Elderly, even by elven standards. Elf has live many
           lifetimes and forgotten his or her (gender also unknown)
           name.
+
     - name: Thaddeus
       link: thaddeus
       class: paladin
@@ -20,7 +21,8 @@ pcs:
       details: |
           Arrogant and racist. Proud to a fault. Follower of the god
           Helm. Challenged Strahd van Zarovich to a duel in which he
-          was kill despite a valliant effort.
+          was killed despite a valliant effort.
+
     - name: Philip (Pip)
       link: pip
       class: paladin
@@ -28,6 +30,7 @@ pcs:
       details: |
           Squire to Thaddeus, who treated him as his own son. Has
           sworn an oath of vengence against Strahd.
+
     - name: Mighty
       link: mighty
       class: druid
@@ -36,6 +39,7 @@ pcs:
           Sailor cum adventurer. Kind hearted, but fearsome in battle.
           Fell to a swarm of vampire spawn. Whereabouts unknown,
           presumed dead. Best friends with Astrid.
+
     - name: Astrid
       link: astrid
       class: rogue
@@ -43,6 +47,7 @@ pcs:
       details: |
           Orphaned tabaxi street child. Wild and untamed. Best friends
           with Mighty.
+
     - name: Milivoj
       link: milivoj
       class: fighter
@@ -58,6 +63,22 @@ pcs:
           resisted, he offers to join them.
 
           Trusty with a shovel, which he weilds like a polearm.
+
+          He was killed in a fray with seven bezerkers while he destroyed the
+          Staff of Gulthias, killing hundreds of blights and the evil reborn
+          Wintersplinter and saving his friends from certain death.
+
+    - name: Pete
+      link: pete
+      class: cleric
+      race: aasimar
+      details: |
+          A wanderer of many lands. Following the whisperings of his patron
+          angel to seek out those who need help. He's gone by many names, but
+          for now he is called "Pete".
+
+          Led to Barovia by this same angel patron to seek out and help heroes
+          who will rid the land of its curse.
 
 story:
     - date: 2018-11-24
@@ -595,3 +616,66 @@ story:
           Zarovich. The vampire lord looked directly at them, bowed with great
           aplumb, and picked up the Tome of Strahd - his tome - from the now
           dead body of [Milivoj](#milivoj) the Shovel Knight.
+
+    - date: 2019-09-11
+      title: The Wanderer
+      summary: |
+          After the death of [Milivoj](#milivoj), [Pip](#pip) and [Elf](#elf)
+          were able to rendezvous in the forest around Yester Hill. Pushing
+          aside their grief they headed back towards the winery, at least
+          having accomplished their goal of retrieving the magical gem for
+          Davian, despite the heavy cost.
+
+          As they approached the winery Davian met them outside and quickly
+          ushered them in asking for help. He'd found an unconscious man in the
+          fields of the winery. [Pip](#pip) laid hands upon him and summoned
+          divine energy to bring life back to man, who awoke gasping and
+          confused.
+
+          Emotions frayed and tested to their limits, after a brief
+          introduction and ascertaining that he was not a threat or an agent of
+          Strahd in anyway they could detect, the two adventurers went to their
+          rooms to mourn their fallen friend.
+
+          The wanderer, confused and disoriented attempted to reach out with
+          divination magic. The magical link between him and his patron was
+          redirected to a new voice. One that mocked him and drew out his
+          darkest thoughts. This new voice must be Strahd, he thought, and
+          vowed then to put an end to this blight.
+
+          After a long night's rest, [Elf](#elf) ventured down and spoke with
+          Davian and the strange man. He introduced himself as [Pete, the
+          Wanderer](#pete). He was brought to Barovia by his patron angel who
+          sent him to assist adventurers in eradicating the curse of Strahd.
+
+          [Elf](#elf) remained sceptical of this strange man, and went to check
+          on [Ezmeralda](#ezmeralda). [Pete](#pete) followed along and
+          immediately recognising that she was still battling the lycanthropic
+          infection, despite the wolfsbane, he touched her forehead and
+          summoned his divine energy to cure her of her curse.
+
+          She awoke slowly, weak from her days in traction, but alive and fully
+          well once again. She thanked this strange man, and immediately asked
+          where [Pip](#pip) and [Milivoj](#milivoj) were. Fresh tears entered
+          [Elf](#elf)'s eyes as he relayed the last few weeks to to vistana.
+
+          [Ezmeralda](#ezmeralda) then demanded to see [Pip](#pip), who had
+          isolated himself in his room with his grief. She spoke to him quietly
+          about the pain of losing so many loved ones in such a short time
+          period and how the only cure for this is vengeance. With this his
+          demeaner changed and he focused his attention and power once again.
+          Strahd must die.
+
+          But first, the group agreed they must retrieve the body of
+          [Milivoj](#milivoj) and give him a proper burial rite. And so they
+          set off again for Yester Hill this time accompanied by the strange
+          wandering cleric instead of the Shovel Knight.
+
+          Upon arrival they found the druidic hill abandoned by it's perverted
+          worshipers. No more berzerkers nor druids. Only a crucifix with the
+          flayed and dead body of their friend [Milivoj](#milivoj) remained.
+
+          They brought him down and laid him to rest, but not before each
+          saying a small word to honor the man. One of the few Barovians to
+          stand up to the tyrant and fight back. They promised they would
+          avenge him.
