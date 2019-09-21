@@ -27,7 +27,7 @@ page_classes: dnd
 
 <h2>Sessions</h2>
 <% story.each_with_index do |session, i| %>
-    <div class="session">
+    <div class="session" id="session-<%= i %>">
         <h3><%= i + 1 %>. <%= session.title %></h2>
         <h4><%= session.date %></h4>
         <div class="clear"></div>
