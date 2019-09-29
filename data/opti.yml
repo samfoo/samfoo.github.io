@@ -1,0 +1,88 @@
+npcs:
+    - name: Klarg
+      link: klarg
+      details: |
+          Bugbear and leader of a local goblin gang.
+
+    - name: Gundren Rockseeker
+      link: gundren
+      details: |
+          Dwarvish miner and patron of the group.
+
+    - name: Sildar Hallwinter
+      link: sildar
+      details: |
+          Retired soldier and associate of Gundren.
+
+pcs:
+    - name: Keijo
+      link: keijo
+      class: rogue
+      race: human
+      details: |
+          TODO
+
+    - name: Barry
+      link: barry
+      class: fighter
+      race: dwarf
+      details: |
+          TODO
+
+    - name: Dracon (aka Bob)
+      link: bob
+      class: sorcerer
+      race: half elf
+      details: |
+          TODO
+
+    - name: Larry
+      link: larry
+      class: sorcerer
+      race: human
+      details: |
+          TODO
+
+story:
+    - date: 2019-09-25
+      title: Escorting Cargo
+      summary: |
+          The group was commissioned by a dwarvish miner, [Gundren
+          Rockseeker](#gundren) in Neverwinter to escort some mining equipment
+          to a frontier town by the name of Phandelver. After several
+          uneventful days on the road, they came across several dead horses in
+          the middle of the road.
+
+          They approached cautiously and found it was a trap layed by several
+          nearby goblins. They truned the tables and ambushed the goblins,
+          killing the foul beasts.
+
+          Afterwards, some investigation revealed a path into the woods covered
+          in goblin footprints. They decided to tie their horses and cart up
+          and investigate the path.
+
+          Soon they arrived at a cave that was guarded by several goblins.
+          [Bob](#bob) was able to charm one of the goblins and convince him
+          that they were friends. The team questioned the goblin and learned of
+          a human prisoner being held in the cave, and a large bugbear named
+          Klarg leading the goblin troupe.
+
+          They decided to rescue the prisoner. [Keijo](#keijo) was sent in
+          first to explore, and after passing some guard dogs tied up at the
+          entrance found a passageway to what he believed was the cavern where
+          the goblin described the prisoner being held. Being unable to see in
+          the pitch black, he called out to the others who joined him.
+
+          They made their way up a steep and tight passageway, eventually
+          finding several sleeping goblins and a larger goblin cooking
+          something foul over a fire. In the corner they spotted the prisoner.
+
+          [Larry](#larry) used arcane power to communicate with the prisoner
+          and let him know they were there to free him. [Keijo](#keijo)
+          silently killed several goblins until he was seen and the rest of the
+          group attacked at once.
+
+          After defeating the goblins, they freed the prisoner who revealed his
+          name was [Sildar](#sildar) and that was an associate of
+          [Gundren's](#gundren). He revealed some more details about
+          [Klarg](#klarg)...
