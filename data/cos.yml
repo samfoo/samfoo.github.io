@@ -80,6 +80,22 @@ pcs:
           Led to Barovia by this same angel patron to seek out and help heroes
           who will rid the land of its curse.
 
+    - name: Muriel Vinshaw
+      link: muriel
+      class: druid
+      race: human (wereraven)
+      details: |
+          Working as one of the lookouts for the wereravens who stand against
+          Strahd, Muriel was assigned to spy on the hag, Baba Lysaga by Davian
+          Martikov.
+
+          After months in the swamp and bog she was to return to report her
+          findings. On her flight back, she saw the adventurers on the road and
+          flew down to greet them.
+
+          After some convincing, she decided that she would join them on their
+          way to Vallaki to kill the burgermaster.
+
 story:
     - date: 2018-11-24
       title: Instantiation
@@ -679,3 +695,85 @@ story:
           saying a small word to honor the man. One of the few Barovians to
           stand up to the tyrant and fight back. They promised they would
           avenge him.
+
+    - date: 2019-10-02
+      title: The Wereraven Muriel
+      summary: |
+          After performing proper rites for [Milivoj](#milivoj), the group
+          returned to the winery where they rested for some time, and discussed
+          their next moves.
+
+          After deliberating for quite some time, they ultimately decided that
+          they would return to the town of Vallaki and confront the
+          burgermaster. Doing so would mean they'd no longer be personas non
+          grata there, and would be able to draw on the resources of some of
+          the friendly townsfolk (including Urwin Martikov).
+
+          They thanked Davian for all of his help, and promised him that they'd
+          retrieve another of the missing gems from Baba Lysaga after freeing
+          Vallaki.
+
+          They departed and began working their way back along the now familiar
+          Svalich Road towards Vallaki. Some time into their second day on the
+          road they spotted a raven high in the sky looking down on them. It
+          swooped down and transformed into a woman in front of them.
+
+          The woman introduced herself as [Muriel Vinshaw](#muriel). A
+          wereraven stationed in the ruins of Berez. She had been returning to
+          discuss some of her findings when she spotted the adventurers.
+
+          After just a brief time, and some confirmation that she wasn't an
+          agent of Strahd, the group invited her to accompany them to Vallaki.
+          Her local knowledge would be invaluable. She agreed.
+
+          With [Muriel](#muriel) in tow, the team now discussed their plans.
+          They would send in [Pip](#pip) to try to lure out the burgermaster or
+          his henchman with the demonic arm, Izek, out onto the road where they
+          could be ambushed. They'd do so by using [Ezmeralda](#ezmeralda) as
+          bait.
+
+          [Pip](#pip) made his way to the village, leaving the others several
+          kilometers outside in the woods. [Muriel](#muriel) flew high above in
+          raven form, keeping watch. The guards stopped the young paladin
+          immediately, and he demanded to speak with the burgermaster. The
+          guards had been made aware that the adventurers were fugitives and
+          immediately took him into custody and led him to a building in town
+          to wait while they fetched Izek to speak with him.
+
+          Izek's arrived and wasn't taken in by the ruse or attempt to get him
+          out of town. Izek ordered his guards to torture [Pip](#pip) until he
+          told them where [Ezmeralda](#ezmeralda) and the others were. Izek
+          then left to speak on the matter with the burgermaster.
+
+          [Muriel](#muriel), being the clever sort, realised after a few
+          minutes that [Pip](#pip) was in quite the bind, and landed quietly in
+          a nearby alleyway, where she summoned the help of several resident
+          spiders by enlarging them and immobilising the guards while
+          [Pip](#pip) was able to escape.
+
+          She then headed back to the group to tell them of what had
+          transpired. [Pip](#pip) meanwhile began to work his way towards the
+          Blue Water Inn where he knew he could trust the Martikovs.
+
+          [Muriel](#muriel) arrived back and informed [Pete](#pete),
+          [Ezmeralda](#ezmeralda) and [Elf](#elf) of the situation, then
+          quickly took flight again back to assist [Pip](#pip).
+
+          The others meanwhile began a very fast jog towards Vallaki. Once they
+          neared the gates, from some distance away still, they saw a large
+          number of town guards amassing and waiting. [Elf](#elf), not being
+          the patient sort, started firing arrows at them, killing several
+          before the remaining guards took cover.  [Pete](#pete) began working
+          his way towards the gate.
+
+          [Muriel](#muriel) arrived back in Vallaki to find Izek gathering a
+          group of many civilians with pitchforks to storm the woods and find
+          the adventurers. Thinking quickly, she landed in the middle of the
+          group and, using magical means, charmed Izek into thinking her a
+          friendly. After this, she convinced him that he and she should leave
+          the town alone, to which he agreed and dispersed the crowd.
+
+          The ruse worked and she led Izek into the waiting arms of the
+          adventurers who killed him, but not until they dispelled the magic in
+          his arm and it shriveled away into nothing. He was left powerless and
+          stripped on the road, no longer able to terrorise people.

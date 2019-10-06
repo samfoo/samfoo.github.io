@@ -43,13 +43,20 @@ pcs:
       details: |
           TODO
 
+    - name: Orgrad
+      link: orgrad
+      class: cleric
+      rase: half-orc
+      details: |
+          TODO
+
 story:
     - date: 2019-09-25
       title: Escorting Cargo
       summary: |
           The group was commissioned by a dwarvish miner, [Gundren
           Rockseeker](#gundren) in Neverwinter to escort some mining equipment
-          to a frontier town by the name of Phandelver. After several
+          to a frontier town by the name of Phandelen. After several
           uneventful days on the road, they came across several dead horses in
           the middle of the road.
 
@@ -86,3 +93,48 @@ story:
           name was [Sildar](#sildar) and that was an associate of
           [Gundren's](#gundren). He revealed some more details about
           [Klarg](#klarg)...
+
+    - date: 2019-10-03
+      title: Phandalen
+      summary: |
+          After rescuing Sildar, the group worked their way back to the main
+          road and their wagons. Upon arriving back, they found a half orc
+          gravely wounded resting against the wheel. Sildar immediately
+          recognised him as [Orgrad](#orgrad) and explained to the raiders that
+          he was one of the mercenaries hired by Gundren to travel with him and
+          Sildar to Phandalen.
+
+          Sildar explained that while he and Gundren were abducted, they
+          weren't sure what had happened to Orgrad and had assumed he died.
+          [Barry](#barry) stabilised the half orc and, confirming that he was
+          able to walk, they began to head towards Phandalen.
+
+          They arrived in the town without further incident and headed towards
+          the local inn where Sildar promised to get them rooms. Exhausted at
+          this point, they slept.
+
+          Arising in the morning they found Sildar had already left on
+          business. The raiders went out to replenish some supplies and see if
+          they could find news of Gundren.
+
+          They learned that no one had seen Gundren or his brothers for several
+          weeks. The town locals were mostly preoccupied with the local
+          ruffians who'd dubbed themselves the Redbrands. They were terrorising
+          the shops and homes and generally causing problems.
+
+          They met Sildar back in the inn where he paid them for their
+          services, and told them that he would be preoccupied with looking for
+          a wizard friend of his who had disappeared, last having been seen
+          heading towards the manor which the Redbrands used as their
+          headquarters.
+
+          The raiders agreed to look for him, and were also interesting in
+          seeing these ruffians for themselves. They worked their way towards
+          the local pub known to be frequented by members of the gang. On
+          arrival they were attacked, and defeated seven of the members.
+          [Bob](#bob) was able to put two of them to sleep, and the group
+          dragged them into the pub to question.
+
+          After some enhanced interrogation, they found of that the Redbrands
+          had a secret hideout underneath the manor, and also that they were
+          somehow connected to the abduction of Gundren.
