@@ -84,3 +84,12 @@ meetings:
         - asin: B007EE4T3E
           title: Bored of the Rings
           author: Harvard Lampoon
+
+    - date: 2019-09-29
+      attendees:
+        - Sam Gibson
+        - Michael Thompson
+      books:
+        - asin: B00BY7NK96
+          title: Lean In
+          author: Sheryl Sandberg
