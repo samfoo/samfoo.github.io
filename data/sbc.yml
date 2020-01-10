@@ -93,3 +93,13 @@ meetings:
         - asin: B00BY7NK96
           title: Lean In
           author: Sheryl Sandberg
+
+    - date: 2019-12-15
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Michael Thompson
+      books:
+        - cover: https://taff.org.uk/ebooks/thumbs/EyeArgon.jpg
+          title: The Eye of Argon
+          author: Jim Theis
