@@ -103,3 +103,13 @@ meetings:
         - cover: https://taff.org.uk/ebooks/thumbs/EyeArgon.jpg
           title: The Eye of Argon
           author: Jim Theis
+
+    - date: 2020-02-16
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Michael Thompson
+      books:
+        - cover: https://images-na.ssl-images-amazon.com/images/P/B00513DGES.01.LZZZZZZZ.jpg 
+          title: The Crystal Star: Star Wars Legends 
+          author: Vonda McIntyre
