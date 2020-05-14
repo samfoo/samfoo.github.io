@@ -1,19 +1,4 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Sam Gibson</title>
-
-        <link href="stylesheets/normalize-6197e73d.css" rel="stylesheet" /><link href="stylesheets/all-7da1815b.css" rel="stylesheet" /><link href="stylesheets/font-awesome.min-3fbc1e70.css" rel="stylesheet" /><link href="stylesheets/books-731736d0.css" rel="stylesheet" /><link href="stylesheets/dnd-f1012ae1.css" rel="stylesheet" />
-        <!-- <script src="javascripts/all-da39a3ee.js"></script> -->
-    </head>
-
-    <body id="content" class="x2018-goals">
-        <header>
-            <a href="/"><i class="fa fa-home"></i> ifdown.net</a>
-        </header>
-        <h1>2017 Review</h1>
+<h1>2017 Review</h1>
 
 <h2>What are you most proud of?</h2>
 
@@ -130,9 +115,9 @@ year.</p></li>
 <p>I got a black belt!</p></li>
 </ul>
 
-<p><img alt="blackbelt 1" src="images/blackbelt-1-c4d0ad5d.jpg" />
-<img alt="blackbelt 2" src="images/blackbelt-2-15489a62.jpg" />
-<img alt="blackbelt 3" src="images/blackbelt-3-9d37310b.jpg" /></p>
+<p><img src="/images/blackbelt-1-c4d0ad5d.jpg" alt="blackbelt 1" />
+<img src="/images/blackbelt-2-15489a62.jpg" alt="blackbelt 2" />
+<img src="/images/blackbelt-3-9d37310b.jpg" alt="blackbelt 3" /></p>
 
 <h3>Camping / Outdoors</h3>
 
@@ -167,6 +152,3 @@ saving really put a crimp in our weekend plans.</p></li>
 
 <p>Smashing success. Between the two groups, we have a regular rhythm going.</p></li>
 </ul>
-
-    </body>
-</html>

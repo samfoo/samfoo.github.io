@@ -1,19 +1,4 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Sam Gibson</title>
-
-        <link href="stylesheets/normalize-6197e73d.css" rel="stylesheet" /><link href="stylesheets/all-7da1815b.css" rel="stylesheet" /><link href="stylesheets/font-awesome.min-3fbc1e70.css" rel="stylesheet" /><link href="stylesheets/books-731736d0.css" rel="stylesheet" /><link href="stylesheets/dnd-f1012ae1.css" rel="stylesheet" />
-        <!-- <script src="javascripts/all-da39a3ee.js"></script> -->
-    </head>
-
-    <body id="content" class="x2017-goals">
-        <header>
-            <a href="/"><i class="fa fa-home"></i> ifdown.net</a>
-        </header>
-        <h1>Goals for 2017</h1>
+<h1>Goals for 2017</h1>
 
 <h2>Meta</h2>
 
@@ -173,6 +158,3 @@ on my phone, though.</em></li>
 <em>Not even close. I think we went probably twice</em></li>
 </ul></li>
 </ul>
-
-    </body>
-</html>

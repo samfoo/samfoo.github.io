@@ -1,19 +1,4 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Sam Gibson</title>
-
-        <link href="stylesheets/normalize-6197e73d.css" rel="stylesheet" /><link href="stylesheets/all-7da1815b.css" rel="stylesheet" /><link href="stylesheets/font-awesome.min-3fbc1e70.css" rel="stylesheet" /><link href="stylesheets/books-731736d0.css" rel="stylesheet" /><link href="stylesheets/dnd-f1012ae1.css" rel="stylesheet" />
-        <!-- <script src="javascripts/all-da39a3ee.js"></script> -->
-    </head>
-
-    <body id="content" class="project-ideas">
-        <header>
-            <a href="/"><i class="fa fa-home"></i> ifdown.net</a>
-        </header>
-        <h1>Bored? Here&#39;s some project ideas</h1>
+<h1>Bored? Here&#39;s some project ideas</h1>
 
 <h2>Coding</h2>
 
@@ -63,6 +48,3 @@ immediately obvious, nor are common patterns like mocking/stubbing. Write a
 series of articles outlining some approaches for writing tests/testable
 code in rust.</p></li>
 </ul>
-
-    </body>
-</html>

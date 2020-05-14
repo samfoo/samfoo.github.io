@@ -1,19 +1,4 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Sam Gibson</title>
-
-        <link href="stylesheets/normalize-6197e73d.css" rel="stylesheet" /><link href="stylesheets/all-7da1815b.css" rel="stylesheet" /><link href="stylesheets/font-awesome.min-3fbc1e70.css" rel="stylesheet" /><link href="stylesheets/books-731736d0.css" rel="stylesheet" /><link href="stylesheets/dnd-f1012ae1.css" rel="stylesheet" />
-        <!-- <script src="javascripts/all-da39a3ee.js"></script> -->
-    </head>
-
-    <body id="content" class="x2020-goals">
-        <header>
-            <a href="/"><i class="fa fa-home"></i> ifdown.net</a>
-        </header>
-        <h1>Goals for 2020</h1>
+<h1>Goals for 2020</h1>
 
 <h2>Vision</h2>
 
@@ -44,6 +29,3 @@ reddit or hackernews.</li>
 <ul>
 <li>[ ] Do some kind of art (any kind) at least 2 times per month.</li>
 </ul>
-
-    </body>
-</html>
