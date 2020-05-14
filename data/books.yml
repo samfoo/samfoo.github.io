@@ -1576,3 +1576,27 @@ books:
                 views at the end, and ultimately an unsatisfying description of
                 how technology makes us more polarised - i.e. very "boomer"
                 centric.
+
+    - asin: B0043M6712
+      date: 2020-05-12
+      title: "The Last Wish"
+      author: Andrzej Sapkowski
+      type: fiction
+      review: |
+                I'd resisted these books for years, thinking they were just
+                fan-fiction-style garbage. I couldn't have been more wrong.
+                This is one of my favourite fantasy books I've read in ages.
+                Interesting ton, and I ultimately love low-magic worlds so
+                much. Pretty keen to read more in the series.
+
+    - asin: B076FTNNXN
+      date: 2020-05-14
+      title: "Exactly: How PRecision Engineers Created the Modern World"
+      author: Simon Winchester
+      type: nonfiction
+      review: |
+                Ultimately unsatisfying. A lot of stories about precision
+                engineering, but never enough meat to keep me interested. I
+                went into the book hoping to get a richer understanding of,
+                e.g. "how was the first screw made" and was ultimately
+                disappointed.
