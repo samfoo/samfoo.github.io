@@ -8,8 +8,9 @@
 ## Experience
 
 ### [Optiver Asia Pacific](http://optiver.com) (Australia)
-#### Research Team Lead: Japan Markets: Execution Speed &amp; Success - 2018 to Present
-#### IT Team Lead: Japan Markets: Execution Speed &amp; Success (Delta 1) - 2017 to 2018
+#### Head of Execution Research - 2019 to Present
+#### Research Team Lead: Japan Markets: Execution Speed &amp; Success - 2018 to 2019
+#### IT Team Lead: Japan Markets - 2017 to 2018
 #### Software Engineer: Core Platforms &amp; Risk - 2016
 
 ### [ThoughtWorks](http://thoughworks.com) (Australia, India, South Africa, New Zealand)
