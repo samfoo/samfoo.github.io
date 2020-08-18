@@ -1611,3 +1611,29 @@ books:
                 reading some spy novels. This one is more of a "Sherlock
                 Holmes" vibe, but a good start. So many mid-century
                 idiosyncrasies.
+
+    - asin: B00540QR7Q
+      date: 2020-06-16
+      title: "The Alloy of Law"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Good combination of Sherlock and action. Fun read.
+
+    - asin: B00R697CGS
+      date: 2020-07-16
+      title: "Shadows of Self"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Same as Alloy. Fun to read, fun characters, but too much like a
+                screenplay in some spots.
+
+    - asin: B00R697BC8
+      date: 2020-08-16
+      title: "The Bands of Mourning"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Not the greatest "conclusion" to me. Pretty dumb to setup the
+                mystery for yet another book.
