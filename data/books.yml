@@ -1637,3 +1637,12 @@ books:
       review: |
                 Not the greatest "conclusion" to me. Pretty dumb to setup the
                 mystery for yet another book.
+
+    - asin: B08CGP9TJ7
+      date: 2020-12-28
+      title: "Ready Player Two"
+      author: Ernest Cline
+      type: fiction
+      review: |
+                SBC for the end of the year. Such a terrible book. I couldn't
+                tell if it was parody or not.
