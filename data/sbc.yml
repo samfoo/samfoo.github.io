@@ -113,3 +113,23 @@ meetings:
         - cover: https://images-na.ssl-images-amazon.com/images/P/B00513DGES.01.LZZZZZZZ.jpg
           title: The Crystal Star - Star Wars Legends
           author: Vonda McIntyre
+
+    - date: 2020-10-22
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Michael Thompson
+      books:
+        - cover: https://images-na.ssl-images-amazon.com/images/P/B075HY5NPF.01.LZZZZZZZ.jpg
+          title: Hope Never Dies
+          author: Andrew Shaffer
+
+    - date: 2021-01-02
+      attendees:
+        - Sam Gibson
+        - Scott Robinson
+        - Michael Thompson
+      books:
+        - cover: https://images-na.ssl-images-amazon.com/images/P/B08BYWH6CS.01.LZZZZZZZ.jpg
+          title: Ready Player Two
+          author: Ernest Cline
