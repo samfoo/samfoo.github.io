@@ -1646,3 +1646,24 @@ books:
       review: |
                 SBC for the end of the year. Such a terrible book. I couldn't
                 tell if it was parody or not.
+
+    - asin: B0826NKZHR
+      date: 2021-02-28
+      title: "Rhythm of War"
+      author: Brandon Sanderson
+      type: fiction
+      review: |
+                Stormlight Chronicles are just dragging on. Over a thousand
+                pages, but I just didn't care about anything until about
+                halfway through.
+
+    - asin: B00Q1HZMCW
+      date: 2021-05-01
+      title: "Debt: The First 5,000 Years"
+      author: David Graeber
+      type: nonfiction
+      review: |
+                Some interesting bits, but like many things written by
+                anthropologists, quite a long bow drawn from few examples.
+                Interesting, but I'm not sure I take much more away from it
+                than that.
