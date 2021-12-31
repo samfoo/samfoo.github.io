@@ -1667,3 +1667,47 @@ books:
                 anthropologists, quite a long bow drawn from few examples.
                 Interesting, but I'm not sure I take much more away from it
                 than that.
+
+    - asin: B003E20ZRY
+      date: 2021-04-01
+      title: "Liar's Poker"
+      author: Michael Lewis
+      type: nonfiction
+      review: |
+                Fun view of "greed"-era Wall Street.
+
+    - asin: B01MQGRV2R
+      date: 2021-08-01
+      title: "Horus Rising"
+      author: Dan Abnett
+      type: fiction
+      review: |
+                Obvious shame that I'm reading 40k novels. This is what the
+                pandemic has done to me.
+
+                The action sequences are silly, but I do enjoy the political
+                machinations.
+
+    - asin: B01N90FH0Z
+      date: 2021-09-01
+      title: "False Gods"
+      author: Graham McNeill
+      type: fiction
+      review: |
+                See above.
+
+    - asin: B01MQJHF7R
+      date: 2021-10-01
+      title: "Galaxy in Flames"
+      author: Ben Counter
+      type: fiction
+      review: |
+                See above.
+
+    - asin: B01N75PTCX
+      date: 2021-12-31
+      title: "The Flight of the Eisenstein"
+      author: James Swallow
+      type: fiction
+      review: |
+                See above.
