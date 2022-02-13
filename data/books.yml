@@ -1711,3 +1711,51 @@ books:
       type: fiction
       review: |
                 See above.
+
+    - asin: B005MJFA2W
+      date: 2022-01-31
+      title: "Thinking Fast and Slow"
+      author: Daniel Kahneman
+      type: nonfiction
+      review: |
+                Lots of interesting takes in this book. There are some areas
+                where I think he classes decisions as irrational (e.g. around
+                risk taking on EV for single events) when they are actually
+                rational in risk-weighted terms (i.e. some sharpe ratio type of
+                measure).
+
+                Things that may be irrational in an iterated scenario may be
+                perfectly rational in a once-offscenario (e.g. accepting $90
+                guaranteed instead of a 95% chance of $100). The second is a
+                better trade if you can make it repeatedly, but by risk ratio
+                the first is a better trade once-off.
+
+    - asin: B08MQ7ZHQT
+      date: 2022-02-10
+      title: "Leviathan Falls"
+      author: James S. A. Corey
+      type: fiction
+      review: |
+                As a finale to the series, overall I found it pretty
+                disappointing. The book feels like all the problems of the
+                other books, but without the best bits.
+
+                The first half really dragged on without any direction and the
+                characters just felt like they were bouncing from one vignette
+                to the next.
+
+                The second half kickstarts a plot, but on the whole it just
+                doesn't feel engaging or interesting the way the other books
+                did.
+
+    - asin: B08FFJS3YW
+      date: 2022-02-13
+      title: "Project Hail Mary"
+      author: Andy Weir
+      type: fiction
+      review: |
+                Such a great book. Better than The Martian in basically every
+                way. Only towards the very end did I think it was dragging on a
+                bit.
+
+                One of my favourite hard sci-fi books in ages.
