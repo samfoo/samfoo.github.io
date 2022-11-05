@@ -1759,3 +1759,58 @@ books:
                 bit.
 
                 One of my favourite hard sci-fi books in ages.
+
+    - asin: B00B7NPRY8
+      date: 2022-05-01
+      title: "Dune"
+      author: Frank Herbert
+      type: fiction
+      review: |
+                Re-read from decades ago. The new movie inspired me to come
+                back to it, and I enjoyed it way more than I expected to.
+
+    - asin: B0079XPUOW
+      date: 2022-09-29
+      title: "Redshirts"
+      author: John Scalzi
+      type: fiction
+      review: |
+                Not a good book. Was expecting more based on the
+                recommendations (and the Hugo Award) but it was underwhelming.
+
+                No character building, the characters are literally NPCs. The
+                plot is a weird love letter to... Hollywood producers? There's
+                no real sci-fi and the core conceit is a time paradox that
+                (admittedly with self-awareness) is just handwaved away.
+
+    - asin: B08HLPZY6X
+      date: 2022-10-10
+      title: "Shards of Earth"
+      author: Adrian Tchaikovsky
+      type: fiction
+      review: |
+                Cool series start. Lots of potential from the characters to the
+                world-building.
+
+    - asin: B09FJPJLH6
+      date: 2022-11-05
+      title: "Eyes of the Void"
+      author: Adrian Tchaikovsky
+      type: fiction
+      review: |
+                Really poor second showing in a series I was pretty excited
+                about. I was struggling to finish by about 70% of the way
+                through.
+
+                The first book did a good job setting up the characters, the
+                world, etc. And this book does exactly... nothing with them.
+
+                It also commits so many tropes that I nearly quit on that basis
+                alone.
+
+                * Mustache twirling villains that repeatedly show up and always
+                  manage to get away.
+                * Unambiguously good and bad sides.
+                * Making characters so ultra-strong and intimidating and then
+                  having to make EVEN MORE ultra strong and intimidating
+                  characters so there's an actual threat.
