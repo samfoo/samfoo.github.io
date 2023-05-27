@@ -79,3 +79,15 @@ that you really can't figure out what's going on."
 bridges, beg in the streets and steal loaves of bread."
 
 <div class="attrib">- Anatole France</div>
+
+"We must make our freedom by cutting holes in the fabric of this reality, by
+forging new realities which will, in turn, fashion us. Putting yourself in new
+situations constantly is the only way to ensure that you make your decisions
+unencumbered by the inertia of habit, custom, law, or prejudice—and it is up to
+you to create these situations"
+
+"Freedom only exists in the moment of revolution. And those moments are not as
+rare as you think. Change, revolutionary change, is going on constantly and
+everywhere—and everyone plays a part in it, consciously or not"
+
+<div class="attrib">- Crimethinc collective</div>
