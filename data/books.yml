@@ -1890,3 +1890,42 @@ books:
                 One of the worst books I've ever read. I DNF'd around 30%
                 through. I can't understand how this has such good critical
                 acclaim.
+
+    - asin: B08KYHC6QV
+      date: 2023-08-20
+      title: "Capitalism and Freedom"
+      author: Milton Friedman
+      type: nonfiction
+      review: |
+                Really hard to read this. Friedman's intellectualism is so void
+                of rigour I struggled to take away something thought provoking.
+
+
+    - asin: B0C5DNW987
+      date: 2023-09-01
+      title: "Going Infinite: The Rise and Fall of a New Tycoon"
+      author: Michael Lewis
+      type: nonfiction
+      review: |
+                Lewis is a hack. This might as well be a love letter to SBF.
+                Irresponsible misrepresentation of a scam artist and industry.
+                I had low expectations and this somehow was worse than I
+                expected.
+
+    - asin: B0089EMLGK
+      date: 2023-10-01
+      title: "Blind Man's Bluff: The Untold Story Of American Submarine Espionage"
+      author: Sherry Sontag, Christopher Drew, Annette Lawrence Drew
+      type: nonfiction
+      review: |
+                Short stories on submarining in the cold war. Loved it.
+
+    - asin: B09Y45ZW6N
+      date: 2024-03-01
+      title: "Pirate Enlightenment, or the Real Libertalia"
+      author: David Graeber
+      type: nonfiction
+      review: |
+                Not exactly what I was expecting. More ethnographic on the
+                people of Madagascar than on any kind of Libertalia or
+                proto-anarcho-organising.
