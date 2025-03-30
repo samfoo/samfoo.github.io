@@ -5,8 +5,16 @@
 
         <title><%= current_page.data.title || "Sam Gibson" %></title>
 
-        <%= stylesheet_link_tag "normalize", "all", "font-awesome.min", "books", "dnd" %>
-        <!-- <%= javascript_include_tag  "all" %> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <%= stylesheet_link_tag "normalize", "all", "font-awesome.min", "books", "dnd", "nanogallery2.min", "nanogallery2.woff.min" %>
+        <%= javascript_include_tag  "all",
+                                    "jquery.nanogallery2.core.min.js",
+                                    "jquery.nanogallery2.data_flickr.min.js",
+                                    "jquery.nanogallery2.data_google3.min.js",
+                                    "jquery.nanogallery2.data_nano_photos_provider2.min.js",
+                                    "jquery.nanogallery2.js",
+                                    "jquery.nanogallery2.min.js" %>
     </head>
 
     <body id="content" class="<%= page_classes %>">

@@ -1,0 +1,10 @@
+<h1>Warhammer 40,000 Kill Team: Mandrakes</h1>
+<div id="killtream-mandrakes" data-nanogallery2>
+
+<% Dir.glob('source/images/minis/killteam-mandrakes/*.jpg') do |img| %>
+  <a href="/images/minis/killteam-mandrakes/<%= File.basename(img) %>" data-ngthumb="/images/minis/killteam-mandrakes/<%= File.basename(img, ".jpg") %>.jpg">
+    <%= File.basename(img, ".jpg") %>
+  </a>
+<% end %>
+
+</div>
