@@ -1,0 +1,17 @@
+<h1>Warhammer 40,000 Space Wolves</h1>
+<div id="space-wolves" data-nanogallery2="{
+    'thumbnailDisplayTransition': 'scaleDown',
+    'thumbnailBorderHorizontalv1': 0,
+    'thumbnailBorderVerticalv1': 0,
+    'viewerToolbar': { 'display': true },
+    'thumbnailHoverEffect2': 'scale120'
+}">
+
+<% Dir.glob('source/images/minis/space-wolves/*.jpg') do |img| %>
+  <a href="/images/minis/space-wolves/<%= File.basename(img) %>" data-ngthumb="/images/minis/space-wolves/<%= File.basename(img, ".jpg") %>.png">
+    <%= File.basename(img, ".jpg") %>
+  </a>
+<% end %>
+
+</div>
+
