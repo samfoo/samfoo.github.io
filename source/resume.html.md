@@ -7,8 +7,9 @@
 
 ## Experience
 
-### [Optiver Asia Pacific](http://optiver.com) (Australia)
-#### Head of Execution Research - 2019 to Present
+### [Optiver](http://optiver.com) (Australia, USA)
+#### Head of Execution Research - Options (NA) - 2024 to Present
+#### Head of Execution Research (APAC) - 2019 to 2024
 #### Research Team Lead: Japan Markets: Execution Speed &amp; Success - 2018 to 2019
 #### IT Team Lead: Japan Markets - 2017 to 2018
 #### Software Engineer: Core Platforms &amp; Risk - 2016
@@ -87,4 +88,8 @@
 
 ## Interests
 
-Surfing, cycling, canyoning, BJJ, travel, and general all-around adventure.
+#### Current interests:
+Cycling, warhammer miniature painting, and fighting games.
+
+#### Past interests:
+Surfing, canyoning, BJJ (black belt in 2018), travel, and general all-around adventure.
