@@ -1,0 +1,389 @@
+---
+title: Health & Fitness
+layout: layout
+---
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+
+<style>
+  .health-updated {
+    color: gray;
+    font-size: 12px;
+    font-family: monospace;
+    margin-bottom: 24px;
+  }
+
+  .health-summary {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  .health-stat {
+    flex: 1;
+    min-width: 120px;
+    background: #263238;
+    border-radius: 6px;
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .health-stat .stat-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffc107;
+    line-height: 1.2;
+  }
+
+  .health-stat .stat-unit {
+    font-size: 13px;
+    color: #90a4ae;
+  }
+
+  .health-stat .stat-label {
+    font-size: 12px;
+    color: #90a4ae;
+    margin-top: 4px;
+  }
+
+  .chart-section {
+    margin-bottom: 40px;
+  }
+
+  .chart-section h2 {
+    border-bottom: 1px solid #37474f;
+    padding-bottom: 8px;
+  }
+
+  .chart-wrap {
+    position: relative;
+    height: 240px;
+  }
+
+  .chart-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .chart-row .chart-section {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  table.health {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  table.health th {
+    text-align: left;
+    color: #90a4ae;
+    font-weight: normal;
+    padding: 6px 8px;
+    border-bottom: 1px solid #37474f;
+  }
+
+  table.health td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #263238;
+  }
+
+  table.health tr:hover td {
+    background: #263238;
+  }
+
+  .activity-type {
+    display: inline-block;
+    font-size: 11px;
+    background: #37474f;
+    color: #90a4ae;
+    border-radius: 3px;
+    padding: 1px 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .no-data {
+    color: #546e7a;
+    font-style: italic;
+    padding: 24px 0;
+    text-align: center;
+  }
+</style>
+
+<h1>Health &amp; Fitness</h1>
+
+<%
+  garmin = data.garmin
+
+  # Sort data (should already be sorted, but be safe)
+  weight_data = (garmin.weight || []).sort_by { |r| r["date"] }
+  daily_data  = (garmin.daily_stats || []).sort_by { |r| r["date"] }
+  # Weekly running distance — last 12 weeks (Mon–Sun), newest first
+  runs = (garmin.activities || []).select { |a| a["type"] =~ /running|trail_running|treadmill_running/i }
+  weekly_runs = runs.group_by { |a|
+    d = Date.parse(a["date"])
+    (d - d.wday + 1).to_s  # Monday of that week (wday: 0=Sun)
+  }
+  # Build 12-week slots regardless of whether there were runs
+  twelve_weeks = (0..11).map { |i|
+    today = Date.today
+    mon = today - today.wday + 1 - (i * 7)
+    sun = mon + 6
+    week_runs = weekly_runs[mon.to_s] || []
+    total_km = week_runs.sum { |a| a["distance_km"] || 0 }
+    runs_count = week_runs.size
+    {
+      week_start: mon.to_s,
+      week_end:   sun.to_s,
+      total_km:   total_km.round(2),
+      runs:       runs_count,
+    }
+  }
+
+  # Summary: use most recent non-nil values
+  latest_weight  = weight_data.reverse.find { |r| r["weight_kg"] }
+  latest_stats   = daily_data.last
+  recent_steps   = daily_data.last(7).map { |r| r["steps"] }.compact
+  avg_steps_7d   = recent_steps.any? ? (recent_steps.sum / recent_steps.size).round : nil
+  recent_sleep   = daily_data.last(7).map { |r| r["sleep_score"] }.compact
+  avg_sleep_7d   = recent_sleep.any? ? (recent_sleep.sum / recent_sleep.size).round : nil
+  recent_rhr     = daily_data.last(7).map { |r| r["resting_hr"] }.compact
+  avg_rhr_7d     = recent_rhr.any? ? (recent_rhr.sum / recent_rhr.size).round : nil
+
+  # Chart datasets — keep it to last 60 days for readability
+  chart_daily  = daily_data.last(60)
+  chart_weight = weight_data.last(60)
+%>
+
+<% if garmin.last_updated %>
+  <p class="health-updated">Last synced: <%= garmin.last_updated %></p>
+<% else %>
+  <p class="no-data">No data yet — run <code>./scripts/garmin_sync.py</code> to populate.</p>
+<% end %>
+
+<!-- Summary strip -->
+<div class="health-summary">
+  <div class="health-stat">
+    <div class="stat-value"><%= latest_weight ? latest_weight["weight_kg"] : "—" %></div>
+    <div class="stat-unit">kg</div>
+    <div class="stat-label">Weight</div>
+  </div>
+  <div class="health-stat">
+    <div class="stat-value"><%= avg_steps_7d ? avg_steps_7d.to_s.reverse.scan(/\d{1,3}/).join(",").reverse : "—" %></div>
+    <div class="stat-unit">steps/day</div>
+    <div class="stat-label">7-day avg</div>
+  </div>
+  <div class="health-stat">
+    <div class="stat-value"><%= avg_rhr_7d || "—" %></div>
+    <div class="stat-unit">bpm</div>
+    <div class="stat-label">Resting HR</div>
+  </div>
+  <div class="health-stat">
+    <div class="stat-value"><%= avg_sleep_7d || "—" %></div>
+    <div class="stat-unit">/ 100</div>
+    <div class="stat-label">Sleep score</div>
+  </div>
+</div>
+
+<!-- Weight -->
+<div class="chart-section">
+  <h2>Weight</h2>
+  <div class="chart-wrap">
+    <canvas id="weightChart"></canvas>
+  </div>
+</div>
+
+<!-- Steps & Heart Rate -->
+<div class="chart-row">
+  <div class="chart-section">
+    <h2>Daily Steps</h2>
+    <div class="chart-wrap">
+      <canvas id="stepsChart"></canvas>
+    </div>
+  </div>
+  <div class="chart-section">
+    <h2>Resting Heart Rate</h2>
+    <div class="chart-wrap">
+      <canvas id="hrChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Sleep -->
+<div class="chart-section">
+  <h2>Sleep Score</h2>
+  <div class="chart-wrap">
+    <canvas id="sleepChart"></canvas>
+  </div>
+</div>
+
+<!-- Weekly running table -->
+<div class="chart-section">
+  <h2>Weekly Running</h2>
+  <table class="health">
+    <thead>
+      <tr>
+        <th>Week</th>
+        <th>Runs</th>
+        <th>Distance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% twelve_weeks.each do |w| %>
+        <tr>
+          <td><%= w[:week_start] %> – <%= w[:week_end] %></td>
+          <td><%= w[:runs] > 0 ? w[:runs] : "—" %></td>
+          <td><%= w[:total_km] > 0 ? "#{w[:total_km]} km" : "—" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<script>
+(function() {
+  // Shared Chart.js defaults
+  Chart.defaults.color = '#90a4ae';
+  Chart.defaults.borderColor = '#37474f';
+  Chart.defaults.font.family = 'inherit';
+
+  const ACCENT   = '#ffc107';
+  const ACCENT2  = '#4dd0e1';
+  const ACCENT3  = '#ef9a9a';
+  const GRID     = '#37474f';
+
+  function axisDefaults(extra) {
+    return Object.assign({
+      grid: { color: GRID },
+      ticks: { maxTicksLimit: 6, color: '#90a4ae' },
+    }, extra);
+  }
+
+  function tooltipDefaults() {
+    return {
+      backgroundColor: '#1c2c34',
+      titleColor: '#ffc107',
+      bodyColor: '#cfd8dc',
+      borderColor: '#37474f',
+      borderWidth: 1,
+    };
+  }
+
+  function lineDataset(label, data, color) {
+    return {
+      label,
+      data,
+      borderColor: color,
+      backgroundColor: color + '22',
+      fill: true,
+      tension: 0.3,
+      pointRadius: 2,
+      pointHoverRadius: 5,
+      borderWidth: 2,
+    };
+  }
+
+  function barDataset(label, data, color) {
+    return {
+      label,
+      data,
+      backgroundColor: color + 'bb',
+      borderColor: color,
+      borderWidth: 1,
+      borderRadius: 2,
+    };
+  }
+
+  // ---------- Weight ----------
+  const weightLabels = <%= chart_weight.map { |r| r["date"] }.to_json %>;
+  const weightVals   = <%= chart_weight.map { |r| r["weight_kg"] }.to_json %>;
+
+  if (weightLabels.length) {
+    new Chart(document.getElementById('weightChart'), {
+      type: 'line',
+      data: { labels: weightLabels, datasets: [lineDataset('Weight (kg)', weightVals, ACCENT)] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 6, color: '#90a4ae' } }),
+                  y: axisDefaults({ title: { display: true, text: 'kg', color: '#90a4ae' } }) },
+      },
+    });
+  }
+
+  // ---------- Steps ----------
+  const stepsLabels = <%= chart_daily.map { |r| r["date"] }.to_json %>;
+  const stepsVals   = <%= chart_daily.map { |r| r["steps"] }.to_json %>;
+  const stepGoal    = <%= (chart_daily.map { |r| r["step_goal"] }.compact.first || 10000).to_json %>;
+
+  if (stepsLabels.length) {
+    new Chart(document.getElementById('stepsChart'), {
+      type: 'bar',
+      data: {
+        labels: stepsLabels,
+        datasets: [
+          barDataset('Steps', stepsVals, ACCENT),
+          {
+            type: 'line',
+            label: 'Goal',
+            data: stepsLabels.map(() => stepGoal),
+            borderColor: '#546e7a',
+            borderDash: [4, 4],
+            borderWidth: 1,
+            pointRadius: 0,
+            fill: false,
+          },
+        ],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 8, color: '#90a4ae' } }),
+                  y: axisDefaults({ beginAtZero: true }) },
+      },
+    });
+  }
+
+  // ---------- Resting HR ----------
+  const hrLabels = <%= chart_daily.map { |r| r["date"] }.to_json %>;
+  const hrVals   = <%= chart_daily.map { |r| r["resting_hr"] }.to_json %>;
+
+  if (hrLabels.length && hrVals.some(v => v !== null)) {
+    new Chart(document.getElementById('hrChart'), {
+      type: 'line',
+      data: { labels: hrLabels, datasets: [lineDataset('Resting HR (bpm)', hrVals, ACCENT3)] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({}), y: axisDefaults({ title: { display: true, text: 'bpm', color: '#90a4ae' } }) },
+      },
+    });
+  }
+
+  // ---------- Sleep score ----------
+  const sleepLabels = <%= chart_daily.map { |r| r["date"] }.to_json %>;
+  const sleepVals   = <%= chart_daily.map { |r| r["sleep_score"] }.to_json %>;
+
+  if (sleepLabels.length && sleepVals.some(v => v !== null)) {
+    new Chart(document.getElementById('sleepChart'), {
+      type: 'bar',
+      data: {
+        labels: sleepLabels,
+        datasets: [barDataset('Sleep score', sleepVals, ACCENT2)],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 8, color: '#90a4ae' } }),
+                  y: axisDefaults({ beginAtZero: true, min: 0, max: 100,
+                     title: { display: true, text: 'score', color: '#90a4ae' } }) },
+      },
+    });
+  }
+})();
+</script>
