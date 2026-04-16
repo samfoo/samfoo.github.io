@@ -1,0 +1,17 @@
+<h1>Warhammer 40,000 Kill Team: Deathwatch</h1>
+<div id="killteam-deathwatch" data-nanogallery2="{
+    'thumbnailDisplayTransition': 'scaleDown',
+    'thumbnailBorderHorizontalv1': 0,
+    'thumbnailBorderVerticalv1': 0,
+    'viewerToolbar': { 'display': true },
+    'thumbnailHoverEffect2': 'scale120'
+}">
+
+<% Dir.glob('source/images/minis/killteam-deathwatch/*.jpg') do |img| %>
+  <a href="/images/minis/killteam-deathwatch/<%= File.basename(img) %>" data-ngthumb="/images/minis/killteam-deathwatch/<%= File.basename(img, ".jpg") %>.png">
+    <%= File.basename(img, ".jpg") %>
+  </a>
+<% end %>
+
+</div>
+
