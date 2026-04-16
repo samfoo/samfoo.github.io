@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Health & Fitness</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link href="stylesheets/normalize-87b4e351.css" rel="stylesheet" /><link href="stylesheets/all-40ef7cfe.css" rel="stylesheet" /><link href="stylesheets/font-awesome.min-05ea25bc.css" rel="stylesheet" /><link href="stylesheets/books-f7b4df3c.css" rel="stylesheet" /><link href="stylesheets/dnd-f8ae66ea.css" rel="stylesheet" /><link href="stylesheets/nanogallery2.min-3e619aca.css" rel="stylesheet" /><link href="stylesheets/nanogallery2.woff.min-a96f054a.css" rel="stylesheet" />
+        <script src="javascripts/all-d7c52391.js"></script><script src="javascripts/jquery.nanogallery2.core.min-7fa0ff93.js"></script><script src="javascripts/jquery.nanogallery2.data_flickr.min-fd829350.js"></script><script src="javascripts/jquery.nanogallery2.data_google3.min-282a0570.js"></script><script src="javascripts/jquery.nanogallery2.data_nano_photos_provider2.min-f6996015.js"></script><script src="javascripts/jquery.nanogallery2-aa1e52ec.js"></script><script src="javascripts/jquery.nanogallery2.min-bf261059.js"></script>
+    </head>
+
+    <body id="content" class="health">
+        <header>
+            <a href="/"><i class="fa fa-home"></i> ifdown.net</a>
+        </header>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+
+<style>
+  .health-updated {
+    color: gray;
+    font-size: 12px;
+    font-family: monospace;
+    margin-bottom: 24px;
+  }
+
+  .health-summary {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  .health-stat {
+    flex: 1;
+    min-width: 120px;
+    background: #263238;
+    border-radius: 6px;
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .health-stat .stat-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffc107;
+    line-height: 1.2;
+  }
+
+  .health-stat .stat-unit {
+    font-size: 13px;
+    color: #90a4ae;
+  }
+
+  .health-stat .stat-label {
+    font-size: 12px;
+    color: #90a4ae;
+    margin-top: 4px;
+  }
+
+  .chart-section {
+    margin-bottom: 40px;
+  }
+
+  .chart-section h2 {
+    border-bottom: 1px solid #37474f;
+    padding-bottom: 8px;
+  }
+
+  .chart-wrap {
+    position: relative;
+    height: 240px;
+  }
+
+  .chart-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .chart-row .chart-section {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  table.health {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  table.health th {
+    text-align: left;
+    color: #90a4ae;
+    font-weight: normal;
+    padding: 6px 8px;
+    border-bottom: 1px solid #37474f;
+  }
+
+  table.health td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #263238;
+  }
+
+  table.health tr:hover td {
+    background: #263238;
+  }
+
+  .activity-type {
+    display: inline-block;
+    font-size: 11px;
+    background: #37474f;
+    color: #90a4ae;
+    border-radius: 3px;
+    padding: 1px 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .no-data {
+    color: #546e7a;
+    font-style: italic;
+    padding: 24px 0;
+    text-align: center;
+  }
+</style>
+
+<h1>Health &amp; Fitness</h1>
+
+
+  <p class="health-updated">Last synced: 2026-04-15T19:55:19</p>
+
+<!-- Summary strip -->
+<div class="health-summary">
+  <div class="health-stat">
+    <div class="stat-value">91.36</div>
+    <div class="stat-unit">kg</div>
+    <div class="stat-label">Weight</div>
+  </div>
+  <div class="health-stat">
+    <div class="stat-value">7,766</div>
+    <div class="stat-unit">steps/day</div>
+    <div class="stat-label">7-day avg</div>
+  </div>
+  <div class="health-stat">
+    <div class="stat-value">55</div>
+    <div class="stat-unit">bpm</div>
+    <div class="stat-label">Resting HR</div>
+  </div>
+  <div class="health-stat">
+    <div class="stat-value">85</div>
+    <div class="stat-unit">/ 100</div>
+    <div class="stat-label">Sleep score</div>
+  </div>
+</div>
+
+<!-- Weight -->
+<div class="chart-section">
+  <h2>Weight</h2>
+  <div class="chart-wrap">
+    <canvas id="weightChart"></canvas>
+  </div>
+</div>
+
+<!-- Steps & Heart Rate -->
+<div class="chart-row">
+  <div class="chart-section">
+    <h2>Daily Steps</h2>
+    <div class="chart-wrap">
+      <canvas id="stepsChart"></canvas>
+    </div>
+  </div>
+  <div class="chart-section">
+    <h2>Resting Heart Rate</h2>
+    <div class="chart-wrap">
+      <canvas id="hrChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Sleep -->
+<div class="chart-section">
+  <h2>Sleep Score</h2>
+  <div class="chart-wrap">
+    <canvas id="sleepChart"></canvas>
+  </div>
+</div>
+
+<!-- Weekly running table -->
+<div class="chart-section">
+  <h2>Weekly Running</h2>
+  <table class="health">
+    <thead>
+      <tr>
+        <th>Week</th>
+        <th>Runs</th>
+        <th>Distance</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2026-04-13 – 2026-04-19</td>
+          <td>2</td>
+          <td>14.36 km</td>
+        </tr>
+        <tr>
+          <td>2026-04-06 – 2026-04-12</td>
+          <td>3</td>
+          <td>14.21 km</td>
+        </tr>
+        <tr>
+          <td>2026-03-30 – 2026-04-05</td>
+          <td>3</td>
+          <td>13.82 km</td>
+        </tr>
+        <tr>
+          <td>2026-03-23 – 2026-03-29</td>
+          <td>1</td>
+          <td>3.72 km</td>
+        </tr>
+        <tr>
+          <td>2026-03-16 – 2026-03-22</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>2026-03-09 – 2026-03-15</td>
+          <td>1</td>
+          <td>3.75 km</td>
+        </tr>
+        <tr>
+          <td>2026-03-02 – 2026-03-08</td>
+          <td>1</td>
+          <td>6.77 km</td>
+        </tr>
+        <tr>
+          <td>2026-02-23 – 2026-03-01</td>
+          <td>2</td>
+          <td>16.14 km</td>
+        </tr>
+        <tr>
+          <td>2026-02-16 – 2026-02-22</td>
+          <td>2</td>
+          <td>9.11 km</td>
+        </tr>
+        <tr>
+          <td>2026-02-09 – 2026-02-15</td>
+          <td>2</td>
+          <td>13.83 km</td>
+        </tr>
+        <tr>
+          <td>2026-02-02 – 2026-02-08</td>
+          <td>3</td>
+          <td>20.78 km</td>
+        </tr>
+        <tr>
+          <td>2026-01-26 – 2026-02-01</td>
+          <td>3</td>
+          <td>17.04 km</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+(function() {
+  // Shared Chart.js defaults
+  Chart.defaults.color = '#90a4ae';
+  Chart.defaults.borderColor = '#37474f';
+  Chart.defaults.font.family = 'inherit';
+
+  const ACCENT   = '#ffc107';
+  const ACCENT2  = '#4dd0e1';
+  const ACCENT3  = '#ef9a9a';
+  const GRID     = '#37474f';
+
+  function axisDefaults(extra) {
+    return Object.assign({
+      grid: { color: GRID },
+      ticks: { maxTicksLimit: 6, color: '#90a4ae' },
+    }, extra);
+  }
+
+  function tooltipDefaults() {
+    return {
+      backgroundColor: '#1c2c34',
+      titleColor: '#ffc107',
+      bodyColor: '#cfd8dc',
+      borderColor: '#37474f',
+      borderWidth: 1,
+    };
+  }
+
+  function lineDataset(label, data, color) {
+    return {
+      label,
+      data,
+      borderColor: color,
+      backgroundColor: color + '22',
+      fill: true,
+      tension: 0.3,
+      pointRadius: 2,
+      pointHoverRadius: 5,
+      borderWidth: 2,
+    };
+  }
+
+  function barDataset(label, data, color) {
+    return {
+      label,
+      data,
+      backgroundColor: color + 'bb',
+      borderColor: color,
+      borderWidth: 1,
+      borderRadius: 2,
+    };
+  }
+
+  // ---------- Weight ----------
+  const weightLabels = ["2026-04-15"];
+  const weightVals   = [91.36];
+
+  if (weightLabels.length) {
+    new Chart(document.getElementById('weightChart'), {
+      type: 'line',
+      data: { labels: weightLabels, datasets: [lineDataset('Weight (kg)', weightVals, ACCENT)] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 6, color: '#90a4ae' } }),
+                  y: axisDefaults({ title: { display: true, text: 'kg', color: '#90a4ae' } }) },
+      },
+    });
+  }
+
+  // ---------- Steps ----------
+  const stepsLabels = ["2026-02-15","2026-02-16","2026-02-17","2026-02-18","2026-02-19","2026-02-20","2026-02-21","2026-02-22","2026-02-23","2026-02-24","2026-02-25","2026-02-26","2026-02-27","2026-02-28","2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21","2026-03-22","2026-03-23","2026-03-24","2026-03-25","2026-03-26","2026-03-27","2026-03-28","2026-03-29","2026-03-30","2026-03-31","2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-06","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-13","2026-04-14","2026-04-15"];
+  const stepsVals   = [5699,3637,10366,4185,6206,6352,4783,11065,11621,5917,5394,6111,43,11866,11246,7050,13113,6226,14143,1483,null,null,11437,5091,5654,45,6024,6430,3353,4958,4593,null,null,null,null,2437,8615,null,9432,null,6912,null,2727,12114,5598,7451,6351,12462,9266,3732,6291,4376,3837,368,9819,5602,17441,438,12117,8581];
+  const stepGoal    = 5660;
+
+  if (stepsLabels.length) {
+    new Chart(document.getElementById('stepsChart'), {
+      type: 'bar',
+      data: {
+        labels: stepsLabels,
+        datasets: [
+          barDataset('Steps', stepsVals, ACCENT),
+          {
+            type: 'line',
+            label: 'Goal',
+            data: stepsLabels.map(() => stepGoal),
+            borderColor: '#546e7a',
+            borderDash: [4, 4],
+            borderWidth: 1,
+            pointRadius: 0,
+            fill: false,
+          },
+        ],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 8, color: '#90a4ae' } }),
+                  y: axisDefaults({ beginAtZero: true }) },
+      },
+    });
+  }
+
+  // ---------- Resting HR ----------
+  const hrLabels = ["2026-02-15","2026-02-16","2026-02-17","2026-02-18","2026-02-19","2026-02-20","2026-02-21","2026-02-22","2026-02-23","2026-02-24","2026-02-25","2026-02-26","2026-02-27","2026-02-28","2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21","2026-03-22","2026-03-23","2026-03-24","2026-03-25","2026-03-26","2026-03-27","2026-03-28","2026-03-29","2026-03-30","2026-03-31","2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-06","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-13","2026-04-14","2026-04-15"];
+  const hrVals   = [53,53,60,54,52,59,59,59,55,61,62,55,null,59,55,62,58,61,58,63,null,null,64,57,59,65,58,65,65,68,72,null,null,null,null,74,66,null,68,null,71,null,73,64,55,62,55,63,58,58,63,60,57,53,57,54,55,54,56,56];
+
+  if (hrLabels.length && hrVals.some(v => v !== null)) {
+    new Chart(document.getElementById('hrChart'), {
+      type: 'line',
+      data: { labels: hrLabels, datasets: [lineDataset('Resting HR (bpm)', hrVals, ACCENT3)] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({}), y: axisDefaults({ title: { display: true, text: 'bpm', color: '#90a4ae' } }) },
+      },
+    });
+  }
+
+  // ---------- Sleep score ----------
+  const sleepLabels = ["2026-02-15","2026-02-16","2026-02-17","2026-02-18","2026-02-19","2026-02-20","2026-02-21","2026-02-22","2026-02-23","2026-02-24","2026-02-25","2026-02-26","2026-02-27","2026-02-28","2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21","2026-03-22","2026-03-23","2026-03-24","2026-03-25","2026-03-26","2026-03-27","2026-03-28","2026-03-29","2026-03-30","2026-03-31","2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-06","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-13","2026-04-14","2026-04-15"];
+  const sleepVals   = [80,84,null,84,84,null,28,67,80,41,null,79,null,70,82,null,63,59,80,null,null,null,null,52,71,null,79,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,85,null,88,null,83,83,null,83,86,86,88,88,91,83,81,84];
+
+  if (sleepLabels.length && sleepVals.some(v => v !== null)) {
+    new Chart(document.getElementById('sleepChart'), {
+      type: 'bar',
+      data: {
+        labels: sleepLabels,
+        datasets: [barDataset('Sleep score', sleepVals, ACCENT2)],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 8, color: '#90a4ae' } }),
+                  y: axisDefaults({ beginAtZero: true, min: 0, max: 100,
+                     title: { display: true, text: 'score', color: '#90a4ae' } }) },
+      },
+    });
+  }
+})();
+</script>
+
+    </body>
+</html>
