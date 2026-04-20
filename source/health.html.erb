@@ -6,6 +6,28 @@ layout: layout
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 
 <style>
+  .fitness-age {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .fitness-age-value {
+    display: block;
+    font-size: 72px;
+    font-weight: bold;
+    color: #ffc107;
+    line-height: 1;
+  }
+
+  .fitness-age-label {
+    display: block;
+    font-size: 13px;
+    color: #90a4ae;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+  }
+
   .health-updated {
     color: gray;
     font-size: 12px;
@@ -157,13 +179,20 @@ layout: layout
 
   # Chart datasets — keep it to last 60 days for readability
   chart_daily  = daily_data.last(60)
-  chart_weight = weight_data.last(60)
+  chart_weight = weight_data
 %>
 
 <% if garmin.last_updated %>
   <p class="health-updated">Last synced: <%= garmin.last_updated %></p>
 <% else %>
   <p class="no-data">No data yet — run <code>./scripts/garmin_sync.py</code> to populate.</p>
+<% end %>
+
+<% if garmin.fitness_age %>
+<div class="fitness-age">
+  <span class="fitness-age-value"><%= garmin.fitness_age.round(2) %></span>
+  <span class="fitness-age-label">fitness age</span>
+</div>
 <% end %>
 
 <!-- Summary strip -->
@@ -300,18 +329,30 @@ layout: layout
   }
 
   // ---------- Weight ----------
-  const weightLabels = <%= chart_weight.map { |r| r["date"] }.to_json %>;
-  const weightVals   = <%= chart_weight.map { |r| r["weight_kg"] }.to_json %>;
+  const weightPoints = <%= chart_weight.map { |r| { x: r["date"], y: r["weight_kg"] } }.to_json %>;
 
-  if (weightLabels.length) {
+  if (weightPoints.length) {
     new Chart(document.getElementById('weightChart'), {
-      type: 'line',
-      data: { labels: weightLabels, datasets: [lineDataset('Weight (kg)', weightVals, ACCENT)] },
+      type: 'scatter',
+      data: {
+        datasets: [{
+          label: 'Weight (kg)',
+          data: weightPoints,
+          backgroundColor: ACCENT + 'cc',
+          pointRadius: 4,
+          pointHoverRadius: 6,
+        }],
+      },
       options: {
         responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
-        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 6, color: '#90a4ae' } }),
-                  y: axisDefaults({ title: { display: true, text: 'kg', color: '#90a4ae' } }) },
+        plugins: { legend: { display: false }, tooltip: { ...tooltipDefaults(),
+          callbacks: { label: ctx => `${ctx.parsed.y} kg` },
+        }},
+        scales: {
+          x: { ...axisDefaults({}), type: 'category',
+               ticks: { maxTicksLimit: 8, color: '#90a4ae' } },
+          y: axisDefaults({ title: { display: true, text: 'kg', color: '#90a4ae' } }),
+        },
       },
     });
   }
@@ -356,7 +397,7 @@ layout: layout
   if (hrLabels.length && hrVals.some(v => v !== null)) {
     new Chart(document.getElementById('hrChart'), {
       type: 'line',
-      data: { labels: hrLabels, datasets: [lineDataset('Resting HR (bpm)', hrVals, ACCENT3)] },
+      data: { labels: hrLabels, datasets: [{ ...lineDataset('Resting HR (bpm)', hrVals, ACCENT3), stepped: 'before', tension: 0, fill: false }] },
       options: {
         responsive: true, maintainAspectRatio: false,
         plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
@@ -366,15 +407,20 @@ layout: layout
   }
 
   // ---------- Sleep score ----------
-  const sleepLabels = <%= chart_daily.map { |r| r["date"] }.to_json %>;
-  const sleepVals   = <%= chart_daily.map { |r| r["sleep_score"] }.to_json %>;
+  const sleepLabels  = <%= chart_daily.map { |r| r["date"] }.to_json %>;
+  const sleepVals    = <%= chart_daily.map { |r| r["sleep_score"] }.to_json %>;
+  const sleepIsWeekend = <%= chart_daily.map { |r| d = Date.parse(r["date"]); d.saturday? || d.sunday? }.to_json %>;
+  const WEEKEND_COLOR  = '#ce93d8';
+  const sleepColors    = sleepIsWeekend.map(w => w ? WEEKEND_COLOR + 'bb' : ACCENT2 + 'bb');
+  const sleepBorders   = sleepIsWeekend.map(w => w ? WEEKEND_COLOR : ACCENT2);
 
   if (sleepLabels.length && sleepVals.some(v => v !== null)) {
     new Chart(document.getElementById('sleepChart'), {
       type: 'bar',
       data: {
         labels: sleepLabels,
-        datasets: [barDataset('Sleep score', sleepVals, ACCENT2)],
+        datasets: [{ ...barDataset('Sleep score', sleepVals, ACCENT2),
+          backgroundColor: sleepColors, borderColor: sleepBorders }],
       },
       options: {
         responsive: true, maintainAspectRatio: false,

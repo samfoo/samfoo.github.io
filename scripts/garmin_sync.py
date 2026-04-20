@@ -209,9 +209,18 @@ def main():
     print("Fetching activities …")
     activities = fetch_activities(api, args.days)
 
+    print("Fetching fitness age …")
+    fitness_age = None
+    try:
+        fa = api.get_fitnessage_data(end.isoformat())
+        fitness_age = fa.get("fitnessAge") or fa.get("fitnessage")
+    except Exception as e:
+        print(f"Warning: fitness age fetch failed: {e}", file=sys.stderr)
+
     payload = {
         "last_updated": datetime.now().isoformat(timespec="seconds"),
         "days": args.days,
+        "fitness_age": fitness_age,
         "weight": sorted(weight, key=lambda r: r["date"]),
         "daily_stats": sorted(daily, key=lambda r: r["date"]),
         "activities": sorted(activities, key=lambda r: r["date"], reverse=True),
