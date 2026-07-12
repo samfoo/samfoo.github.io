@@ -2,7 +2,7 @@
 # /// script
 # requires-python = ">=3.11"
 # dependencies = [
-#   "garminconnect>=0.2.19",
+#   "garminconnect>=0.3.6",
 # ]
 # ///
 """
@@ -55,21 +55,27 @@ def init_api() -> Garmin:
     email = os.getenv("GARMIN_EMAIL") or input("Garmin email: ")
     password = os.getenv("GARMIN_PASSWORD") or getpass("Garmin password: ")
 
+    def prompt_mfa() -> str:
+        return input("Garmin MFA code: ").strip()
+
     try:
-        api = Garmin(email, password)
+        # prompt_mfa is only invoked if Garmin challenges for a 2FA code.
+        api = Garmin(email, password, prompt_mfa=prompt_mfa)
         # Passing tokenstore here makes login() save tokens automatically after
         # a successful credential-based auth (no separate .dump() call needed).
         api.login(TOKENSTORE)
         print(f"Authenticated and saved tokens to {TOKENSTORE}")
         return api
-    except GarminConnectAuthenticationError as e:
+    except Exception as e:
         msg = str(e)
-        if "429" in msg:
+        if "429" in msg or "rate limit" in msg.lower():
             print(
-                "\nGarmin returned HTTP 429 (rate limited). "
-                "Wait a few minutes and try again.\n"
-                "Tip: once you authenticate successfully, tokens are cached and "
-                "this won't happen on subsequent runs.",
+                "\nGarmin returned HTTP 429 (IP rate limited). This is the most "
+                "common cause of 'auth not working' — it is NOT a bad password.\n"
+                "Wait 15-30 minutes (avoid rapid retries, which extend the "
+                "block) and try again.\n"
+                "Tip: once you authenticate successfully, tokens are cached at "
+                f"{TOKENSTORE} and subsequent runs skip login entirely.",
                 file=sys.stderr,
             )
         else:
@@ -96,11 +102,14 @@ def fetch_body_composition(api: Garmin, start: date, end: date) -> list[dict]:
             weight_g = entry.get("weight")
             muscle_g = entry.get("muscleMass")
             bone_g = entry.get("boneMass")
+            # The scale occasionally logs weight but fails the body-fat
+            # reading, storing 0.0 — treat that as missing.
+            body_fat = entry.get("bodyFat")
             records.append({
                 "date": cal_date,
                 "weight_kg": round(weight_g / 1000, 2) if weight_g else None,
                 "bmi": entry.get("bmi"),
-                "body_fat_pct": entry.get("bodyFatPercent"),
+                "body_fat_pct": body_fat if body_fat else None,
                 "muscle_mass_kg": round(muscle_g / 1000, 2) if muscle_g else None,
                 "bone_mass_kg": round(bone_g / 1000, 2) if bone_g else None,
             })
@@ -132,6 +141,16 @@ def fetch_daily_stats(api: Garmin, start: date, end: date) -> list[dict]:
             )
         except Exception as e:
             print(f"Warning: stats fetch failed for {day_str}: {e}", file=sys.stderr)
+
+        # VO2 max — the dominant input to Garmin's fitness age.
+        # get_max_metrics returns a list; the "generic" (running) VO2 max
+        # lives under vo2MaxPreciseValue (falls back to vo2MaxValue).
+        try:
+            mm = api.get_max_metrics(day_str)
+            generic = (mm[0].get("generic") if mm else None) or {}
+            record["vo2max"] = generic.get("vo2MaxPreciseValue") or generic.get("vo2MaxValue")
+        except Exception as e:
+            print(f"Warning: vo2max fetch failed for {day_str}: {e}", file=sys.stderr)
 
         # Sleep
         try:

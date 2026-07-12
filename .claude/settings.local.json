@@ -1,7 +1,29 @@
 {
   "permissions": {
     "allow": [
-      "Bash(uv run *)"
+      "Bash(uv run *)",
+      "WebSearch",
+      "Bash(pip show *)",
+      "Bash(python3 -c \"import garminconnect; print\\(garminconnect.__version__\\)\")",
+      "Bash(timeout 60 ./scripts/garmin_sync.py --days 1)",
+      "Bash(./scripts/garmin_sync.py --days 1)",
+      "Bash(uv pip *)",
+      "Bash(chmod +x /Users/sam/projects/samfoo.github.io/scripts/garmin_debug.py)",
+      "Bash(python3 *)",
+      "Bash(timeout 300 ./scripts/garmin_sync.py --days 90)",
+      "Bash(./scripts/garmin_sync.py --days 90)",
+      "Bash(chmod +x /private/tmp/claude-501/-Users-sam-projects-samfoo-github-io/4d208fa3-46ae-4e32-ac4d-524f40a23884/scratchpad/probe.py)",
+      "Bash(/private/tmp/claude-501/-Users-sam-projects-samfoo-github-io/4d208fa3-46ae-4e32-ac4d-524f40a23884/scratchpad/probe.py)",
+      "Bash(bundle exec *)",
+      "Bash(./scripts/training_log.py --week 2026-W28)",
+      "Bash(sed -n '/## Garmin summary/,/## Sunday/p' training/logs/2026-W28.md)",
+      "Bash(./scripts/training_log.py --week 2026-W29)",
+      "Bash(ruby -v)",
+      "Bash(bundle -v)",
+      "Bash(git check-ignore *)",
+      "Bash(git -C /Users/sam/projects/samfoo.github.io rev-parse --show-toplevel)",
+      "Bash(git -C /Users/sam/projects/samfoo.github.io ls-files '*.html')",
+      "Bash(THOR_SILENCE_DEPRECATION=1 bundle exec middleman build)"
     ]
   }
 }

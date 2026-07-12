@@ -1,0 +1,112 @@
+---
+title: Training
+layout: layout
+---
+<% content_for :head do %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<% end %>
+
+<style>
+  .training { line-height: 1.5; }
+  .training .tnav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 10px 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    z-index: 5;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .training .tnav a { margin-right: 16px; }
+  .training .updated { color: gray; font-size: 12px; font-family: monospace; }
+
+  .training .doc {
+    border-top: 3px solid #f0f0f0;
+    margin-top: 36px;
+    padding-top: 4px;
+  }
+
+  /* Tables scroll horizontally on narrow (gym phone) screens instead of overflowing. */
+  .training table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    margin: 12px 0;
+  }
+  .training th, .training td {
+    border: 1px solid #ddd;
+    padding: 6px 9px;
+    text-align: left;
+    vertical-align: top;
+  }
+  .training th { background: #f5f5f5; }
+  .training tr:nth-child(even) td { background: #fafafa; }
+
+  .training code {
+    background: #f2f2f2;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .training pre {
+    background: #f5f5f5;
+    padding: 10px 12px;
+    overflow-x: auto;
+    border-radius: 4px;
+  }
+  .training pre code { background: none; padding: 0; }
+  .training blockquote {
+    border-left: 4px solid #ffc107;
+    margin: 16px 0;
+    padding: 6px 14px;
+    background: #fffdf5;
+    color: #555;
+  }
+  .training details {
+    margin: 8px 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 4px 10px;
+  }
+  .training summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #0288d1;
+    padding: 4px 0;
+  }
+</style>
+
+<%
+  # All logged weeks, newest first — no implicit "current week" selection.
+  weeks = training_week_logs.map { |p| File.basename(p, ".md") }.sort.reverse
+%>
+
+<div class="training" id="top">
+  <h1>Training</h1>
+  <p class="updated"><%= weeks.size %> week<%= "s" unless weeks.size == 1 %> logged</p>
+
+  <nav class="tnav">
+    <a href="#weeks">Weeks</a>
+    <a href="#strength">Lifts</a>
+  </nav>
+
+  <section id="weeks">
+    <% if weeks.empty? %>
+      <p>No weekly logs yet.</p>
+    <% else %>
+      <% weeks.each do |wk| %>
+        <div class="doc"><%= render_training("logs/#{wk}.md") %></div>
+      <% end %>
+    <% end %>
+  </section>
+
+  <section id="strength" class="doc">
+    <%= render_training("strength.md") %>
+  </section>
+</div>

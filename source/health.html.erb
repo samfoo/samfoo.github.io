@@ -169,6 +169,7 @@ layout: layout
 
   # Summary: use most recent non-nil values
   latest_weight  = weight_data.reverse.find { |r| r["weight_kg"] }
+  latest_body_fat = weight_data.reverse.find { |r| r["body_fat_pct"] }
   latest_stats   = daily_data.last
   recent_steps   = daily_data.last(7).map { |r| r["steps"] }.compact
   avg_steps_7d   = recent_steps.any? ? (recent_steps.sum / recent_steps.size).round : nil
@@ -176,6 +177,7 @@ layout: layout
   avg_sleep_7d   = recent_sleep.any? ? (recent_sleep.sum / recent_sleep.size).round : nil
   recent_rhr     = daily_data.last(7).map { |r| r["resting_hr"] }.compact
   avg_rhr_7d     = recent_rhr.any? ? (recent_rhr.sum / recent_rhr.size).round : nil
+  latest_vo2max  = daily_data.reverse.map { |r| r["vo2max"] }.find { |v| v }
 
   # Chart datasets — keep it to last 60 days for readability
   chart_daily  = daily_data.last(60)
@@ -213,17 +215,35 @@ layout: layout
     <div class="stat-label">Resting HR</div>
   </div>
   <div class="health-stat">
+    <div class="stat-value"><%= latest_vo2max ? latest_vo2max.round(1) : "—" %></div>
+    <div class="stat-unit">mL/kg/min</div>
+    <div class="stat-label">VO₂ Max</div>
+  </div>
+  <div class="health-stat">
+    <div class="stat-value"><%= latest_body_fat ? latest_body_fat["body_fat_pct"].round(1) : "—" %></div>
+    <div class="stat-unit">%</div>
+    <div class="stat-label">Body Fat</div>
+  </div>
+  <div class="health-stat">
     <div class="stat-value"><%= avg_sleep_7d || "—" %></div>
     <div class="stat-unit">/ 100</div>
     <div class="stat-label">Sleep score</div>
   </div>
 </div>
 
-<!-- Weight -->
-<div class="chart-section">
-  <h2>Weight</h2>
-  <div class="chart-wrap">
-    <canvas id="weightChart"></canvas>
+<!-- Weight & Body Fat -->
+<div class="chart-row">
+  <div class="chart-section">
+    <h2>Weight</h2>
+    <div class="chart-wrap">
+      <canvas id="weightChart"></canvas>
+    </div>
+  </div>
+  <div class="chart-section">
+    <h2>Body Fat</h2>
+    <div class="chart-wrap">
+      <canvas id="bodyFatChart"></canvas>
+    </div>
   </div>
 </div>
 
@@ -240,6 +260,14 @@ layout: layout
     <div class="chart-wrap">
       <canvas id="hrChart"></canvas>
     </div>
+  </div>
+</div>
+
+<!-- VO2 Max -->
+<div class="chart-section">
+  <h2>VO₂ Max</h2>
+  <div class="chart-wrap">
+    <canvas id="vo2Chart"></canvas>
   </div>
 </div>
 
@@ -357,6 +385,35 @@ layout: layout
     });
   }
 
+  // ---------- Body Fat ----------
+  const bodyFatPoints = <%= chart_weight.select { |r| r["body_fat_pct"] }.map { |r| { x: r["date"], y: r["body_fat_pct"].round(1) } }.to_json %>;
+
+  if (bodyFatPoints.length) {
+    new Chart(document.getElementById('bodyFatChart'), {
+      type: 'scatter',
+      data: {
+        datasets: [{
+          label: 'Body Fat (%)',
+          data: bodyFatPoints,
+          backgroundColor: ACCENT3 + 'cc',
+          pointRadius: 4,
+          pointHoverRadius: 6,
+        }],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { ...tooltipDefaults(),
+          callbacks: { label: ctx => `${ctx.parsed.y}%` },
+        }},
+        scales: {
+          x: { ...axisDefaults({}), type: 'category',
+               ticks: { maxTicksLimit: 8, color: '#90a4ae' } },
+          y: axisDefaults({ title: { display: true, text: '%', color: '#90a4ae' } }),
+        },
+      },
+    });
+  }
+
   // ---------- Steps ----------
   const stepsLabels = <%= chart_daily.map { |r| r["date"] }.to_json %>;
   const stepsVals   = <%= chart_daily.map { |r| r["steps"] }.to_json %>;
@@ -402,6 +459,23 @@ layout: layout
         responsive: true, maintainAspectRatio: false,
         plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
         scales: { x: axisDefaults({}), y: axisDefaults({ title: { display: true, text: 'bpm', color: '#90a4ae' } }) },
+      },
+    });
+  }
+
+  // ---------- VO2 Max ----------
+  const vo2Labels = <%= chart_daily.map { |r| r["date"] }.to_json %>;
+  const vo2Vals   = <%= chart_daily.map { |r| r["vo2max"] }.to_json %>;
+
+  if (vo2Labels.length && vo2Vals.some(v => v !== null)) {
+    new Chart(document.getElementById('vo2Chart'), {
+      type: 'line',
+      data: { labels: vo2Labels, datasets: [{ ...lineDataset('VO₂ Max (mL/kg/min)', vo2Vals, ACCENT), spanGaps: true }] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
+        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 8, color: '#90a4ae' } }),
+                  y: axisDefaults({ title: { display: true, text: 'mL/kg/min', color: '#90a4ae' } }) },
       },
     });
   }
