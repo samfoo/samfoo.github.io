@@ -85,7 +85,7 @@ column whenever you add load; keep the history in the weekly logs. Units: kg.
 
 | Lift | Baseline (wk1, 5 @ RPE7) | Current working weight | Notes |
 |------|--------------------------|------------------------|-------|
-| Back squat | _tbd (W29)_ | _tbd_ | not done W28 — establish next week |
+| Back squat | 90 | 90 | W29: 1×5 @ 90 (baseline, ~RPE7). Aim 3×6–8 @ 90 next lift week (W31) |
 | Deadlift | 100 | 100 | W28: 2×6 then 2×4 @ 100 (reps dropped → likely ~RPE8+). Hold 100, aim 3×6 clean |
 | Bench press | 60 | 60 | W28: 60 for 7/6/5/3 (fatigued across sets). Hold 60, aim 3×6–8 all sets |
 | Overhead press | 30 | 30 | W28: 4×6 @ 30, looked solid |
