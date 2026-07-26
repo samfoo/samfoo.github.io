@@ -45,6 +45,26 @@ Garmin only sees the runs (and any activity you record on the watch). **Strength
 are logged by hand** in the week file — or just tell me in a session what you did and I'll write
 it up.
 
+## Pushing the week's run workout to the watch
+
+The week's **quality run** (strides / tempo / intervals / time-trial) can be pushed to Garmin as a
+structured workout, so the watch guides you through each interval with HR targets instead of you
+building it by hand:
+
+```sh
+./scripts/garmin_workout.py                        # upload current ISO week's quality workout
+./scripts/garmin_workout.py --week 2026-W32
+./scripts/garmin_workout.py --week 2026-W32 --schedule 2026-08-05   # pin it to a date
+./scripts/garmin_workout.py --week 2026-W32 --dry-run               # preview, no upload
+./scripts/garmin_workout.py --list                 # what's on Garmin
+./scripts/garmin_workout.py --week 2026-W32 --delete
+```
+
+Re-running a week replaces its previous copy (idempotent). On the watch: **Menu → Training →
+Workouts** (or it appears on its scheduled day). The per-week sessions live in `workout_catalog()`
+in the script and mirror the "quality run" column of [`plan.md`](plan.md); easy and long runs stay
+unstructured (just run at the right HR). HR zones come from [`principles.md`](principles.md).
+
 ## Two ways to keep it current
 
 - **Automatic:** `training_log.py` fills the run rows from Garmin; you add lifts/climbs by hand.

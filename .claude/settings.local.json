@@ -23,7 +23,11 @@
       "Bash(git check-ignore *)",
       "Bash(git -C /Users/sam/projects/samfoo.github.io rev-parse --show-toplevel)",
       "Bash(git -C /Users/sam/projects/samfoo.github.io ls-files '*.html')",
-      "Bash(THOR_SILENCE_DEPRECATION=1 bundle exec middleman build)"
+      "Bash(THOR_SILENCE_DEPRECATION=1 bundle exec middleman build)",
+      "Bash(./scripts/training_log.py --week 2026-W30)",
+      "Bash(sed -n '/## Garmin summary/,/## Sunday/p' training/logs/2026-W30.md)",
+      "Bash(./scripts/garmin_workout.py --week 2026-W31 --schedule 2026-07-29)",
+      "Bash(./scripts/garmin_workout.py --list)"
     ]
   }
 }
