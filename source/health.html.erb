@@ -247,12 +247,12 @@ layout: layout
   </div>
 </div>
 
-<!-- Steps & Heart Rate -->
+<!-- Sleep Score & Resting Heart Rate -->
 <div class="chart-row">
   <div class="chart-section">
-    <h2>Daily Steps</h2>
+    <h2>Sleep Score</h2>
     <div class="chart-wrap">
-      <canvas id="stepsChart"></canvas>
+      <canvas id="sleepChart"></canvas>
     </div>
   </div>
   <div class="chart-section">
@@ -271,11 +271,11 @@ layout: layout
   </div>
 </div>
 
-<!-- Sleep -->
+<!-- Daily Steps -->
 <div class="chart-section">
-  <h2>Sleep Score</h2>
+  <h2>Daily Steps</h2>
   <div class="chart-wrap">
-    <canvas id="sleepChart"></canvas>
+    <canvas id="stepsChart"></canvas>
   </div>
 </div>
 
@@ -448,17 +448,30 @@ layout: layout
   }
 
   // ---------- Resting HR ----------
-  const hrLabels = <%= chart_daily.map { |r| r["date"] }.to_json %>;
-  const hrVals   = <%= chart_daily.map { |r| r["resting_hr"] }.to_json %>;
+  const hrPoints = <%= chart_daily.select { |r| r["resting_hr"] }.map { |r| { x: r["date"], y: r["resting_hr"] } }.to_json %>;
 
-  if (hrLabels.length && hrVals.some(v => v !== null)) {
+  if (hrPoints.length) {
     new Chart(document.getElementById('hrChart'), {
-      type: 'line',
-      data: { labels: hrLabels, datasets: [{ ...lineDataset('Resting HR (bpm)', hrVals, ACCENT3), stepped: 'before', tension: 0, fill: false }] },
+      type: 'scatter',
+      data: {
+        datasets: [{
+          label: 'Resting HR (bpm)',
+          data: hrPoints,
+          backgroundColor: ACCENT3 + 'cc',
+          pointRadius: 4,
+          pointHoverRadius: 6,
+        }],
+      },
       options: {
         responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
-        scales: { x: axisDefaults({}), y: axisDefaults({ title: { display: true, text: 'bpm', color: '#90a4ae' } }) },
+        plugins: { legend: { display: false }, tooltip: { ...tooltipDefaults(),
+          callbacks: { label: ctx => `${ctx.parsed.y} bpm` },
+        }},
+        scales: {
+          x: { ...axisDefaults({}), type: 'category',
+               ticks: { maxTicksLimit: 8, color: '#90a4ae' } },
+          y: axisDefaults({ title: { display: true, text: 'bpm', color: '#90a4ae' } }),
+        },
       },
     });
   }
@@ -481,27 +494,36 @@ layout: layout
   }
 
   // ---------- Sleep score ----------
-  const sleepLabels  = <%= chart_daily.map { |r| r["date"] }.to_json %>;
-  const sleepVals    = <%= chart_daily.map { |r| r["sleep_score"] }.to_json %>;
-  const sleepIsWeekend = <%= chart_daily.map { |r| d = Date.parse(r["date"]); d.saturday? || d.sunday? }.to_json %>;
+  const sleepPoints    = <%= chart_daily.select { |r| r["sleep_score"] }.map { |r| { x: r["date"], y: r["sleep_score"] } }.to_json %>;
+  const sleepIsWeekend = <%= chart_daily.select { |r| r["sleep_score"] }.map { |r| d = Date.parse(r["date"]); d.saturday? || d.sunday? }.to_json %>;
   const WEEKEND_COLOR  = '#ce93d8';
-  const sleepColors    = sleepIsWeekend.map(w => w ? WEEKEND_COLOR + 'bb' : ACCENT2 + 'bb');
+  const sleepColors    = sleepIsWeekend.map(w => w ? WEEKEND_COLOR + 'cc' : ACCENT2 + 'cc');
   const sleepBorders   = sleepIsWeekend.map(w => w ? WEEKEND_COLOR : ACCENT2);
 
-  if (sleepLabels.length && sleepVals.some(v => v !== null)) {
+  if (sleepPoints.length) {
     new Chart(document.getElementById('sleepChart'), {
-      type: 'bar',
+      type: 'scatter',
       data: {
-        labels: sleepLabels,
-        datasets: [{ ...barDataset('Sleep score', sleepVals, ACCENT2),
-          backgroundColor: sleepColors, borderColor: sleepBorders }],
+        datasets: [{
+          label: 'Sleep score',
+          data: sleepPoints,
+          backgroundColor: sleepColors,
+          borderColor: sleepBorders,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+        }],
       },
       options: {
         responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: tooltipDefaults() },
-        scales: { x: axisDefaults({ ticks: { maxTicksLimit: 8, color: '#90a4ae' } }),
-                  y: axisDefaults({ beginAtZero: true, min: 0, max: 100,
-                     title: { display: true, text: 'score', color: '#90a4ae' } }) },
+        plugins: { legend: { display: false }, tooltip: { ...tooltipDefaults(),
+          callbacks: { label: ctx => `${ctx.parsed.y} / 100` },
+        }},
+        scales: {
+          x: { ...axisDefaults({}), type: 'category',
+               ticks: { maxTicksLimit: 8, color: '#90a4ae' } },
+          y: axisDefaults({ beginAtZero: true, min: 0, max: 100,
+             title: { display: true, text: 'score', color: '#90a4ae' } }),
+        },
       },
     });
   }
