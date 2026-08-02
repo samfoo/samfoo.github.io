@@ -27,7 +27,11 @@
       "Bash(./scripts/training_log.py --week 2026-W30)",
       "Bash(sed -n '/## Garmin summary/,/## Sunday/p' training/logs/2026-W30.md)",
       "Bash(./scripts/garmin_workout.py --week 2026-W31 --schedule 2026-07-29)",
-      "Bash(./scripts/garmin_workout.py --list)"
+      "Bash(./scripts/garmin_workout.py --list)",
+      "Bash(./scripts/training_log.py --week 2026-W31)",
+      "Bash(sed -n '/## Garmin summary/,/## Sunday/p' training/logs/2026-W31.md)",
+      "Bash(./scripts/garmin_workout.py --week 2026-W32 --schedule 2026-08-05)",
+      "Bash(./scripts/garmin_workout.py --week 2026-W31 --delete)"
     ]
   }
 }

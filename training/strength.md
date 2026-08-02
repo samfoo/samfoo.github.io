@@ -9,28 +9,38 @@ Everything is **RPE-capped at 8** because we're in a deficit (see [`principles.m
 We keep intensity respectable (heavier, lower reps as the blocks progress) so strength is preserved,
 with just enough volume to drive a little growth.
 
+**Lean-day structure (revised W32):** the **two main barbell lifts are the required work** on each
+day — everything after them is *one optional accessory*, done only if time allows. This keeps a lift
+day to ~40–45 min. The pulling / grip / core that the old accessory list covered is now covered by
+**climbing**, which counts as a real session (see below) — so on weeks you climb, just do the two
+mains and skip the accessory guilt-free.
+
 ## Day A — Squat + Bench focus
 
 | Order | Lift | Sets × reps | Notes |
 |-------|------|-------------|-------|
 | A1 | **Back squat** | per block (see table) | the priority lift — do it first, fresh |
-| A2 | **Bench press** | per block | |
-| A3 | Romanian deadlift | 3 × 8–10 @ RPE7 | posterior chain, primes Day B's deadlift |
-| A4 | Chest-supported / DB row | 3 × 8–12 | pull volume for balance |
-| A5 | Core — hanging leg raise or ab wheel | 3 × 8–12 | |
+| A2 | **Bench press** | per block | second priority — full rest, don't rush |
+| A3 | *optional:* Romanian deadlift **or** DB row | 2–3 × 8–12 | pick one if time; skip on a climbing week |
 
 ## Day B — Deadlift focus
 
 | Order | Lift | Sets × reps | Notes |
 |-------|------|-------------|-------|
 | B1 | **Deadlift** | per block (see table) | priority lift — fresh. Fewer total sets than squat; it's taxing |
-| B2 | **Overhead press** (or incline bench) | per block | vertical/inclined press; alternate with bench emphasis |
-| B3 | Front squat or walking lunge | 3 × 8–10 | quad + second squat-pattern exposure |
-| B4 | Pull-up (weighted if easy) | 3 × AMRAP-1 | keep 1 rep in reserve; great for climbing carryover |
-| B5 | Core — plank / pallof press | 3 × 30–45 s | anti-rotation, protects the back |
+| B2 | **Overhead press** (or incline bench) | per block | vertical/inclined press |
+| B3 | *optional:* pull-up **or** walking lunge | 2–3 sets | pick one if time; skip on a climbing week |
 
-Time-boxing to ~50 min: superset the accessories (A3+A4, B3+B4) with ~60–90 s rest. Take fuller
-rest (2–3 min) on the main lifts only.
+Take full rest (2–3 min) on the two main lifts — they're the point. The optional accessory is a
+bonus, not a requirement; if the session's tight, two quality main lifts *is* a complete day.
+
+## Climbing — a real session, not an extra
+
+Climbing covers most of what the old accessories did — vertical/horizontal pulling, grip, and a big
+core demand — plus it's anaerobic work you enjoy, so it earns a proper slot (1–2×/week, ~45–75 min).
+On a week you climb, the Day A/B optional accessories are redundant: **do the two barbell mains, then
+climb, and call the pulling/core done.** It does *not* replace the barbell mains (squat/deadlift/bench
+are goal #3), so keep both lift days — climbing sits alongside them, not instead of them.
 
 ## Progression by block
 
@@ -85,11 +95,11 @@ column whenever you add load; keep the history in the weekly logs. Units: kg.
 
 | Lift | Baseline (wk1, 5 @ RPE7) | Current working weight | Notes |
 |------|--------------------------|------------------------|-------|
-| Back squat | 90 | 90 | W29: 1×5 @ 90 (baseline, ~RPE7). Aim 3×6–8 @ 90 next lift week (W31) |
-| Deadlift | 100 | 100 | W28: 2×6 then 2×4 @ 100 (reps dropped → likely ~RPE8+). Hold 100, aim 3×6 clean |
-| Bench press | 60 | 60 | W28: 60 for 7/6/5/3 (fatigued across sets). Hold 60, aim 3×6–8 all sets |
-| Overhead press | 30 | 30 | W28: 4×6 @ 30, looked solid |
-| Front squat | _tbd_ | _tbd_ | |
+| Back squat | 90 | 90 → **95** | W31: clean 3×6 @ 90. Start Block 2 at 95 for 4×4–6; hold if it feels ≥RPE8 |
+| Deadlift | 100 | 100 → **105** | W31: clean 3×6 @ 100. Start Block 2 at 105 for 4×4–6 |
+| Bench press | 60 | 60 → **62.5** | W31: 3×7 @ 60 (hit top of range) → earned the bump to 62.5 |
+| Overhead press | 30 | 30 → **32.5** | W31: solid 4×6 @ 30 → bump to 32.5 |
+| Front squat | _tbd_ | _tbd_ | now an *optional* accessory — establish only if you use it |
 
 ### Re-test (week 13)
 
