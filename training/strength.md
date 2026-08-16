@@ -95,10 +95,10 @@ column whenever you add load; keep the history in the weekly logs. Units: kg.
 
 | Lift | Baseline (wk1, 5 @ RPE7) | Current working weight | Notes |
 |------|--------------------------|------------------------|-------|
-| Back squat | 90 | **95** | W32 missed (work) — still targeting 95 for 4×4–6 in W33; #1 priority |
-| Deadlift | 100 | **105** | W32: 3×4 @ 105 (bottom of range). Hold 105, chase 4×6 before adding |
-| Bench press | 60 | **62.5** | W31 earned the bump; W32 missed → confirm 62.5 for 4×4–6 in W33 |
-| Overhead press | 30 | 40 (cap) | W32: 4×4 @ 40 (no 32.5 plates). Big jump from 30 — treat 40 as a top, earn 4×6 before adding |
+| Back squat | 90 | **95** | W33: clean 4×5 @ 95. Solid — bump to 100 when Block 3 starts (W36) |
+| Deadlift | 100 | **105** | W33: clean 4×5 @ 105. On track — bump to 110 for Block 3 |
+| Bench press | 60 | **62.5** | W33: clean 4×5 @ 62.5. Bump to 65 for Block 3 |
+| Overhead press | 30 | **40** | W33: clean 4×5 @ 40 — the big jump held. Now a real working weight, not a cap |
 | Front squat | _tbd_ | _tbd_ | now an *optional* accessory — establish only if you use it |
 
 ### Re-test (week 13)

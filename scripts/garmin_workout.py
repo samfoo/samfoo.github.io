@@ -78,7 +78,7 @@ def workout_catalog():
         "2026-W31": ("Strides 6×20s",          [warmup(), repeat(6, [stride(20), jog(60)]), cooldown()]),
         "2026-W32": ("Tempo 2×8min Z3",        [warmup(), repeat(2, [tempo(8), jog(120)]), cooldown()]),
         "2026-W33": ("Intervals 5×3min Z4",    [warmup(12), repeat(5, [vo2(3), jog(120)]), cooldown()]),
-        "2026-W34": ("Tempo 20min Z3",         [warmup(), tempo(20), cooldown()]),
+        "2026-W34": ("Deload strides 4×20s",   [warmup(), repeat(4, [stride(20), jog(90)]), cooldown()]),
         "2026-W35": ("Deload strides 4×20s",   [warmup(), repeat(4, [stride(20), jog(90)]), cooldown()]),
         "2026-W36": ("Intervals 6×3min Z4",    [warmup(12), repeat(6, [vo2(3), jog(120)]), cooldown()]),
         "2026-W37": ("Tempo 2×10min Z3",       [warmup(), repeat(2, [tempo(10), jog(120)]), cooldown()]),
