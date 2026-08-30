@@ -1,0 +1,16 @@
+<h1>Warhammer 40,000 Kill Team: Spectre Squad</h1>
+<div id="killteam-spectre-squad" data-nanogallery2="{
+    'thumbnailDisplayTransition': 'scaleDown',
+    'thumbnailBorderHorizontalv1': 0,
+    'thumbnailBorderVerticalv1': 0,
+    'viewerToolbar': { 'display': true },
+    'thumbnailHoverEffect2': 'scale120'
+}">
+
+<% Dir.glob('source/images/minis/killteam-spectre-squad/*.jpg') do |img| %>
+  <a href="/images/minis/killteam-spectre-squad/<%= File.basename(img) %>" data-ngthumb="/images/minis/killteam-spectre-squad/<%= File.basename(img, ".jpg") %>.png">
+    <%= File.basename(img, ".jpg").gsub(/(?<=[a-z])(?=[A-Z])/, ' ') %>
+  </a>
+<% end %>
+
+</div>
