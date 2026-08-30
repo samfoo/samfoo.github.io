@@ -56,6 +56,33 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* Data-table styling, opt-in per page (books/bookclub use tables for layout and
+   must stay unstyled). Add the page's body class to this selector list. */
+body.coffee table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+body.coffee th, body.coffee td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+body.coffee th {
+    background: #f5f5f5;
+    white-space: nowrap;
+}
+
+body.coffee tr:nth-child(even) td {
+    background: #fafafa;
+}
+
 ul.links {
     list-style-type: none;
     margin: 0;

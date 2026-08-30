@@ -17,7 +17,10 @@ Encoding.default_external = Encoding::UTF_8
 set :encoding, "utf-8"
 
 set :markdown_engine, :redcarpet
-# set :markdown, input: "GFM"
+# Redcarpet defaults tables/fenced code off — turn them on for source/*.md pages.
+set :markdown, tables: true, fenced_code_blocks: true, autolink: true,
+               strikethrough: true, no_intra_emphasis: true,
+               space_after_headers: true
 
 # The training log / plan markdown lives outside source/ (repo root) so it isn't
 # published by default; the /training page renders it in at build time.
