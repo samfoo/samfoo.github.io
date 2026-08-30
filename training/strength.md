@@ -95,10 +95,10 @@ column whenever you add load; keep the history in the weekly logs. Units: kg.
 
 | Lift | Baseline (wk1, 5 @ RPE7) | Current working weight | Notes |
 |------|--------------------------|------------------------|-------|
-| Back squat | 90 | 95 → **100** | Block 3 (W35): bump to 100 for 4×3–5. Hold if ≥RPE8 (deficit) |
-| Deadlift | 100 | 105 → **110** | Block 3 (W35): bump to 110 for 3–4×3–5 |
-| Bench press | 60 | 62.5 → **65** | Block 3 (W35): bump to 65 for 4×3–5 |
-| Overhead press | 30 | **40** | W33: clean 4×5 @ 40 (big jump held). Hold 40 in Block 3, earn the reps before 42.5 |
+| Back squat | 90 | **100** | W35: clean 4×4 @ 100. Hold for another clean week, then eye 102.5 |
+| Deadlift | 100 | **110** | W35: clean 4×4 @ 110. Hold; chase 4×5 before adding |
+| Bench press | 60 | **65** | W35: clean 4×4 @ 65. Hold; earn 4×5–6 then nudge |
+| Overhead press | 30 | **40** | W35: 4×4 @ 40 again. Solid; earn 4×6 before 42.5 |
 | Front squat | _tbd_ | _tbd_ | now an *optional* accessory — establish only if you use it |
 
 ### Re-test (week 13)
