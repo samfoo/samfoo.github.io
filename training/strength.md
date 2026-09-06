@@ -96,7 +96,7 @@ column whenever you add load; keep the history in the weekly logs. Units: kg.
 | Lift | Baseline (wk1, 5 @ RPE7) | Current working weight | Notes |
 |------|--------------------------|------------------------|-------|
 | Back squat | 90 | **100** | W36: 4×5 @ 100 (+1 rep vs W35). Top of range → bump to 102.5 next lift week |
-| Deadlift | 100 | **110** | W35: clean 4×4 @ 110 (W36 logged 100 — treat as typo unless told otherwise). Chase 4×5 |
+| Deadlift | 100 | **110** | W35 & W36: clean 4×4 @ 110. Chase 4×5 before adding |
 | Bench press | 60 | **65** | W36: 4×5 @ 65 (+1 rep). Nearly there → 67.5 once 4×5–6 is comfortable |
 | Overhead press | 30 | **40** | W36: 3×6+1×4 @ 40 — one more session earns 42.5 |
 | Front squat | _tbd_ | _tbd_ | now an *optional* accessory — establish only if you use it |
