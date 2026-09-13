@@ -1,24 +1,8 @@
 {
-  "last_updated": "2026-09-06T14:07:17",
+  "last_updated": "2026-09-13T15:52:53",
   "days": 90,
-  "fitness_age": 38.36159206733388,
+  "fitness_age": 39.23903630792071,
   "weight": [
-    {
-      "date": "2026-06-09",
-      "weight_kg": 87.52,
-      "bmi": 25.600000381469727,
-      "body_fat_pct": 23.0,
-      "muscle_mass_kg": 34.77,
-      "bone_mass_kg": 5.13
-    },
-    {
-      "date": "2026-06-11",
-      "weight_kg": 87.6,
-      "bmi": 25.600000381469727,
-      "body_fat_pct": null,
-      "muscle_mass_kg": null,
-      "bone_mass_kg": null
-    },
     {
       "date": "2026-06-22",
       "weight_kg": 88.88,
@@ -498,100 +482,57 @@
       "body_fat_pct": 22.3,
       "muscle_mass_kg": 33.79,
       "bone_mass_kg": 4.86
+    },
+    {
+      "date": "2026-09-07",
+      "weight_kg": 83.74,
+      "bmi": 24.5,
+      "body_fat_pct": 22.2,
+      "muscle_mass_kg": 33.75,
+      "bone_mass_kg": 4.86
+    },
+    {
+      "date": "2026-09-08",
+      "weight_kg": 83.95,
+      "bmi": 24.5,
+      "body_fat_pct": 22.3,
+      "muscle_mass_kg": 33.8,
+      "bone_mass_kg": 4.86
+    },
+    {
+      "date": "2026-09-09",
+      "weight_kg": 83.97,
+      "bmi": 24.5,
+      "body_fat_pct": 21.9,
+      "muscle_mass_kg": 33.81,
+      "bone_mass_kg": 4.9
+    },
+    {
+      "date": "2026-09-10",
+      "weight_kg": 84.63,
+      "bmi": 24.700000762939453,
+      "body_fat_pct": 21.7,
+      "muscle_mass_kg": 33.97,
+      "bone_mass_kg": 4.98
+    },
+    {
+      "date": "2026-09-11",
+      "weight_kg": 84.01,
+      "bmi": 24.5,
+      "body_fat_pct": 22.3,
+      "muscle_mass_kg": 33.82,
+      "bone_mass_kg": 4.87
+    },
+    {
+      "date": "2026-09-12",
+      "weight_kg": 83.65,
+      "bmi": 24.399999618530273,
+      "body_fat_pct": 22.2,
+      "muscle_mass_kg": 33.73,
+      "bone_mass_kg": 4.85
     }
   ],
   "daily_stats": [
-    {
-      "date": "2026-06-09",
-      "steps": 6966,
-      "step_goal": 8450,
-      "calories": 2515.0,
-      "active_calories": 300.0,
-      "avg_hr": null,
-      "resting_hr": 56,
-      "intensity_minutes": 11,
-      "vo2max": null,
-      "sleep_hours": 7.97,
-      "sleep_score": 77
-    },
-    {
-      "date": "2026-06-10",
-      "steps": 8256,
-      "step_goal": 8310,
-      "calories": 2685.0,
-      "active_calories": 470.0,
-      "avg_hr": null,
-      "resting_hr": 60,
-      "intensity_minutes": 38,
-      "vo2max": 48.3,
-      "sleep_hours": null,
-      "sleep_score": null
-    },
-    {
-      "date": "2026-06-11",
-      "steps": 4020,
-      "step_goal": 8300,
-      "calories": 2382.0,
-      "active_calories": 166.0,
-      "avg_hr": null,
-      "resting_hr": 56,
-      "intensity_minutes": 9,
-      "vo2max": null,
-      "sleep_hours": 8.88,
-      "sleep_score": 68
-    },
-    {
-      "date": "2026-06-12",
-      "steps": 4849,
-      "step_goal": 7450,
-      "calories": 2330.0,
-      "active_calories": 114.0,
-      "avg_hr": null,
-      "resting_hr": 54,
-      "intensity_minutes": 0,
-      "vo2max": null,
-      "sleep_hours": 7.52,
-      "sleep_score": 82
-    },
-    {
-      "date": "2026-06-13",
-      "steps": 6247,
-      "step_goal": 6930,
-      "calories": 2449.0,
-      "active_calories": 141.0,
-      "avg_hr": null,
-      "resting_hr": 60,
-      "intensity_minutes": 0,
-      "vo2max": null,
-      "sleep_hours": null,
-      "sleep_score": null
-    },
-    {
-      "date": "2026-06-14",
-      "steps": 4236,
-      "step_goal": 6800,
-      "calories": 2293.0,
-      "active_calories": 77.0,
-      "avg_hr": null,
-      "resting_hr": 59,
-      "intensity_minutes": 0,
-      "vo2max": null,
-      "sleep_hours": null,
-      "sleep_score": null
-    },
-    {
-      "date": "2026-06-15",
-      "steps": 8730,
-      "step_goal": 5660,
-      "calories": 2392.0,
-      "active_calories": 176.0,
-      "avg_hr": null,
-      "resting_hr": 53,
-      "intensity_minutes": 0,
-      "vo2max": null,
-      "sleep_hours": 7.78,
-      "sleep_score": 83
-    },
     {
       "date": "2026-06-16",
       "steps": 12405,
@@ -1660,19 +1601,120 @@
     },
     {
       "date": "2026-09-06",
-      "steps": 55,
+      "steps": 6127,
       "step_goal": 10850,
-      "calories": 698.0,
-      "active_calories": 0.0,
+      "calories": 2282.0,
+      "active_calories": 111.0,
       "avg_hr": null,
       "resting_hr": 54,
       "intensity_minutes": 0,
       "vo2max": null,
       "sleep_hours": 8.88,
       "sleep_score": 80
+    },
+    {
+      "date": "2026-09-07",
+      "steps": 7473,
+      "step_goal": 9910,
+      "calories": 2392.0,
+      "active_calories": 223.0,
+      "avg_hr": null,
+      "resting_hr": 54,
+      "intensity_minutes": 0,
+      "vo2max": null,
+      "sleep_hours": 8.15,
+      "sleep_score": 78
+    },
+    {
+      "date": "2026-09-08",
+      "steps": 12052,
+      "step_goal": 9430,
+      "calories": 2806.0,
+      "active_calories": 635.0,
+      "avg_hr": null,
+      "resting_hr": 53,
+      "intensity_minutes": 86,
+      "vo2max": 48.2,
+      "sleep_hours": 8.73,
+      "sleep_score": 84
+    },
+    {
+      "date": "2026-09-09",
+      "steps": 265,
+      "step_goal": 9700,
+      "calories": 2176.0,
+      "active_calories": 4.0,
+      "avg_hr": null,
+      "resting_hr": 57,
+      "intensity_minutes": 0,
+      "vo2max": null,
+      "sleep_hours": null,
+      "sleep_score": null
+    },
+    {
+      "date": "2026-09-10",
+      "steps": 9193,
+      "step_goal": 9700,
+      "calories": 2387.0,
+      "active_calories": 207.0,
+      "avg_hr": null,
+      "resting_hr": 52,
+      "intensity_minutes": 0,
+      "vo2max": null,
+      "sleep_hours": 8.35,
+      "sleep_score": 78
+    },
+    {
+      "date": "2026-09-11",
+      "steps": 8974,
+      "step_goal": 9600,
+      "calories": 2386.0,
+      "active_calories": 214.0,
+      "avg_hr": null,
+      "resting_hr": 54,
+      "intensity_minutes": 0,
+      "vo2max": null,
+      "sleep_hours": 8.15,
+      "sleep_score": 68
+    },
+    {
+      "date": "2026-09-12",
+      "steps": 7131,
+      "step_goal": 9480,
+      "calories": 2355.0,
+      "active_calories": 186.0,
+      "avg_hr": null,
+      "resting_hr": 58,
+      "intensity_minutes": 0,
+      "vo2max": null,
+      "sleep_hours": null,
+      "sleep_score": null
+    },
+    {
+      "date": "2026-09-13",
+      "steps": 2901,
+      "step_goal": 9010,
+      "calories": 1425.0,
+      "active_calories": 71.0,
+      "avg_hr": null,
+      "resting_hr": 54,
+      "intensity_minutes": 0,
+      "vo2max": null,
+      "sleep_hours": 7.6,
+      "sleep_score": 83
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-08",
+      "name": "Chicago Running",
+      "type": "running",
+      "distance_km": 6.12,
+      "duration_min": 39.6,
+      "avg_hr": 145.0,
+      "calories": 512.0,
+      "avg_speed_kph": 9.3
+    },
     {
       "date": "2026-09-05",
       "name": "Chicago Road Cycling",
@@ -2012,26 +2054,6 @@
       "avg_hr": 113.0,
       "calories": 609.0,
       "avg_speed_kph": 4.3
-    },
-    {
-      "date": "2026-06-10",
-      "name": "Chicago Running",
-      "type": "running",
-      "distance_km": 2.73,
-      "duration_min": 17.0,
-      "avg_hr": 138.0,
-      "calories": 231.0,
-      "avg_speed_kph": 9.7
-    },
-    {
-      "date": "2026-06-08",
-      "name": "Chicago Running",
-      "type": "running",
-      "distance_km": 7.04,
-      "duration_min": 43.0,
-      "avg_hr": 142.0,
-      "calories": 604.0,
-      "avg_speed_kph": 9.8
     }
   ]
 }
