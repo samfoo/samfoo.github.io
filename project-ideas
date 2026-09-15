@@ -1,0 +1,50 @@
+<h1>Bored? Here&#39;s some project ideas</h1>
+
+<h2>Coding</h2>
+
+<ul>
+<li><p>IRC client that doesn&#39;t blow</p>
+
+<p>IRC clients are largely crap and don&#39;t generally have features that I
+actually care about. A client based on electron that has a UI similar to
+Slack or HipChat would greatly improve my IRC experience.</p>
+
+<ul>
+<li>Support for inline images and link previews</li>
+<li>Support for emoji&#39;s</li>
+<li>Less noise more signal (e.g. <code>samfoo (samfoo@moz-baii8t.dsl.ncf.ca)
+joined the channel</code> - who cares!?)</li>
+</ul></li>
+<li><p>Babushka re-written in go</p>
+
+<p>Better portability, easier to setup, learn go.</p></li>
+<li><p><a href="http://github.com/samfoo/oxidize">Assertions / Expectations in Rust that aren&#39;t crap</a></p>
+
+<p>Assertions in rust aren&#39;t great, write a library that does something like
+AssertJ or Hamcrest or Chai.</p>
+
+<p>Current status: Needs better error messages, needs more types of
+assertions, needs documentation for what exists, needs to be publicised.</p></li>
+<li><p>&quot;Google Alerts&quot; for Australian legislation</p>
+
+<p>Subscribe to words that you&#39;d like to be alerted to when legislation goes
+in front of the house or senate. Get email alerts when bills that have that
+language get added.</p></li>
+<li><p>Finish the <a href="http://www.canyons.io">canyons.io</a> website, and start doing trip
+reports there.</p>
+
+<p>There&#39;s still a ton of features that I&#39;d like to complete and get out
+there. Probably makes sense to put together a trello board and do some
+simple wireframes.</p></li>
+</ul>
+
+<h2>Writing</h2>
+
+<ul>
+<li><p>The Rust Testing Guide</p>
+
+<p>Rust testing is a bit of a black art. Dependency injection isn&#39;t
+immediately obvious, nor are common patterns like mocking/stubbing. Write a
+series of articles outlining some approaches for writing tests/testable
+code in rust.</p></li>
+</ul>
