@@ -95,7 +95,7 @@ column whenever you add load; keep the history in the weekly logs. Units: kg.
 
 | Lift | Baseline (wk1, 5 @ RPE7) | Current working weight | Notes |
 |------|--------------------------|------------------------|-------|
-| Back squat | 90 | **100** | W36: 4×5 @ 100 (+1 rep vs W35). Top of range → bump to 102.5 next lift week |
+| Back squat | 90 | **105** | W38: clean 3×5 @ 105 (nudged up even in a hold week). Strong — retest from here in W40 |
 | Deadlift | 100 | **110** | W35 & W36: clean 4×4 @ 110. Chase 4×5 before adding |
 | Bench press | 60 | **65** | W36: 4×5 @ 65 (+1 rep). Nearly there → 67.5 once 4×5–6 is comfortable |
 | Overhead press | 30 | **40** | W36: 3×6+1×4 @ 40 — one more session earns 42.5 |

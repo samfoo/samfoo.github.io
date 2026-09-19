@@ -83,7 +83,7 @@ def workout_catalog():
         "2026-W36": ("Intervals 6×3min Z4",    [warmup(12), repeat(6, [vo2(3), jog(120)]), cooldown()]),
         "2026-W37": ("Tempo 2×8min Z3",        [warmup(), repeat(2, [tempo(8), jog(120)]), cooldown()]),
         "2026-W38": ("Light tempo 2×6min Z3",  [warmup(), repeat(2, [tempo(6), jog(120)]), cooldown()]),
-        "2026-W39": ("Sharpening 4×2min Z4",   [warmup(12), repeat(4, [vo2(2), jog(120)]), cooldown()]),
+        # W39 = 100 km ride + taper: no structured run workout this week.
         "2026-W40": ("Benchmark 5k time trial",[warmup(12), timetrial(5000), cooldown()]),
     }
 
