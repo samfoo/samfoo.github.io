@@ -95,16 +95,17 @@ column whenever you add load; keep the history in the weekly logs. Units: kg.
 
 | Lift | Baseline (wk1, 5 @ RPE7) | Current working weight | Notes |
 |------|--------------------------|------------------------|-------|
-| Back squat | 90 | **105** | W38: clean 3×5 @ 105 (nudged up even in a hold week). Strong — retest from here in W40 |
-| Deadlift | 100 | **110** | W35 & W36: clean 4×4 @ 110. Chase 4×5 before adding |
-| Bench press | 60 | **65** | W36: 4×5 @ 65 (+1 rep). Nearly there → 67.5 once 4×5–6 is comfortable |
-| Overhead press | 30 | **40** | W36: 3×6+1×4 @ 40 — one more session earns 42.5 |
+| Back squat | 90 | **115** | W40 test: 1×5 @ 115 @ RPE8 (+25 off baseline). New working weight |
+| Deadlift | 100 | **120** | W40 test: 1×5 @ 120 @ RPE8 (+20 off baseline) |
+| Bench press | 60 | **70** | W40 test: 1×5 @ 70 then 1×3 @ 75 @ RPE8. Work 75 for reps next |
+| Overhead press | 30 | **45** | W40 test: 1×5 @ 45 @ RPE8 (+15 off baseline) |
 | Front squat | _tbd_ | _tbd_ | now an *optional* accessory — establish only if you use it |
 
 ### Re-test (week 13)
 
-| Lift | Wk1 baseline | Wk13 top set of 3 @ RPE8 | Change |
-|------|-------------|--------------------------|--------|
-| Back squat | | | |
-| Deadlift | | | |
-| Bench press | | | |
+| Lift | Wk1 baseline | Wk13 top set @ RPE8 | Change |
+|------|-------------|---------------------|--------|
+| Back squat | 90 (5 @ RPE7) | 115 (1×5) | **+25 kg** |
+| Deadlift | 100 | 120 (1×5) | **+20 kg** |
+| Bench press | 60 | 70 (1×5) / 75 (1×3) | **+10–15 kg** |
+| Overhead press | 30 | 45 (1×5) | **+15 kg** |
