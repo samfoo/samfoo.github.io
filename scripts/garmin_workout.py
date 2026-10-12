@@ -86,6 +86,7 @@ def workout_catalog():
         # W39 = 100 km ride + taper: no structured run workout this week.
         "2026-W40": ("Benchmark 5k time trial",[warmup(12), timetrial(5000), cooldown()]),
         "2026-W41": ("Benchmark 5k time trial",[warmup(12), timetrial(5000), cooldown()]),  # deferred from W40
+        "2026-W42": ("Tempo 2×8min Z3",        [warmup(), repeat(2, [tempo(8), jog(120)]), cooldown()]),  # Block 4 re-entry
     }
 
 
