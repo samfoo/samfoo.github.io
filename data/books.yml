@@ -2108,3 +2108,25 @@ books:
 
                 I did like it overall, but not sure I'll read the author's
                 other books.
+
+    - asin: B000XU4SRS
+      date: 2026-10-09
+      title: "Henry VIII: The King and His Court"
+      author:  Alison Weir
+      type: nonfiction
+      review: |
+                Struggle to finish this one. Not enough Henry, too much of his
+                court. Every paragraph where the history gets interesting is
+                interspersed with 5 paragraphs about the remodelling history of
+                some palace somewhere. Boring - even by history book standards.
+
+    - asin: B0GMJZ7M5N
+      date: 2026-10-15
+      title: "Scion"
+      author:  James Islington
+      type: fiction
+      review: |
+                Short and sweet interlude between the Will of the Many books.
+                Bit of a miss from Islington actually. Premise was fun, very
+                Altered Carbon coded, but no real payoff and the twist wasn't
+                really thought provoking or surprising.
