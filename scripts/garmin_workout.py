@@ -87,6 +87,8 @@ def workout_catalog():
         "2026-W40": ("Benchmark 5k time trial",[warmup(12), timetrial(5000), cooldown()]),
         "2026-W41": ("Benchmark 5k time trial",[warmup(12), timetrial(5000), cooldown()]),  # deferred from W40
         "2026-W42": ("Tempo 2×8min Z3",        [warmup(), repeat(2, [tempo(8), jog(120)]), cooldown()]),  # Block 4 re-entry
+        # W43 (travel→Sydney) & W44 (Sydney, jet-lag): no structured run workout.
+        "2026-W45": ("Tempo 2×8min Z3",        [warmup(), repeat(2, [tempo(8), jog(120)]), cooldown()]),  # Melbourne running week
     }
 
 
